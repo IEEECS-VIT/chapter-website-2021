@@ -1,0 +1,86 @@
+.card {
+  border: 1px solid black;
+  max-width: 200px;
+  width: 250px;
+  height: 280px;
+  text-align: center;
+  padding: 10px;
+  margin: 25px;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.imageWrapper:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  margin-top: 20px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(8, 8, 8, 0.4);
+}
+
+.image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 15px;
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+}
+
+.social {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.name {
+  margin-top: 190px;
+  padding: 5px;
+  font-size: larger;
+  width: 100%;
+}
+
+.position {
+  font-size: large;
+  width: 100%;
+}
+
+.iconButton {
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 8px;
+  font-size: 1.5rem;
+  /* line-height: 1.5rem; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+  margin-bottom: 10px;
+  color: white;
+}
