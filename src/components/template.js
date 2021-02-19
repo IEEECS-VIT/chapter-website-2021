@@ -1,13 +1,17 @@
-import React from "react"
+import React, { useContext } from "react"
+
+import ThemeProvider from "../utils/theme"
+import Navbar from "./navbar"
 
 const Template = ({ children }) => {
-  console.log(children)
   return (
-    <div>
-      <h1>Navbar</h1>
-      {children}
-      <h1>Footer</h1>
-    </div>
+    <ThemeProvider>
+      <div>
+        <Navbar />
+        {children}
+        <h1>Footer</h1>
+      </div>
+    </ThemeProvider>
   )
 }
 

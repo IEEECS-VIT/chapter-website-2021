@@ -2,7 +2,7 @@ import React from "react"
 
 const Landing = () => {
   return (
-    <div style={{ height: "100vh" }}>
+    <div>
       <h1>Landing</h1>
     </div>
   )

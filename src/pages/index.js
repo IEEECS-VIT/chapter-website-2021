@@ -19,7 +19,7 @@ const Index = () => {
           rel="stylesheet"
         ></link>
       </Helmet>
-      <body>
+      <div>
         <Template>
           <Landing />
           <AboutUs />
@@ -29,7 +29,7 @@ const Index = () => {
           <OurTeam />
           <ContactUs />
         </Template>
-      </body>
+      </div>
     </>
   )
 }
