@@ -1,5 +1,5 @@
-import React from "react";
-import classes from "./teamCard.module.css";
+import React from "react"
+import classes from "./teamCard.module.css"
 
 const TeamCard = ({ cardInfo }) => {
   const {
@@ -11,7 +11,7 @@ const TeamCard = ({ cardInfo }) => {
     twitter,
     facebook,
     personal,
-  } = cardInfo;
+  } = cardInfo
 
   return (
     <div className={classes.card}>
@@ -71,13 +71,14 @@ const TeamCard = ({ cardInfo }) => {
             )}
           </div>
         </div>
+        <img className={classes.bgEffect} src={require("./bg.png")} />
       </div>
       <div className={classes.cardBody}>
         <div className={classes.name}>{name}</div>
         <div className={classes.position}>{position}</div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TeamCard;
+export default TeamCard
