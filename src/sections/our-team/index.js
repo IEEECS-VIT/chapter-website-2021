@@ -1,7 +1,7 @@
-import React from "react";
-import TeamCard from "./components/teamCard";
+import React from "react"
+import TeamCard from "./components/teamCard"
 
-import classes from "./styles.module.css";
+import classes from "./styles.module.css"
 
 const OurTeamSection = () => {
   const cardInfo1 = {
@@ -11,7 +11,7 @@ const OurTeamSection = () => {
     linkedIn: "https://linkedin.com/",
     twitter: "https://twitter.com/",
     personal: "https://dog.ceo/",
-  };
+  }
 
   const cardInfo2 = {
     name: "Doggo Pupper",
@@ -20,7 +20,7 @@ const OurTeamSection = () => {
     linkedIn: "https://linkedin.com/",
     facebook: "https://facebook.com/",
     personal: "https://dog.ceo/",
-  };
+  }
 
   const cardInfo3 = {
     name: "Doggo Pupper",
@@ -29,7 +29,7 @@ const OurTeamSection = () => {
     linkedIn: "https://linkedin.com/",
     twitter: "https://twitter.com/",
     personal: "https://dog.ceo/",
-  };
+  }
 
   return (
     <div className={classes.container}>
@@ -61,7 +61,7 @@ const OurTeamSection = () => {
         <TeamCard cardInfo={cardInfo3} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default OurTeamSection;
+export default OurTeamSection
