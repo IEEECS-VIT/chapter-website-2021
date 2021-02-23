@@ -26,7 +26,11 @@ const TeamCard = ({ cardInfo }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                IG
+                <img
+                  src={require("./ig.png")}
+                  alt="instagram"
+                  className={classes.icon}
+                />
               </a>
             )}
             {facebook && (
@@ -36,7 +40,11 @@ const TeamCard = ({ cardInfo }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                FB
+                <img
+                  src={require("./fb.png")}
+                  alt="facebook"
+                  className={classes.icon}
+                />
               </a>
             )}
             {linkedIn && (
@@ -46,7 +54,11 @@ const TeamCard = ({ cardInfo }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                IN
+                <img
+                  src={require("./ln.png")}
+                  alt="linkedIn"
+                  className={classes.icon}
+                />
               </a>
             )}
             {twitter && (
@@ -56,7 +68,11 @@ const TeamCard = ({ cardInfo }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                TW
+                <img
+                  src={require("./tw.png")}
+                  alt="twitter"
+                  className={classes.icon}
+                />
               </a>
             )}
             {personal && (
@@ -66,12 +82,20 @@ const TeamCard = ({ cardInfo }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                PW
+                <img
+                  src={require("./pw.png")}
+                  alt="personal"
+                  className={classes.icon}
+                />
               </a>
             )}
           </div>
         </div>
-        <img className={classes.bgEffect} src={require("./bg.png")} />
+        <img
+          className={classes.bgEffect}
+          alt="dotted-effect"
+          src={require("./bg.png")}
+        />
       </div>
       <div className={classes.cardBody}>
         <div className={classes.name}>{name}</div>

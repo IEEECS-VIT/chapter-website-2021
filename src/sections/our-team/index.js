@@ -17,7 +17,7 @@ const OurTeamSection = () => {
     name: "Doggo Pupper",
     image: require("../../images/pupper.jpg"),
     position: "Doggo CEO",
-    linkedIn: "https://linkedin.com/",
+    instagram: "https://instagram.com/",
     facebook: "https://facebook.com/",
     personal: "https://dog.ceo/",
   }
