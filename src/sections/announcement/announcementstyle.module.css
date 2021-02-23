@@ -1,0 +1,13 @@
+.achievement{
+    text-align: center;
+    width:35vw;
+    height:9vh;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    padding: 8px;
+}
+.text{
+    margin:auto;
+}
