@@ -71,4 +71,8 @@ const OurTeamSection = () => {
   )
 }
 
+<<<<<<< HEAD
 export default OurTeamSection
+=======
+export default OurTeam
+>>>>>>> closes #3

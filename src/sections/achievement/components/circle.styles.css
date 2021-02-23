@@ -1,0 +1,54 @@
+
+  .img{
+    background-image: url('bg.png');
+    position: absolute;
+    width: 240px;
+    height:240px;
+    border-radius: 50%;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    z-index: -1;
+  
+    
+ }
+  .box{
+    flex-basis: 18%;
+    text-align: center;
+    margin: auto;
+   
+  }
+   
+ 
+  .circle {
+      height: 180px;
+      width: 180px;
+      background-color:#EFCA53;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      position: relative;
+  
+    }
+    #one{
+      vertical-align: middle;
+      display: inline-block;
+      text-align: center;
+      text-indent:10px;
+      font-size: 160px;
+      font-weight: 550;
+      
+      
+    }
+   
+   #caption{
+  
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+   }
