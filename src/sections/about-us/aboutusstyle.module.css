@@ -3,6 +3,8 @@
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     margin:0;
+    width: 100vw;
+    overflow-x: hidden;
 }
 .aboutus{
     font-weight: 700;
@@ -40,6 +42,7 @@ margin-top: 27vh;
     width:50vw;
     height:100vh;
     z-index: -1;
+    
 }
 .circle2{
     display:block;

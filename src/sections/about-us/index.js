@@ -4,8 +4,6 @@ import clubimg from '../../images/club.png'
 const AboutUs = () => {
   return (
     <div className={styles.about}>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet"></link>
-                
                 <div className={styles.aboutus}>About Us</div>
                 <img className={styles.clubimg} src={clubimg} alt="club"></img>
                 <div className={styles.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec lacinia velit. Phasellus tempor in est sed fringilla. Etiam nec sem elit. Nunc rhoncus hendrerit arcu at mattis. Cras a erat at lacus aliquam sodales. Etiam id metus arcu. Fusce porttitor pharetra turpis sit amet lobortis. Quisque aliquet purus nec purus dignissim sodales. Phasellus ac auctor magna, eget feugiat ipsum..</div>
