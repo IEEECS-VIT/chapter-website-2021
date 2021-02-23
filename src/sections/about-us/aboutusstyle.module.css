@@ -5,6 +5,7 @@
     margin:0;
     width: 100vw;
     overflow-x: hidden;
+    height:100vh;
 }
 .aboutus{
     font-weight: 700;
@@ -19,6 +20,7 @@
     margin-left:12vw;
     margin-top:8vh;
     grid-column: span 6;
+    text-align: justify;
 }
 .clubimg{
 grid-column: span 6;
@@ -110,7 +112,7 @@ box-sizing: border-box;
         grid-row: 1;
         position:relative;
       grid-column: span 12;
-      margin-top:20vh;
+      margin-top:25vh;
       margin-left: auto;
       margin-right: auto;
       font-size: 40px;;
@@ -132,6 +134,30 @@ box-sizing: border-box;
         margin-left: auto;
         margin-right: auto;
 
+    }
+    .circle1{
+        visibility: hidden;
+    }
+    .circle2{
+        visibility: hidden;
+    }
+    .circle3{
+        visibility: hidden;
+    }
+    .circle4{
+        visibility: hidden;
+    }
+    .circle5{
+        visibility: hidden;
+    }
+    .circle6{
+        visibility: hidden;
+    }
+    .dot{
+        visibility: hidden;
+    }
+    .hollowcircle{
+        visibility: hidden;
     }
   }
 body{
