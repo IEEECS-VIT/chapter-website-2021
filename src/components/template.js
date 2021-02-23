@@ -1,12 +1,14 @@
 import React, { useContext } from "react"
 
 import ThemeProvider from "../utils/theme"
-import Navbar from "./navbar"
+import Navbar from "./sidebar/navbar"
+
 
 const Template = ({ children }) => {
+  
   return (
     <ThemeProvider>
-      <div>
+      <div >
         <Navbar />
         {children}
         <h1>Footer</h1>
