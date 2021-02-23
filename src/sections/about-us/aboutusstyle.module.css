@@ -28,10 +28,15 @@ display:inline-flex;
 margin-top: 27vh;
 
 }
-.shade{
-    position: absolute;
-    width:100vw;
-      
+.hollowcircle{
+position: absolute;
+width: 175px;
+height: 175px;
+left: -80px;
+top:275px;
+border-radius: 50%;
+border: 23px solid #EFCA53;
+box-sizing: border-box;
 }
 .circle1{
     display:block;
@@ -123,3 +128,6 @@ margin-top: 27vh;
 
     }
   }
+body{
+    overflow-x: hidden;
+}

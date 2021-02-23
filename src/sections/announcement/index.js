@@ -4,6 +4,7 @@ const Announcement = () => {
   return (
     <div className={styles.achievement}>
       <div className={styles.text}>Announcement: Lorem ipsum dolor sit amet,</div>
+      
     </div>
   )
 }
