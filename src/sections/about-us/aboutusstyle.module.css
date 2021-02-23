@@ -30,13 +30,19 @@ margin-top: 27vh;
 }
 .hollowcircle{
 position: absolute;
-width: 175px;
-height: 175px;
-left: -80px;
-top:275px;
+width: 125px;
+height: 125px;
+left: 10px;
+top:265px;
 border-radius: 50%;
-border: 23px solid #EFCA53;
+border: 17px solid #EFCA53;
 box-sizing: border-box;
+}
+.dot{
+    position:absolute;
+    z-index: -2;
+    left:-330px;
+    top:-25px;
 }
 .circle1{
     display:block;
