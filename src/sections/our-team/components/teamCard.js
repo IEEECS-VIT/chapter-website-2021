@@ -1,5 +1,12 @@
 import React from "react"
 import classes from "./teamCard.module.css"
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaInstagram,
+  FaTwitter,
+  FaGlobe,
+} from "react-icons/fa"
 
 const TeamCard = ({ cardInfo }) => {
   const {
@@ -26,11 +33,7 @@ const TeamCard = ({ cardInfo }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={require("./ig.png")}
-                  alt="instagram"
-                  className={classes.icon}
-                />
+                <FaInstagram />
               </a>
             )}
             {facebook && (
@@ -40,11 +43,7 @@ const TeamCard = ({ cardInfo }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={require("./fb.png")}
-                  alt="facebook"
-                  className={classes.icon}
-                />
+                <FaFacebook />
               </a>
             )}
             {linkedIn && (
@@ -54,11 +53,7 @@ const TeamCard = ({ cardInfo }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={require("./ln.png")}
-                  alt="linkedIn"
-                  className={classes.icon}
-                />
+                <FaLinkedin />
               </a>
             )}
             {twitter && (
@@ -68,11 +63,7 @@ const TeamCard = ({ cardInfo }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={require("./tw.png")}
-                  alt="twitter"
-                  className={classes.icon}
-                />
+                <FaTwitter />
               </a>
             )}
             {personal && (
@@ -82,11 +73,7 @@ const TeamCard = ({ cardInfo }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={require("./pw.png")}
-                  alt="personal"
-                  className={classes.icon}
-                />
+                <FaGlobe />
               </a>
             )}
           </div>
