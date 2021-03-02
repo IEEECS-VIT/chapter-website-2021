@@ -8,18 +8,22 @@ const Circle = ({info})=>{
     }=info
     return(
          <div className="box">
-             <div className="img">
+             <div className="bgimg">
+                <img className="background" src={require("./bg.png")}/>
+                </div>
                
-               <span className="circle">
-               <span id="one">{text}</span>
-               </span>
+               <div className="circle">
+               
+               <span className="one">{text}</span>
+               
+               </div>
                
                
                <br></br><br></br>
                
-               <span id="caption">{caption}</span>
+               <div className="caption">{caption}</div>
               
-            </div>
+            
         </div>
 
                

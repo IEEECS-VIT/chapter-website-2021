@@ -1,50 +1,49 @@
 
-  .img{
-    background-image: url('bg.png');
+   
+   .background{
+     
     position: absolute;
-    width: 240px;
-    height:240px;
-    border-radius: 50%;
-    margin-top: 30px;
+    width: 490px;
+    height: 260px;
+    z-index: -1; 
     background-repeat: no-repeat;
     background-position: center;
-    object-fit: cover;
-    z-index: -1;
-  
+    object-fit: cover;  
     
- }
+ } 
+ .bgimg {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  opacity: 1;
+}
   .box{
     flex-basis: 18%;
-    text-align: center;
-    margin: auto;
-   
+    margin: 0  auto;
+    
   }
-   
- 
+  
   .circle {
       height: 180px;
       width: 180px;
       background-color:#EFCA53;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: inline-block;
+      justify-content: space-evenly;
       margin-top: 30px;
       position: relative;
+      
   
     }
-    #one{
-      vertical-align: middle;
+    .one{
+      vertical-align:middle;
       display: inline-block;
-      text-align: center;
-      text-indent:10px;
-      font-size: 160px;
-      font-weight: 550;
-      
-      
+      text-indent:30px;
+      font-size: 140px;
+      font-weight: 550; 
     }
    
-   #caption{
+   .caption{
   
     font-weight: 900;
     font-size: 15px;

@@ -22,11 +22,7 @@ margin:auto;
 
 }
 .container {
-   /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-*/
+
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -35,7 +31,4 @@ margin:auto;
   
   }
 
- /*
- @media only screen and (max-width: 667px)
- { 
-  */
+ 

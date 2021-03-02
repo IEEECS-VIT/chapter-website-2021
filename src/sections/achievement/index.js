@@ -8,6 +8,7 @@ const Achievements = () => {
 import './achievements.styles.css'
 import Circle from './components/circle'
 
+
 const Achievements = () => {
   const circle1={
     text:"15+",
@@ -23,6 +24,7 @@ const Achievements = () => {
   }
   return (
     <div className="header">
+     
         <div id="we"><b>What We</b></div>
         <div id="eve"><b>Achieved</b></div>
         <div className='content'>

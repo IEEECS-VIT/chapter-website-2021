@@ -58,8 +58,21 @@ form{
     margin-bottom: 2%;
     
 }
-img{
-    background-color:black;
-    border-radius: 40%;
-    size: 20px;
+
+.social{
+    
+    display: flex;
+    justify-content: center;
+    padding: 50px;
 }
+span{
+    margin-right: 30px;
+}
+@media only screen and (max-width: 1054px)
+{
+    .form{
+        width:100%;
+    }
+
+}
+
