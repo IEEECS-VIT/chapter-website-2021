@@ -18,7 +18,8 @@ const Landing = () => {
   
   return (
     
-    <div id="Home" className={styles.home}>
+    <div id="Home" className={`${styles.home} ${styles.backg}`}
+    style={{backgroundImage:isDark? `url(${Lightbg})`:`url(${Darkbg})`}}>
     
   
     <div className={styles.heading}>

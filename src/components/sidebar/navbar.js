@@ -1,4 +1,4 @@
-import React,{useState,useRef,useEffect} from "react"
+import React,{useState} from "react"
 import { useThemeValue } from "../../utils/context"
 import useWindowScrollPosition from "@rehooks/window-scroll-position";
 
@@ -14,21 +14,23 @@ const Menu = ({ open ,setOpen}) => {
  
  
   <div >
-  
+
   <nav className={`${styles.StyledMenu} ${isDark? styles.darkmode:styles.lightmode}`} 
   style={{transform: !(open) ? "translateX(100%)": "translateX(0)"}}>
-  
+      
       <a href="#Home" onClick={() => setOpen(!open)}>Home</a>
       <a href="#About" onClick={() => setOpen(!open)}>About</a>
       <a href="#Events" onClick={() => setOpen(!open)} >Events</a>
       <a href="#Team" onClick={() => setOpen(!open)} >Team</a>
       <a href="#Gallery"  onClick={() => setOpen(!open)}>Gallery</a>
       <a href="#Contact" onClick={() => setOpen(!open)} >Contact</a>
+     
       <br/><br/><br/>
       <span>Toggle Theme</span>
       <input type="checkbox" id="switch" onClick={toggleTheme} /><label for="switch"></label>
 
     </nav>
+    
     </div>
     
   )
@@ -84,7 +86,7 @@ const Header = () => {
       
       <div ref={node} className={`${styles.showNav} ${isDark? styles.dark:null}`}
       style={{backgroundColor: change? "#393e46":"transparent" , transitionTimingFunction: "ease-in"}}>
-      <img className={styles.logo}src={isDark? darklogo:logo} />
+      <img className={styles.logo}src={isDark? darklogo:logo}  alt="IEEE logo"/>
         <Burger open={open} setOpen={setOpen} />
       
         <Menu open={open} setOpen={setOpen} />

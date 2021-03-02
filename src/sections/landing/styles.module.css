@@ -23,7 +23,8 @@
 }
 .announcement{
     margin: 0 0  0 25%;
-    height: 50px;
+    height: 100px;
+
     padding: 2%;
     display: inline-block;
 }
@@ -31,52 +32,79 @@
     
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
-    margin: 0 10% 0 25%;
+    margin: 2% 10% 0 20%;
     height: 10%;
     width: 60%;
-    
     text-transform: uppercase;
-    
     font-weight: 400;
+    padding-top: 2%;
 }
 
-@media (max-width: 780px) {
+.backg{
+    
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 50% 50% ;
+    animation-name: movebg ;
+    animation-duration: 5s;
+   
+
+}
+@keyframes movebg{
+    from {background-size: 50% 0;}
+    to {background-size: 50% 65% }
+}
+
+@keyframes movebgs{
+    from {background-size: 60% 0;}
+    to {background-size: 60% 40% }
+}
+@media (max-width: 600px) {
     .heading {
-        font-size: 70%;
-        margin-right:5%;
-        padding-top: 4%;
+        font-size: 50%;
+        margin-right:8%;
+        padding-top: 10%;
       
      }
     .text{
-        font-size: 90%;
-        margin: 0 5% 0 20%;
-        height: 30%;
+        font-size: 70%;
+        margin: 30% 5% 0 20%;
+        height: 20%;
         width: 70%;
-        margin-bottom: 3%;
+        margin-bottom: 10%;
         
+        
+    }
+    .backg{
+        background-size: 60% 40% ;
+        animation-name: movebgs;
+       
     }
    
 }   
 
-@media (min-width: 1224px) {
+@media (min-width: 1100px) {
     .heading {
         font-size: 22px;
-        margin-right: 22%%;
+       padding-top: 0;
         
        }
     .text{
         font-size: 18px;
-        margin: 0 25% 0 25%;
+        margin: 0 20% 5% 20%;
         
     }
-    
+    .backg{
+        background-size: 50% 69% ;
+        
+    }
      
     }
 .home{
-    height:100vh;
+    
     margin-top: 0;
     padding-top:5%;
-    
+    height: 100vh;
    
 }
 /* Button styling */
@@ -85,11 +113,16 @@
     border: none;
     padding-left: 2rem; 
     position:absolute;
-    bottom:15%;
-    left:5px;
+    bottom: 2%;
+    top:85%;
+    left:0;
 }
 .btn .arrow{
    
-height: 60px;
-width: 50px;
+height: auto;
+width: 30px;
+
+
 }
+
+
