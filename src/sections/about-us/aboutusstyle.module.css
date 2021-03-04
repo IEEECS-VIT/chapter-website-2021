@@ -2,6 +2,7 @@
 .about{
     display:grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:min-content;
     margin:0;
     width: 100vw;
     overflow-x: hidden;
@@ -18,8 +19,8 @@
 .text{
     width:317px;
     margin-left:12vw;
-    margin-top:3vh;
-    
+    margin-top:7vh;
+    top:10vh;
     grid-column: span 6;
     text-align: justify;
 }
@@ -120,8 +121,7 @@ box-sizing: border-box;
 }
 @media screen and (max-width: 768px) {
     .about
-    { z-index:-5;
-        
+    {         
     padding: 5%;
     text-align: center;
 }
@@ -199,6 +199,9 @@ box-sizing: border-box;
         
     }
     .hollowcircle{
+        width:80px;
+        height:80px;
+        border: 12px solid #EFCA53;;
         
     }
     .mcircle1{
