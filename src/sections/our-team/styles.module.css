@@ -7,6 +7,11 @@
   line-height: 1.2;
 }
 
+.header {
+  color: rgba(8, 8, 8, 0.8);
+  font-size: 1.55rem;
+}
+
 .subTitle {
   margin: 0;
   color: rgba(8, 8, 8, 0.6);
@@ -35,4 +40,9 @@
   max-width: 1000px;
   margin: 0 auto;
   justify-content: center;
+}
+
+.darkContainer {
+  color: #e9e7e9;
+  background-color: #1a1a1a;
 }

@@ -1,9 +1,12 @@
 import React from "react"
+import { useThemeValue } from "../../utils/context"
 import TeamCard from "./components/teamCard"
 
 import classes from "./styles.module.css"
 
 const OurTeamSection = () => {
+  const { isDark } = useThemeValue()
+
   const cardInfo1 = {
     name: "Doggo Pupper",
     image: require("../../images/pupper.jpg"),
@@ -32,23 +35,28 @@ const OurTeamSection = () => {
   }
 
   return (
-    <div className={classes.container}>
+    <div className={`${classes.container} ${isDark && classes.darkContainer}`}>
       <div className={classes.headerWrapper}>
         {/* Header */}
-        <h3
-          className={classes.subTitle}
-          style={{ color: "rgba(8, 8, 8, 0.8)", fontSize: "1.55rem" }}
-        >
+        <h3 className={`${classes.header} ${isDark && classes.darkContainer}`}>
           We Have
         </h3>
         <h1 className={classes.title}>Our Team</h1>
-        <h6 className={classes.subTitle}>
+        <h6
+          className={`${classes.subTitle} ${isDark && classes.darkContainer}`}
+        >
           "Teamwork is the ability to work together towards a common vision.
         </h6>
-        <h6 className={classes.subTitle}>
+        <h6
+          className={`${classes.subTitle} ${isDark && classes.darkContainer}`}
+        >
           It is the fuel that allows common people to attain uncommin results."
         </h6>
-        <h6 className={classes.subTitle}>-Andrew Carnegie</h6>
+        <h6
+          className={`${classes.subTitle} ${isDark && classes.darkContainer}`}
+        >
+          -Andrew Carnegie
+        </h6>
       </div>
 
       {/* Cards Body */}
