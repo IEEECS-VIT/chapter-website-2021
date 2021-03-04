@@ -1,0 +1,152 @@
+.EventsMain{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.Semi2{
+    position: absolute;
+    top:40px;
+    left: -50px;
+    transition: 0.5s;
+    transform: rotateZ(-0deg);
+    transform-origin: 40% 10%;
+    opacity: 0.5;
+    width: 100px;
+}
+.Active .Semi2{
+    transform: rotateZ(-90deg);
+}
+.Semi1{
+    position: absolute;
+    top:40px;
+    left: -50px;
+    transition: 0.5s 0.1s;
+    transform: rotateZ(-0deg);
+    transform-origin: 40% 10%;
+    width: 100px;
+}
+.Active .Semi1{
+    transform: rotateZ(-90deg);
+}
+.Half1{
+    position: absolute;
+    top:10%;
+    right:-30px;
+    transform: rotateZ(-90deg);
+}
+.Half2{
+    position: absolute;
+    transform: translateY(30px);
+    bottom:0%;
+    left:10%;
+    
+}
+.Middle{
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    width: 80%;
+    height: 80%;
+    transition: 1s;
+}
+.Active .Middle{
+    top:50%;
+    opacity: 1;
+}
+.Mirror{
+    height: 70vh;
+    width: 70vh;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, .35);
+  
+    backdrop-filter: blur(20px);
+    opacity: 0.5;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 50%;
+    z-index: 10;
+
+}
+.Text{
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 30;
+}
+.Text h3{
+    font-size: 3em;
+    margin: 10px;
+}
+.Text h1{
+    font-size: 4em;
+    margin: 10px;
+}
+.Text div{
+    font-size: 2em;
+    margin: 20px;
+}
+.Text button{
+    margin: 30px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border:2px solid white;
+    background-color: #C4C4C4;
+    outline:none;
+}
+.EventsMain.Disappear{
+    opacity: 0;
+}
+.Dot1,.Dot2{
+    z-index: -100;
+    opacity: 0.5;
+    width: 700px;
+    height: 500px;
+    position: absolute;
+}
+.Dot1{
+    bottom: -150px;
+    left: 10%;
+}
+.Dot2{
+    top:-150px;
+    right: 10%;
+}
+.Gray{
+    width: 150px;
+    height: 150px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    position: absolute;
+    top:50px;
+    left: 30%;
+    opacity: 1;
+    z-index: 20;
+    transform: translateY(500px);
+    transition: 1s;
+}
+.Active .Gray{
+    transform: translateY(0);
+}
+.Yellow{
+    width: 200px;
+    height: 200px;
+    background-color: #EFCA53;
+    border-radius: 50%;
+    position: absolute;
+    bottom:10px;
+    right: 25%;
+    opacity: 1;
+    z-index: -20;
+    transition: 1s;
+}
