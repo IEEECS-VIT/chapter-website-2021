@@ -92,6 +92,12 @@
   width: 2.6rem;
   margin-bottom: 10px;
   color: white;
+  z-index: 10;
+}
+
+.iconButton:hover svg {
+  transform: translateY(-4px);
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 350px) {
