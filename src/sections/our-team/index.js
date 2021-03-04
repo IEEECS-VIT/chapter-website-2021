@@ -45,12 +45,8 @@ const OurTeamSection = () => {
         <h6
           className={`${classes.subTitle} ${isDark && classes.darkContainer}`}
         >
-          "Teamwork is the ability to work together towards a common vision.
-        </h6>
-        <h6
-          className={`${classes.subTitle} ${isDark && classes.darkContainer}`}
-        >
-          It is the fuel that allows common people to attain uncommin results."
+          "Teamwork is the ability to work together towards a common vision. It
+          is the fuel that allows common people to attain uncommin results."
         </h6>
         <h6
           className={`${classes.subTitle} ${isDark && classes.darkContainer}`}

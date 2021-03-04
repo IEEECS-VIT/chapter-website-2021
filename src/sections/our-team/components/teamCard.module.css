@@ -94,7 +94,44 @@
   color: white;
 }
 
-.icon {
-  height: 28px;
-  width: 28px;
+@media only screen and (max-width: 350px) {
+  .card {
+    max-width: 160px;
+    width: 160px;
+    padding: 8px;
+    margin: 10px;
+    height: 220px;
+    max-height: 220px;
+  }
+
+  .name {
+    margin-top: 180px;
+    font-size: 1.1rem;
+  }
+
+  .position {
+    font-size: 1rem;
+  }
+
+  .bgEffect {
+    width: 350px;
+    height: 230px;
+  }
+
+  .overlay {
+    height: 120px;
+    width: 120px;
+  }
+
+  .image {
+    height: 120px;
+    width: 120px;
+  }
+
+  .iconButton {
+    margin-right: 6px;
+    font-size: 1.2rem;
+    width: 2rem;
+    margin-bottom: 8px;
+  }
 }

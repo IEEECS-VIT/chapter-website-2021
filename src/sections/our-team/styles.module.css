@@ -13,16 +13,16 @@
 }
 
 .subTitle {
-  margin: 0;
+  margin: 0 auto;
   color: rgba(8, 8, 8, 0.6);
   font-size: 1.15rem;
   font-weight: unset;
+  max-width: 640px;
 }
 
 .container {
   margin: 0 auto;
   padding: 20px 10px;
-  background-color: none;
   max-width: 1400px;
   font-family: Montserrat;
   position: relative;
@@ -45,4 +45,29 @@
 .darkContainer {
   color: #e9e7e9;
   background-color: #1a1a1a;
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    margin: 0;
+    padding: 10px;
+    z-index: 0;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    margin: 4px;
+    margin-bottom: 12px;
+    line-height: 0.8;
+  }
+
+  .subTitle {
+    font-size: 0.8rem;
+  }
 }
