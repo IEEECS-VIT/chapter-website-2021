@@ -1,6 +1,6 @@
 .outer{ background-color:#DFDFDF;
     
-    
+    overflow-x:hidden;
 }
 
 .heading{
@@ -33,7 +33,7 @@ form{
     background-color: #fff;
     background-clip: padding-box;
     border-radius: .25rem;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     
     
     
@@ -68,11 +68,22 @@ form{
 span{
     margin-right: 30px;
 }
-@media only screen and (max-width: 1054px)
+@media only screen and (max-width: 320px)
 {
-    .form{
-        width:100%;
-    }
+     .heading{
+         font-size: 50px;
 
+     }
+     .form-control{
+         font-size: 20px;
+     }
+}
+
+@media only screen and (max-width: 1024px)
+{
+    .outer{
+       
+    width: 320vw;
+    }
 }
 
