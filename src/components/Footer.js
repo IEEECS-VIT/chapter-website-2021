@@ -18,6 +18,7 @@ const Footer=()=>
 
         </div>
         <div id="vit">VIT Chapter</div>
+        <div className="mainbox">
         <div className="logo">
                 <img src={require("./logo.png")}/>
                 <br></br>
@@ -26,7 +27,7 @@ const Footer=()=>
                 </span>
         </div>
         <div className="columns">
-            <div className="col1">
+            <div className="col1" >
                 <span className="title">Menu</span>
                 <div className="para">
                 <p>About</p>
@@ -35,7 +36,7 @@ const Footer=()=>
                 <p>Contact</p>
                 </div>
            </div>
-           <div className="col1">
+           <div className="col1" >
                 <span className="title">Events</span>
                 <div className="para">
                 <p>Arcs</p>
@@ -55,12 +56,13 @@ const Footer=()=>
                 
            </div>
 
-           <div className="col1">
-                <span className="title">Contact us</span>
+           <div className="col1" >
+                <span className="title">Contact us </span>
                 <div className="para">
                 <p>ieeecs@vit.ac.in</p>
                 </div>
           </div>
+        </div>
         </div>
         </div>
 

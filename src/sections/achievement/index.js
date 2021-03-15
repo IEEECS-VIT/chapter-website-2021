@@ -6,22 +6,29 @@ const Achievements = () => {
     <h1>Achievements</h1>
 =======
 import './achievements.styles.css'
-import Circle from './components/circle'
+
+
+// import Circle from './components/circle'
 
 
 const Achievements = () => {
-  const circle1={
-    text:"15+",
-    caption:"Hackathon Winnners"
-  }
-  const circle2={
-    text:"1",
-    caption:"Merwin Scholar"
-  }
-  const circle3={
-    text:"2",
-    caption:"Best Chapter Awards"
-  }
+  // const circle1={
+  //   text:"15+",
+  //   caption:"Hackathon Winnners"
+  // }
+  // const circle2={
+  //   text:"1",
+  //   caption:"Merwin Scholar"
+  // }
+  // const circle3={
+  //   text:"2",
+  //   caption:"Best Chapter Awards"
+  // }
+  // const c1={
+  //   textIndent:'30px',
+  //   fontSize: '140px',
+  //   fontWeight: '550'
+  // };
   return (
     <div className="header">
      
@@ -39,9 +46,100 @@ const Achievements = () => {
                Our members have also served as the team leads for IEEE CSIS and AICSSYC’19.
                </div>
                <div className="container">
-                 <Circle info={circle1}/>
-                 <Circle info={circle2}/>
-                 <Circle info={circle3}/>
+{/*                  
+                 <Circle style={c1} info={circle1}/>
+                 <Circle style={c1} info={circle2}/>
+                 <Circle style={c1} info={circle3}/> */}
+                  <div className="box">
+             <div className="bgimg">
+                <img className="background" src={require("./bg.png")}/>
+                </div>
+               
+               <div className="circle">
+               
+               <span id="num">15+</span>
+              
+               </div>
+               
+               
+               <br></br><br></br>
+               
+               <div className="caption">Hackathon Winnners</div>
+              
+            
+        </div>
+               <div className="box">
+             <div className="bgimg">
+                <img className="background" src={require("./bg.png")}/>
+                </div>
+               
+               <div className="circle">
+               
+               <span className="one">1</span>
+              
+               </div>
+               
+               
+               <br></br><br></br>
+               
+               <div className="caption">Merwin Scholar</div>
+              
+            
+        </div>
+        <div className="box">
+             <div className="bgimg">
+                <img className="background" src={require("./bg.png")}/>
+                </div>
+               
+               <div className="circle">
+               
+               <span className="one">2</span>
+              
+               </div>
+               
+               
+               <br></br><br></br>
+               
+               <div className="caption">Best Chapter Awards</div>
+              
+            
+        </div>
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+              
+              
                </div>
                  
                  

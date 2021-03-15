@@ -1,34 +1,34 @@
-import React from "react"
+// import React from "react"
 
-import './circle.styles.css'
-const Circle = ({info})=>{
-    const{
-        text,
-        caption
-    }=info
-    return(
-         <div className="box">
-             <div className="bgimg">
-                <img className="background" src={require("./bg.png")}/>
-                </div>
+// import './circle.styles.css'
+// const Circle = ({info})=>{
+//     const{
+//         text,
+//         caption
+//     }=info
+//     return(
+//          <div className="box">
+//              <div className="bgimg">
+//                 <img className="background" src={require("./bg.png")}/>
+//                 </div>
                
-               <div className="circle">
+//                <div className="circle">
                
-               <span className="one">{text}</span>
+//                <span className="one">{text}</span>
                
-               </div>
+//                </div>
                
                
-               <br></br><br></br>
+//                <br></br><br></br>
                
-               <div className="caption">{caption}</div>
+//                <div className="caption">{caption}</div>
               
             
-        </div>
+//         </div>
 
                
                
             
-    )
-}
-export default Circle
+//     )
+// }
+// export default Circle

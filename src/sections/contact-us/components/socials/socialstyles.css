@@ -1,0 +1,13 @@
+.social{
+    
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+ 
+    
+}
+span{
+    margin-right: 30px;
+}

@@ -1,20 +1,4 @@
-.outer{ background-color:#DFDFDF;
-    
-    overflow-x:hidden;
-    
-    
-}
-
-.heading{
-    color: #DF9318;
-    text-align: center;
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: 40px;
-    margin-top: 20px;
-    align-content: center;
-}
-/* form{
+form{
     width: 300px;
     margin: 0 auto;
     margin-top: 50px;
@@ -56,27 +40,18 @@
     margin-bottom: 2%;
     cursor: pointer;
     
-} */
-
-
-
+}
 
 @media only screen and (max-width: 768px)
 {
-     .heading{
-         font-size: 50px;
-
-     }
-    
+     
+     .form-control{
+         font-size: 25px;
+         
+        
+     }   
+       
    
 }
 
- @media only screen and (max-width: 1024px)
-{
-    .outer{
-       
-    width: 320vw;
-    height: 120vh;
-    }
-} 
-
+ 
