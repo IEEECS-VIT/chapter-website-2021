@@ -131,18 +131,17 @@ box-sizing: border-box;
         position:relative;
       grid-column: span 12;
       margin-top:15vh;
-     margin-right: 10vw;
-     margin-left: 10vw;
+        margin-right: 20%;
       font-size: 45px;
     }
     .text {
         grid-row:2;
       grid-column: span 12;
       text-align: justify;
-      max-width: 75vw;
-      font-size: 13px;
-      margin-right: 10vw;
-     margin-left: 10vw;
+      max-width: 70vw;
+      font-size: 11px;
+      
+     
       
     }
     .clubimg{
@@ -156,42 +155,42 @@ box-sizing: border-box;
     }
     .circle1{
         position: absolute;
-        width: 110vw;
+        width: 100vw;
         height:100vw;
         bottom:-95% ;
         left: 0%;
     }
     .circle2{
         position: absolute;
-        width: 110vw;
+        width: 100vw;
         height:107vw;
         bottom:-95% ;
         left: 0%;
     }
     .circle3{
         position: absolute;
-        width: 110vw;
+        width: 100vw;
         height:114vw;
         bottom:-95% ;
         left: 0%;
     }
     .circle4{
         position: absolute;
-        width: 110vw;
+        width: 100vw;
         height:121vw;
         bottom:-95% ;
         left: 0%;
     }
     .circle5{
         position: absolute;
-        width: 110vw;
+        width: 100vw;
         height:128vw;
         bottom:-95% ;
         left: 0%;
     }
     .circle6{
         position: absolute;
-        width: 110vw;
+        width: 100vw;
         height:135vw;
         bottom:-95% ;
         left: 0%;
