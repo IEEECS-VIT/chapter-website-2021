@@ -5,6 +5,8 @@
     position: relative;
     overflow: hidden;
     transition: 0.5s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 .Semi2{
     position: absolute;
@@ -66,14 +68,15 @@
     left:50%;
     transform: translate(-50%,-50%);
     overflow: hidden;
-    background-color: rgba(255, 255, 255, .35);
-  
-    backdrop-filter: blur(20px);
-    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(40px);
+    filter: blur(5px);
+    /* opacity: 0.5; */
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 50%;
     z-index: 10;
-
+    border: 2px solid;
+    border-image-source: linear-gradient(136.57deg, #FFFFFF 13.4%, rgba(255, 255, 255, 0) 91.73%);
 }
 .Text{
     width: 70%;
@@ -85,24 +88,36 @@
     z-index: 30;
 }
 .Text h3{
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 10px;
+    font-weight: 500;
+    letter-spacing: 7px;
 }
 .Text h1{
-    font-size: 4em;
+    font-size: 6.5em;
     margin: 10px;
+    font-weight: 700;
+    transform: translateX(30px);
+    transition: 1s ease-in;
+}
+.Active .Text h1{
+    transform: translateX(0);
 }
 .Text div{
-    font-size: 2em;
-    margin: 20px;
+    font-size: 1.7em;
+    margin: 10px 20px;
+    font-style: italic;
 }
 .Text button{
-    margin: 30px;
+    /* margin: 30px; */
     padding: 10px 30px;
     border-radius: 50px;
-    border:2px solid white;
+    border:1px solid white;
     background-color: #C4C4C4;
     outline:none;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 15px;
 }
 .EventsMain.Disappear{
     opacity: 0;
@@ -115,28 +130,30 @@
     position: absolute;
 }
 .Dot1{
-    bottom: -150px;
-    left: 10%;
+    top:50%;
+    left:50%;
+    transform: translate(calc(-50% + 25vh ),calc(-50% - 25vh));
 }
 .Dot2{
-    top:-150px;
-    right: 10%;
+    top:50%;
+    left:50%;
+    transform: translate(calc(-50% - 25vh ),calc(-50% + 25vh));
 }
 .Gray{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background-color: #C4C4C4;
     border-radius: 50%;
     position: absolute;
-    top:50px;
-    left: 30%;
+    top:50%;
+    left: 50%;
     opacity: 1;
     z-index: 20;
-    transform: translateY(500px);
+    transform: translate(calc(-50% - 30vh),calc(-50% - 18vh + 700px));
     transition: 1s;
 }
 .Active .Gray{
-    transform: translateY(0);
+    transform: translate(calc(-50% - 30vh),calc(-50% - 18vh));
 }
 .Yellow{
     width: 200px;
@@ -144,9 +161,24 @@
     background-color: #EFCA53;
     border-radius: 50%;
     position: absolute;
-    bottom:10px;
-    right: 25%;
+    top:50%;
+    left:50%;
+    transform: translate(calc(-50% + 25vh ),calc(-50% + 25vh));
     opacity: 1;
+    z-index: -20;
+    transition: 1s;
+}
+.Yellow::after{
+    content: '';
+    width: 200px;
+    height: 200px;
+    background-color: #EFCA53;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translate(-25vh ,-25vh);
+    opacity: 0.5;
     z-index: -20;
     transition: 1s;
 }
