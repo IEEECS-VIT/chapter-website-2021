@@ -4,9 +4,11 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows:min-content;
     margin:0;
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100%;
+    overflow: hidden !important; 
+    position:relative;
     height:100vh;
+    border: solid 1px black;
 }
 .aboutus{
     font-weight: 700;
@@ -38,7 +40,7 @@ position: absolute;
 width: 125px;
 height: 125px;
 left: 10px;
-top:265px;
+top:3%;
 border-radius: 50%;
 border: 17px solid #EFCA53;
 box-sizing: border-box;
@@ -47,7 +49,7 @@ box-sizing: border-box;
     position:absolute;
     z-index: -2;
     left:-330px;
-    top:-25px;
+    top:-40%;
 }
 .circle1{
     display:block;
@@ -58,6 +60,7 @@ box-sizing: border-box;
     width:83vh;
     height:100vh;
     z-index: -1;
+    overflow-x: hidden;
     
 }
 .circle2{
@@ -69,6 +72,7 @@ box-sizing: border-box;
     width:88vh;
     height:100vh;
     z-index: -1;
+    overflow-x: hidden;
 }
 .circle3{
     display:block;
@@ -79,6 +83,7 @@ box-sizing: border-box;
     width:93vh;
     height:100vh;
     z-index: -1;
+    overflow-x: hidden;
 }
 .circle4{
     display:block;
@@ -89,6 +94,7 @@ box-sizing: border-box;
     width:98vh;
     height:100vh;
     z-index: -1;
+    overflow-x: hidden;
 }
 .circle5{
     display:block;
@@ -99,6 +105,7 @@ box-sizing: border-box;
     width:103vh;
     height:100vh;
     z-index: -1;
+    overflow-x: hidden;
 }
 .circle6{
     display:block;
@@ -109,6 +116,7 @@ box-sizing: border-box;
     width:108vh;
     height:100vh;
     z-index: -1;
+    overflow-x: hidden;
 }
 .mcircle1{
     display:none;
@@ -157,42 +165,42 @@ box-sizing: border-box;
         position: absolute;
         width: 100vw;
         height:100vw;
-        bottom:-95% ;
+        bottom:-45% ;
         left: 0%;
     }
     .circle2{
         position: absolute;
         width: 100vw;
         height:107vw;
-        bottom:-95% ;
+        bottom:-43% ;
         left: 0%;
     }
     .circle3{
         position: absolute;
         width: 100vw;
         height:114vw;
-        bottom:-95% ;
+        bottom:-41% ;
         left: 0%;
     }
     .circle4{
         position: absolute;
         width: 100vw;
         height:121vw;
-        bottom:-95% ;
+        bottom:-38% ;
         left: 0%;
     }
     .circle5{
         position: absolute;
         width: 100vw;
         height:128vw;
-        bottom:-95% ;
+        bottom:-35% ;
         left: 0%;
     }
     .circle6{
         position: absolute;
         width: 100vw;
         height:135vw;
-        bottom:-95% ;
+        bottom:-32% ;
         left: 0%;
     }
     .dot{

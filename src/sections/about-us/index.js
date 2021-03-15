@@ -16,12 +16,6 @@ const AboutUs = () => {
                 <div className={styles.circle4}></div>
                 <div className={styles.circle5}></div>
                 <div className={styles.circle6}></div>
-                <div className={styles.mcircle1}></div>
-                <div className={styles.mcircle2}></div>
-                <div className={styles.mcircle3}></div>
-                <div className={styles.mcircle4}></div>
-                <div className={styles.mcircle5}></div>
-                <div className={styles.mcircle6}></div>
     </div>
   )
 }
