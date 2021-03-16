@@ -27,7 +27,7 @@ const Menu = ({ open ,setOpen}) => {
     
 
       <span>Toggle Theme</span>
-      <input type="checkbox" id="switch" onClick={toggleTheme} /><label for="switch">.</label>
+      <input type="checkbox" id="switch" onClick={toggleTheme} /><label for="switch"></label>
 
     </nav>
     

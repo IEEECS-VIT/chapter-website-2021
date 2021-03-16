@@ -8,7 +8,7 @@ body{
   position: fixed;
   width: 100%;
   margin: 0;
-  height: 35px;
+  height: 40px;
   opacity: 1;
   transition: 0.3s ease-in-out;
   z-index: 2;
@@ -124,7 +124,7 @@ body{
       background:grey;
       border-radius: 150px;
       position:absolute;
-      color: transparent;
+     
       
     }
     
@@ -157,8 +157,8 @@ body{
    }
    .logo{
      z-index: 3;
-     height:36px;
-     width: 120px;
+     height:35px;
+     width: 110px;
      margin-top: 10px;
      padding-left: 1%;
      position:absolute;
