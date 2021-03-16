@@ -1,10 +1,9 @@
 import React,{useState} from "react"
 import { useThemeValue } from "../../utils/context"
 import useWindowScrollPosition from "@rehooks/window-scroll-position";
-
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import logo from "../../images/logo.png"
 import darklogo from "../../images/darklogo.png"
-
 import styles from './sidebar.module.css'
 
 
@@ -12,20 +11,21 @@ const Menu = ({ open ,setOpen}) => {
   const { toggleTheme, isDark } = useThemeValue()
  return (
  
- 
-  <div >
+  <div>
 
   <nav className={`${styles.StyledMenu} ${isDark? styles.darkmode:styles.lightmode}`} 
   style={{transform: !(open) ? "translateX(100%)": "translateX(0)"}}>
       
-      <a href="#Home" onClick={() => setOpen(!open)}>Home</a>
-      <a href="#About" onClick={() => setOpen(!open)}>About</a>
-      <a href="#Events" onClick={() => setOpen(!open)} >Events</a>
-      <a href="#Team" onClick={() => setOpen(!open)} >Team</a>
-      <a href="#Gallery"  onClick={() => setOpen(!open)}>Gallery</a>
-      <a href="#Contact" onClick={() => setOpen(!open)} >Contact</a>
+      <button  onClick={() => {setOpen(!open) ;scrollTo("#Home")}}>Home</button>
+      <button onClick={() => {setOpen(!open);scrollTo("#About")}}>About</button>
+      <button onClick={() => {setOpen(!open);scrollTo("#Events")}} >Events</button>
+      <button onClick={() => {setOpen(!open);scrollTo("#Team")}} >Team</button>
+      <button  onClick={() => {setOpen(!open);scrollTo("#Gallery")}}>Gallery</button>
+      <button onClick={() => {setOpen(!open);scrollTo("#Contact")}} >Contact</button>
      
       <br/><br/><br/>
+    
+
       <span>Toggle Theme</span>
       <input type="checkbox" id="switch" onClick={toggleTheme} /><label for="switch"></label>
 
@@ -39,9 +39,10 @@ const Menu = ({ open ,setOpen}) => {
 
 
 
-const Burger = ({ open, setOpen }) => {
+const Burger = ({ open, setOpen ,change}) => {
   const { isDark } = useThemeValue()
-  
+  var openClose=  (open)? styles.open:styles.close
+  var mode=(isDark||(change &&(!open))) ? styles.darkmode:styles.lightmode
  
   return (
  
@@ -50,9 +51,9 @@ const Burger = ({ open, setOpen }) => {
     onClick={() => setOpen(!open)} 
     className={styles.styledBurger} > 
   
-      <div className={`${(open) ? styles.open: styles.closed} ${isDark? styles.darkmode:styles.lightmode}`} />
-      <div className={`${(open) ? styles.open: styles.closed} ${isDark? styles.darkmode:styles.lightmode}`}/>
-      <div className={`${(open) ? styles.open: styles.closed} ${isDark? styles.darkmode:styles.lightmode}`}/>
+      <div className={`${openClose} ${mode}`} />
+      <div className={`${openClose} ${mode}`}/>
+      <div className={`${openClose} ${mode}`}/>
       
     </button>
   
@@ -66,7 +67,7 @@ const Header = () => {
   const node = React.useRef();
 
   const [change, setChange] = useState(false);
-  const changePosition = 80;
+  const changePosition = 100;
 
   let position = useWindowScrollPosition();
 
@@ -79,16 +80,11 @@ const Header = () => {
   }
  
   return (
-      <>
-
-      
-      
-      
-      <div ref={node} className={`${styles.showNav} ${isDark? styles.dark:null}`}
-      style={{backgroundColor: change? "#393e46":"transparent" , transitionTimingFunction: "ease-in"}}>
-      <img className={styles.logo}src={isDark? darklogo:logo}  alt="IEEE logo"/>
-        <Burger open={open} setOpen={setOpen} />
-      
+      <> 
+      <div ref={node} className={`${styles.showNav} ${isDark? styles.dark:null} `}
+      style={{backgroundColor: change? "#393e46":"transparent"}}>
+      <img className={styles.logo} src={isDark||change? darklogo:logo}  alt="IEEE logo"/>
+        <Burger open={open} setOpen={setOpen} change={change}/>
         <Menu open={open} setOpen={setOpen} />
         </div>
       

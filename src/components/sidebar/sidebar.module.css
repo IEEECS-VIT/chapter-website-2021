@@ -9,7 +9,9 @@ body{
   margin: 0;
   height: 35px;
   opacity: 1;
-  transition-timing-function: ease-in;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+
  }
 
  
@@ -25,16 +27,21 @@ body{
   top: 0;
   right: 0;
   transition: transform 0.3s ease-in-out;
+  padding-top: 40px;
+  
   
 }
 
 
- .StyledMenu a {
+ .StyledMenu button {
+   display: inline-block;
     font-size: 1.5rem;
     font-family: 'Montserrat','sans-serif';
-    padding: 10px 50px 10px 200px;
+    padding: 10px 50px 10px 160px; 
     color:white;
-    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
     font-weight: 500;
     position: relative;
     top:-70px;
@@ -42,30 +49,10 @@ body{
 }
 
 
- @media (max-width: 576px) {
-  .StyledMenu{
-    width: 100%;
-    opacity: 0.9;
-    background: #1a1a1a;
-    
 
-    
-  }
-  .StyledMenu a{
-    font-size: 1.5em;
-    text-align: center;
-    padding: 2% 10% 2% 60%;
-    font-family: Montserrat;
-   
-  }
-  
-    
-}
-
-  
-.StyledMenu a:hover {
+.StyledMenu button:hover {
     color:#787878;
-     
+     cursor: pointer;
      
     }
 .styledBurger{
@@ -97,11 +84,9 @@ body{
     position: relative;
     transform-origin: 1px;
   }
-    /*chnage the opacity of hamburger lines rotating first and third */
+    /*change the opacity of hamburger lines rotating first and third */
 
- 
-  
-    div:first-child.open{
+  div:first-child.open{
        transform: rotate(45deg);
     }
     div:nth-child(2).open{
@@ -130,21 +115,20 @@ body{
     }
     
   
-    label {
+     label{
       cursor: pointer;
       margin-left: 70%;
-      margin-bottom:-479px ;
+      margin-top: 140%;
       margin-right: 10px;
       width: 60px;
       height: 30px;
-      background: grey;
-      display: block;
+      background:grey;
       border-radius: 150px;
-      position: absolute;
+      position:absolute;
       
     }
     
-    label:after {
+     label:after {
       content: '';
       position: absolute;
       top: 3px;
@@ -163,19 +147,18 @@ body{
       transform: translateX(-100%);
     }
     
-   span{
+    span{
      color:white;
      display: inline-block;
-     position:relative;
-     width:100px;
-     size:2px;
-     margin-bottom: -150px;
-     margin-left:35%;
+     position:absolute;
+     margin-top: 140%;
+     margin-left:28%;
+     font-family: 'Montserrat','sans-serif';
    }
    .logo{
      z-index: 3;
      height:70%;
-     max-width: 18%;
+     max-width: 19%;
      margin-top: 1%;
      padding-left: 1%;
      position:absolute;
@@ -184,25 +167,54 @@ body{
 /* DARK MODE */
 .open.darkmode,.closed.lightmode{
   background-color:black;
+  
 }
 .closed.darkmode,.open.lightmode {
   background-color: white;
 }
 .lightmode{
     background-color: black;
-    color: white;
+   
 }
 .darkmode{
   background-color:white;
 }
-.darkmode a,.darkmode span{
+.darkmode button,.darkmode span{
   color:black;
-}
-
-input:checked + label {
-  background: white;
 }
 
 .darkmode input:checked + label {
   background:black;
+}
+
+
+@media (max-width: 576px) {
+  
+  .StyledMenu{
+    width: 100%;
+    opacity: 0.8;
+    z-index: 2;
+  }
+
+  .StyledMenu button{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 2% 5% 2% 60%;
+    font-family: 'Montserrat','sans-serif';
+    z-index: 2;
+  }
+
+  .darkmode.StyledMenu{
+    background:#A9A9A9;
+   
+  }
+  span{
+    margin-top: 80%;
+
+  }
+
+  label{
+    margin-top: 80%;
+  }
+  
 }
