@@ -11,7 +11,7 @@ const Menu = ({ open ,setOpen}) => {
   const { toggleTheme, isDark } = useThemeValue()
  return (
  
-  <div>
+  <div >
 
   <nav className={`${styles.StyledMenu} ${isDark? styles.darkmode:styles.lightmode}`} 
   style={{transform: !(open) ? "translateX(100%)": "translateX(0)"}}>
@@ -27,7 +27,7 @@ const Menu = ({ open ,setOpen}) => {
     
 
       <span>Toggle Theme</span>
-      <input type="checkbox" id="switch" onClick={toggleTheme} /><label for="switch"></label>
+      <input type="checkbox" id="switch" onClick={toggleTheme} /><label for="switch">.</label>
 
     </nav>
     
@@ -62,9 +62,10 @@ const Burger = ({ open, setOpen ,change}) => {
 
 
 const Header = () => {
-   const { isDark } = useThemeValue()
+  const { isDark } = useThemeValue()
   const [open, setOpen] = React.useState(false);
   const node = React.useRef();
+  var openClose=  (open)? styles.Open:styles.Close
 
   const [change, setChange] = useState(false);
   const changePosition = 100;
@@ -81,9 +82,11 @@ const Header = () => {
  
   return (
       <> 
-      <div ref={node} className={`${styles.showNav} ${isDark? styles.dark:null} `}
-      style={{backgroundColor: change? "#393e46":"transparent"}}>
-      <img className={styles.logo} src={isDark||change? darklogo:logo}  alt="IEEE logo"/>
+      <div className={`${styles.Blur} ${openClose}`}></div>
+      <div ref={node} className={`${styles.showNav} ${isDark? styles.dark:null} ${openClose}`}
+      style={{backgroundColor: change? "rgb(102,102,102,0.9)":"transparent"}}>
+      <img className={`${styles.logo} ${openClose}`} src={isDark||change? darklogo:logo}  alt="IEEE logo"/>
+      <img className={`${styles.logo2} ${openClose}`} src={darklogo}  alt="IEEE logo"/>
         <Burger open={open} setOpen={setOpen} change={change}/>
         <Menu open={open} setOpen={setOpen} />
         </div>

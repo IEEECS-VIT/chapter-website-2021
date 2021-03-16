@@ -2,6 +2,7 @@ body{
   margin: 0;
 }
 
+
 .showNav{
   padding-bottom:2.5%;
   position: fixed;
@@ -11,11 +12,8 @@ body{
   opacity: 1;
   transition: 0.3s ease-in-out;
   z-index: 2;
-
  }
-
  
-
 .StyledMenu{
   display: flex;
   flex-direction: column;
@@ -28,6 +26,7 @@ body{
   right: 0;
   transition: transform 0.3s ease-in-out;
   padding-top: 40px;
+  z-index: 2;
   
   
 }
@@ -125,6 +124,7 @@ body{
       background:grey;
       border-radius: 150px;
       position:absolute;
+      color: transparent;
       
     }
     
@@ -157,11 +157,15 @@ body{
    }
    .logo{
      z-index: 3;
-     height:70%;
-     max-width: 19%;
-     margin-top: 1%;
+     height:36px;
+     width: 120px;
+     margin-top: 10px;
      padding-left: 1%;
      position:absolute;
+     padding-top: 2px;
+   }
+   .logo2{
+     display: none;
    }
   
 /* DARK MODE */
@@ -200,12 +204,12 @@ body{
     font-size: 1.5em;
     text-align: center;
     padding: 2% 5% 2% 60%;
-    font-family: 'Montserrat','sans-serif';
-    z-index: 2;
+    
   }
 
   .darkmode.StyledMenu{
     background:#A9A9A9;
+   
    
   }
   span{
@@ -216,5 +220,21 @@ body{
   label{
     margin-top: 80%;
   }
+
+  
+  .logo2.Open{
+    display:inline-block;
+    z-index: 3;
+     height:36px;
+     width: 120px;
+     margin-top: 10px;
+     padding-left: 1%;
+     position:absolute;
+     padding-top: 2px;
+  }
+  .logo.Open{
+    display: none;
+  }
+ 
   
 }
