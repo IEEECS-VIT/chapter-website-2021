@@ -8,6 +8,7 @@ import Events from "../sections/events"
 import OurTeam from "../sections/our-team"
 import Template from "../components/template"
 import Landing from "../sections/landing"
+import Circle from "../sections/Circle"
 
 
 
@@ -26,6 +27,7 @@ const Index = () => {
       </Helmet>
       <div>
         <Template>
+          <Circle/>
           <Landing />
           <AboutUs />
           <Achievements />

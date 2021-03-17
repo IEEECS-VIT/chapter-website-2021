@@ -1,0 +1,89 @@
+/* circle */
+
+.circle{
+    transition:all 1s;
+    width: 200px;
+    height: 200px;
+    background: orange;
+    border-radius: 180px 0 0 0;
+    position:fixed;
+    bottom: 0px;
+    right:0;
+    box-shadow: 0 0 22px #888888;
+    z-index: 1;
+}
+
+.smallcircle{
+    width: 100px;
+     height: 100px;
+     background:white;
+     border-radius: 90px 0 0 0;
+     position:fixed;
+     bottom: 0px;
+     right:0;
+    z-index: 1;
+    transition:all 1s;
+    
+}
+
+
+
+/* Circle Hide and Show */
+.hide{
+   transform: translate(0,200%);
+   /* overflow-y: hidden; */
+}
+
+
+@media(max-width:600px){
+    
+    .circle{
+        width: 130px;
+         height: 130px;
+         border-radius: 140px 0 0 0;
+         right: 0;
+        bottom: 0;
+        z-index: 1;
+       }
+       .smallcircle{
+        width: 75px;
+         height: 75px;
+         background:white;
+         border-radius: 65px 0 0 0;
+         position:absolute;
+         bottom: 0;
+         right:0;
+        z-index: 1;
+        
+    }
+    
+
+}
+
+
+
+@media (max-width: 450px) {
+   
+    .circle{
+        width: 120px;
+        border-radius: 120px 0 0 0;
+        right: 0;
+        bottom:0;
+        position:fixed;
+        z-index: 1;
+       }
+     .smallcircle{
+        width: 60px;
+         height: 60px;
+         background:white;
+         border-radius: 60px 0 0 0;
+         position:fixed;
+        
+         bottom: 0;
+         right:0;
+        z-index: 1;
+        
+    }
+    
+   
+} 
