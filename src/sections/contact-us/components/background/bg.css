@@ -76,9 +76,30 @@
     z-index:1;
     position: absolute;
     margin-top: 500px; 
-    margin-left:1250px;  
-    height: 150px;
+    margin-left:1230px;  
+    
+    /* background-color: #DF9318; */
+    
+        width: 100px;
+        height: 100px;
+        background-color: #DF9318; 
+        border-radius: 100px 0 0 0;
+        -moz-border-radius: 100px 0 0 0;
+        -webkit-border-radius: 100px 0 0 0;
 
+
+}
+.inner_cir{
+    z-index:1;
+    position: absolute;
+    margin-top: 530px; 
+    margin-left:1260px; 
+    width: 70px;
+        height: 70px;
+        background-color: #DFDFDF; 
+        border-radius: 100px 0 0 0;
+        -moz-border-radius: 100px 0 0 0;
+        -webkit-border-radius: 100px 0 0 0; 
 }
 
 @media only screen and (max-width: 1024px)
