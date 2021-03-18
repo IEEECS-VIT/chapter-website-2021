@@ -8,21 +8,16 @@ import { withAssetPrefix } from "gatsby";
 
 
 const ContactUs = () => {
-  
- 
   return (
     <div>
-    <Background/>
-    <div className="outer">
-      
-    <h1 className="heading">Contact Us</h1>
+         
+<Background>
+    <h1 id="heading">Contact Us</h1>
      <Forms/>
      <Social/>
-     
+</Background>
 </div>
-</div>
-    
-  )
+ )
 }
 
 export default ContactUs

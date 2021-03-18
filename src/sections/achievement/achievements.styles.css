@@ -103,7 +103,7 @@ margin:auto;
   
     .header{
   
-    width:300vw;
+    width:320%;
     font-size: 20px;
   }
   .content{
@@ -114,13 +114,11 @@ margin:auto;
     font-size: 20px;
 }
 
-   
-
 }
    @media only screen and (max-width:375px)
   {
     .header{
-        width:300vw;
+        width:320%;
         height:120vh;
     }
     .content{
@@ -134,7 +132,7 @@ margin:auto;
    @media only screen and (max-width:320px)
   {
     .header{
-        width:300vw;
+        width:320%;
         height:140vh;
     }
      

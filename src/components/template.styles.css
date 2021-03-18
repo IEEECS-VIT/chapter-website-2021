@@ -44,7 +44,7 @@
     
     
 }
-img{
+.ieee_logo{
     width: 150px;
     height: 50px;
 }
@@ -117,7 +117,7 @@ img{
         padding-left: 52%;
         margin-top: -7%;
     }
-    img{
+    .ieee_logo{
         width: 260px;
         height: 80px;
     }

@@ -14,23 +14,23 @@ const Social=()=>{
 
 return(
      <div className="social">
-     <a href="https://www.linkedin.com/company/ieee-computer-society-vit-vellore/">
+     <a  className="s1" href="https://www.linkedin.com/company/ieee-computer-society-vit-vellore/">
    <span style={box}> 
-   <FaLinkedinIn style={iconstyle}/>
+   <FaLinkedinIn  style={iconstyle}/>
    </span>
    </a>
-   <a href="https://twitter.com/ieeecsvit?lang=en">
+   <a  className="s1"href="https://twitter.com/ieeecsvit?lang=en">
    <span style={box}>
      
-   <FaTwitter style={iconstyle}/>
+   <FaTwitter  style={iconstyle}/>
    </span>
    </a>
-   <span style={box}>
+   {/* <span style={box}>
    <FaFacebookF style={iconstyle}/>
-</span>
-<a href="https://www.instagram.com/ieeecs_vit/">
+</span> */}
+<a  className="s1" href="https://www.instagram.com/ieeecs_vit/">
    <span style={box}>
-   <FaInstagram style={iconstyle}/>
+   <FaInstagram  style={iconstyle}/>
    </span>
 </a>
 </div>

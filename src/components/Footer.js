@@ -20,7 +20,7 @@ const Footer=()=>
         <div id="vit">VIT Chapter</div>
         <div className="mainbox">
         <div className="logo">
-                <img src={require("./logo.png")}/>
+                <img className="ieee_logo"src={require("./logo.png")}/>
                 <br></br>
                 <span id="text">
                 Accrete Your Knowledge
