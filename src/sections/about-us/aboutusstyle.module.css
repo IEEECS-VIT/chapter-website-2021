@@ -1,4 +1,7 @@
 
+body{
+    margin:0;
+}
 .about{
     display:grid;
     grid-template-columns: repeat(12, 1fr);
@@ -19,7 +22,7 @@
     margin-top: 27vh;
 }
 .text{
-    max-width: 50%;
+    max-width: 40%;
     margin-left:12vw;
     margin-top:7vh;
     top:10vh;
@@ -30,10 +33,12 @@
 .clubimg{
 grid-column: span 6;
 grid-row: span 2;
-width: 40vw;
+width: 45%;
+height:45%;
+object-fit: cover;
 display:inline-flex;
 margin-top: 27vh;
-border-radius: 6px;
+border-radius: 50%;
 }
 .hollowcircle{
 position: absolute;
@@ -46,6 +51,7 @@ border: 17px solid #EFCA53;
 box-sizing: border-box;
 }
 .dot{
+    
     position:absolute;
     z-index: -2;
     left:-330px;
