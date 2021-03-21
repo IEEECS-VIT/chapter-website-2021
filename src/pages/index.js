@@ -10,11 +10,7 @@ import Template from "../components/template"
 import Landing from "../sections/landing"
 import Circle from "../sections/Circle"
 
-
-
 const Index = () => {
-
-  
   return (
     <div>
       <Helmet>
@@ -23,23 +19,24 @@ const Index = () => {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
           rel="stylesheet"
         ></link>
-        <link rel="stylesheet" href="./global.css"/>
+        <link rel="stylesheet" href="./global.css" />
       </Helmet>
       <div>
         <Template>
-          <Circle/>
+          <Circle />
           <Landing />
           <AboutUs />
           <Achievements />
           <Announcement />
           <Events />
-          <OurTeam />
+          <div id="Team">
+            <OurTeam />
+          </div>
           <ContactUs />
         </Template>
       </div>
     </div>
   )
- 
 }
 
 export default Index
