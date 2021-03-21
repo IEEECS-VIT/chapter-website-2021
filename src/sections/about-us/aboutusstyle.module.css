@@ -220,16 +220,22 @@ box-sizing: border-box;
         bottom:-32% ;
         
     }
-    .dot{
-        
-    }
+    
     .hollowcircle{
         width:80px;
         height:80px;
         border: 12px solid #EFCA53;;
         
     }
-    .mcircle1{
-        
+   
+  }
+  @media screen and (max-width: 321px){
+    .aboutus{
+        font-size: 30px;
+    }
+  }
+  @media screen and (min-height: 800px){
+    .text{
+        font-size: 15px;
     }
   }
