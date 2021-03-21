@@ -1,10 +1,9 @@
-body{
+body {
   margin: 0;
 }
 
-
-.showNav{
-  padding-bottom:2.5%;
+.showNav {
+  padding-bottom: 2.5%;
   position: fixed;
   width: 100%;
   margin: 0;
@@ -12,9 +11,9 @@ body{
   opacity: 1;
   transition: 0.3s ease-in-out;
   z-index: 2;
- }
- 
-.StyledMenu{
+}
+
+.StyledMenu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,34 +26,27 @@ body{
   transition: transform 0.3s ease-in-out;
   padding-top: 40px;
   z-index: 2;
-  
-  
 }
 
-
- .StyledMenu button {
-   display: inline-block;
-    font-size: 1.5rem;
-    font-family: 'Montserrat','sans-serif';
-    padding: 10px 50px 10px 160px; 
-    color:white;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-weight: 500;
-    position: relative;
-    top:-70px;
-
+.StyledMenu button {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: "Montserrat", "sans-serif";
+  padding: 10px 50px 10px 160px;
+  color: white;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  position: relative;
+  top: -70px;
 }
-
-
 
 .StyledMenu button:hover {
-    color:#787878;
-     cursor: pointer;
-     
-    }
-.styledBurger{
+  color: #787878;
+  cursor: pointer;
+}
+.styledBurger {
   position: fixed;
   top: 2%;
   right: 2rem;
@@ -67,174 +59,159 @@ body{
   border: none;
   cursor: pointer;
   z-index: 3;
-  
-  }
-
-  .styledBurger:focus {
-    outline: none;
-  }
-
-
-  .styledBurger div {
-    width: 2rem;
-    height: 0.25rem;
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-  }
-   
-  /*change the opacity of hamburger lines rotating first and third */
-    div:first-child.open{
-       transform: rotate(45deg);
-    }
-    div:nth-child(2).open{
-        transform:translateX(20px) ;
-        opacity: 0;
-    }
-    div:nth-child(3).open{
-      transform: rotate(-45deg);
-   }
-   div:first-child.closed{
-      transform: rotate(0);
-    }
-    div :nth-child(2).closed{
-      transform: translateX(0);
-      opacity: 1;
-    }
-    div :nth-child(3).closed{
-      transform: rotate(0);
-  
-    }
-   
-    input[type=checkbox]{
-      height: 0;
-      width: 0;
-      visibility: hidden;
-    }
-    
-  
-     label{
-      cursor: pointer;
-      margin-left: 70%;
-      margin-top: 140%;
-      margin-right: 10px;
-      width: 60px;
-      height: 30px;
-      background:grey;
-      border-radius: 150px;
-      position:absolute;
-     
-      
-    }
-    
-     label:after {
-      content: '';
-      position: absolute;
-      top: 3px;
-      bottom: 10px;
-      left: 5px;
-      width: 23px;
-      height: 23px;
-      background: #fff;
-      border-radius: 100%;
-      transition: 0.3s;
-    }
-    
-    
-    input:checked + label:after {
-      left: calc(100% - 5px);
-      transform: translateX(-100%);
-    }
-    
-    span{
-     color:white;
-     display: inline-block;
-     position:absolute;
-     margin-top: 140%;
-     margin-left:28%;
-     font-family: 'Montserrat','sans-serif';
-   }
-   .logo{
-     z-index: 3;
-     height:35px;
-     width: 110px;
-     margin-top: 10px;
-     padding-left: 1%;
-     position:absolute;
-     padding-top: 2px;
-   }
-   .logo2{
-     display: none;
-   }
-  
-/* DARK MODE */
-.open.darkmode,.closed.lightmode{
-  background-color:black;
-  
 }
-.closed.darkmode,.open.lightmode {
+
+.styledBurger:focus {
+  outline: none;
+}
+
+.styledBurger div {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+/*change the opacity of hamburger lines rotating first and third */
+div:first-child.open {
+  transform: rotate(45deg);
+}
+div:nth-child(2).open {
+  transform: translateX(20px);
+  opacity: 0;
+}
+div:nth-child(3).open {
+  transform: rotate(-45deg);
+}
+div:first-child.closed {
+  transform: rotate(0);
+}
+div :nth-child(2).closed {
+  transform: translateX(0);
+  opacity: 1;
+}
+div :nth-child(3).closed {
+  transform: rotate(0);
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  margin-left: 70%;
+  margin-top: 140%;
+  margin-right: 10px;
+  width: 60px;
+  height: 30px;
+  background: grey;
+  border-radius: 150px;
+  position: absolute;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  bottom: 10px;
+  left: 5px;
+  width: 23px;
+  height: 23px;
+  background: #fff;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+span {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  margin-top: 140%;
+  margin-left: 28%;
+  font-family: "Montserrat", "sans-serif";
+}
+.logo {
+  z-index: 3;
+  height: 35px;
+  width: 110px;
+  margin-top: 10px;
+  padding-left: 1%;
+  position: absolute;
+  padding-top: 2px;
+}
+.logo2 {
+  display: none;
+}
+
+/* DARK MODE */
+.open.darkmode,
+.closed.lightmode {
+  background-color: black;
+}
+.closed.darkmode,
+.open.lightmode {
   background-color: white;
 }
-.lightmode{
-    background-color: black;
-   
+.lightmode {
+  background-color: black;
 }
-.darkmode{
-  background-color:white;
+.darkmode {
+  background-color: white;
 }
-.darkmode button,.darkmode span{
-  color:black;
+.darkmode button,
+.darkmode span {
+  color: black;
 }
 
 .darkmode input:checked + label {
-  background:black;
+  background: black;
 }
 
-
 @media (max-width: 576px) {
-  
-  .StyledMenu{
+  .StyledMenu {
     width: 100%;
     opacity: 0.8;
     z-index: 2;
   }
 
-  .StyledMenu button{
+  .StyledMenu button {
     font-size: 1.5em;
     text-align: center;
     padding: 2% 5% 2% 60%;
-    
   }
 
-  .darkmode.StyledMenu{
-    background:#A9A9A9;
-   
-   
+  .darkmode.StyledMenu {
+    background: #a9a9a9;
   }
-  span{
-    margin-top: 80%;
-
-  }
-
-  label{
+  span {
     margin-top: 80%;
   }
 
-  
-  .logo2.Open{
-    display:inline-block;
+  label {
+    margin-top: 80%;
+  }
+
+  .logo2.Open {
+    display: inline-block;
     z-index: 3;
-     height:36px;
-     width: 120px;
-     margin-top: 10px;
-     padding-left: 1%;
-     position:absolute;
-     padding-top: 2px;
+    height: 36px;
+    width: 120px;
+    margin-top: 10px;
+    padding-left: 1%;
+    position: absolute;
+    padding-top: 2px;
   }
-  .logo.Open{
+  .logo.Open {
     display: none;
   }
- 
-  
 }

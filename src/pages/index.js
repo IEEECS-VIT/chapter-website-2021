@@ -23,7 +23,9 @@ const Index = () => {
         <Template>
           <Circle />
           <Landing />
-          <AboutUs />
+          <div id="About">
+            <AboutUs />
+          </div>
           <Events />
           <div id="Team">
             <OurTeam />

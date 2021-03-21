@@ -94,7 +94,6 @@ const Header = () => {
   const [open, setOpen] = React.useState(false)
   const node = React.useRef()
   var openClose = open ? styles.Open : styles.Close
-
   const [change, setChange] = useState(false)
   const changePosition = 100
 
