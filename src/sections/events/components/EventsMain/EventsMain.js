@@ -1,6 +1,7 @@
 import React from 'react'
 import Style from './EventsMain.module.css'
-import dots from '../svg/dots.png'
+import dots from '../svg/dots.svg'
+import ldots from '../svg/dots.png'
 import ellipse from '../svg/ellipse.svg'
 import semiEllipse from '../svg/semiEllipse.svg'
 
@@ -21,11 +22,11 @@ const EventsMain = (props)=>{
     }
 
     return(
-        <div className={classList.join(' ')}>
-            <img className={Style.Semi1} src={semiEllipse} />
-            <img className={Style.Semi2} src={semiEllipse} />
-            <img className={Style.Half1}  src={ellipse} />
-            <img className={Style.Half2} src={ellipse} />
+        <div className={`${classList.join(' ')} ${props.isDark && Style.Dark}`}>
+            <img className={Style.Semi1} src={semiEllipse} alt="semi1"/>
+            <img className={Style.Semi2} src={semiEllipse} alt="semi2"/>
+            <img className={Style.Half1}  src={ellipse} alt="half1"/>
+            <img className={Style.Half2} src={ellipse} alt="half2"/>
             <div className={Style.Middle}>
                 <div className={Style.Text}>
                     <h3>We  have  amazing</h3>
@@ -33,11 +34,11 @@ const EventsMain = (props)=>{
                     <div>Planning an event feels like a dream that reality can never live up to, till we end up pulling it off. Organizing events help not only the attendees but also all of us, both as coders and as people.</div>
                     <button onClick={()=>{props.setshowSlider(true)}}>Learn More</button>
                 </div>
-                <div className={Style.Mirror}></div>
-                <img className={Style.Dot1} src={dots} />
-                <img className={Style.Dot2} src={dots} />
-                <div className={Style.Gray}></div>
+                <img className={Style.Dot1} src={props.isDark?dots:ldots} alt="dots"/>
+                <img className={Style.Dot2} src={props.isDark?dots:ldots} alt="dots"/>
                 <div className={Style.Yellow}></div>
+                <div className={Style.Mirror}></div>
+                <div className={Style.Gray}></div>
             </div>
         </div>
     )

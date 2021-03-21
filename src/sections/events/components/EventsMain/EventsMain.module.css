@@ -68,15 +68,22 @@
     left:50%;
     transform: translate(-50%,-50%);
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0);
+    background: linear-gradient(146.51deg, rgba(255, 255, 255, 0.3) 11.69%, rgba(255, 255, 255, 0) 93.09%);
     backdrop-filter: blur(40px);
     filter: blur(5px);
-    /* opacity: 0.5; */
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 50%;
-    z-index: 10;
-    border: 2px solid;
+    z-index: 20;
+    border:2px solid;
     border-image-source: linear-gradient(136.57deg, #FFFFFF 13.4%, rgba(255, 255, 255, 0) 91.73%);
+}
+.Dark .Mirror{
+    background: linear-gradient(143.16deg, rgba(255, 255, 255, 0.2) 11.28%, rgba(255, 255, 255, 0) 92.57%);
+    backdrop-filter: blur(60px);
+    border: 2px solid;
+    border-image-source: linear-gradient(135.93deg, #FFFFFF 13.26%, rgba(255, 255, 255, 0) 91.71%);
+
+
 }
 .Text{
     width: 70%;
@@ -85,7 +92,7 @@
     top:55%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 30;
+    z-index: 40;
 }
 .Text h3{
     font-size: 2.5em;
@@ -109,7 +116,6 @@
     font-style: italic;
 }
 .Text button{
-    /* margin: 30px; */
     padding: 10px 30px;
     border-radius: 50px;
     border:1px solid white;
@@ -123,21 +129,34 @@
     opacity: 0;
 }
 .Dot1,.Dot2{
-    z-index: -100;
+    z-index: 0;
     opacity: 0.5;
     width: 700px;
     height: 500px;
     position: absolute;
+    
+}
+.Dark .Dot1,.Dark .Dot2{
+    width: 1000px;
+    height: 500px;
 }
 .Dot1{
     top:50%;
     left:50%;
     transform: translate(calc(-50% + 25vh ),calc(-50% - 25vh));
+    
 }
 .Dot2{
     top:50%;
     left:50%;
     transform: translate(calc(-50% - 25vh ),calc(-50% + 25vh));
+}
+.Dark .Dot1{
+    transform: translate(calc(-50% + 25vh ),calc(-50% - 25vh));
+    
+}
+.Dark .Dot2{
+    transform: translate(calc(-50% - 25vh ),calc(-50% + 35vh));
 }
 .Gray{
     width: 100px;
@@ -148,7 +167,7 @@
     top:50%;
     left: 50%;
     opacity: 1;
-    z-index: 20;
+    z-index: 30;
     transform: translate(calc(-50% - 30vh),calc(-50% - 18vh + 700px));
     transition: 1s;
 }
@@ -165,7 +184,7 @@
     left:50%;
     transform: translate(calc(-50% + 25vh ),calc(-50% + 25vh));
     opacity: 1;
-    z-index: -20;
+    z-index: 10;
     transition: 1s;
 }
 .Yellow::after{
@@ -181,4 +200,50 @@
     opacity: 0.5;
     z-index: -20;
     transition: 1s;
+}
+@media screen and (max-width:700px){
+    .Middle{
+        width: 100%;
+    }
+    .Mirror{
+        height: 50vh;
+        width: 50vh;
+    }
+    .Dot1,.Dot2{
+        width: 500px;
+        height: 300px;
+    }
+    .Dot1{
+        transform: translate(calc(-50% + 15vh ),calc(-50% - 15vh));
+    }
+    .Dot2{
+        transform: translate(calc(-50% - 15vh ),calc(-50% + 15vh));
+    }
+    .Text{
+        width: 100%;
+        font-size: 9px;
+    }
+    .Gray{
+        width: 75px;
+        height: 75px;
+        transform: translate(calc(-50% - 22vh),calc(-50% - 15vh + 700px ));
+
+    }
+    .Active .Gray{
+        transform: translate(calc(-50% - 22vh),calc(-50% - 15vh));
+    }
+    .Yellow,.Yellow::after{
+        width: 125px;
+        height: 125px;
+    }
+    .Yellow{
+        transform: translate(calc(-50% + 20vh ),calc(-50% + 20vh));
+    }
+    .Yellow::after{
+        transform: translate(-20vh ,-20vh);
+    }
+    .Text button{
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
 }
