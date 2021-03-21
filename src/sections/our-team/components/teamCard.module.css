@@ -1,0 +1,161 @@
+.card {
+  max-width: 200px;
+  width: 250px;
+  height: 280px;
+  /* max-height: 280px; */
+  min-height: 320px;
+  text-align: center;
+  padding: 10px;
+  margin: 25px;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.imageWrapper:hover .overlay {
+  opacity: 1;
+}
+
+.bgEffect {
+  position: absolute;
+  width: 490px;
+  height: 260px;
+  margin-top: -20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  margin-top: 24px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(8, 8, 8, 0.4);
+}
+
+.image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  margin-top: 20px;
+  display: block;
+  position: absolute;
+  border: 4px solid rgb(124, 121, 121);
+}
+
+.social {
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.name {
+  margin-top: 220px;
+  padding: 5px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.position {
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.iconButton {
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 8px;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+  margin-bottom: 10px;
+  color: white;
+  z-index: 10;
+}
+
+.iconButton:hover svg {
+  transform: translateY(-4px);
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 320px) {
+  .card {
+    max-width: 160px;
+    width: 160px;
+    padding: 8px;
+    margin: 10px;
+    height: 220px;
+    max-height: 220px;
+    overflow-x: hidden;
+  }
+
+  .name {
+    margin-top: 180px;
+    font-size: 1.1rem;
+  }
+
+  .position {
+    font-size: 1rem;
+  }
+
+  .bgEffect {
+    width: 300px;
+    height: 230px;
+  }
+
+  .overlay {
+    height: 120px;
+    width: 120px;
+  }
+
+  .image {
+    height: 120px;
+    width: 120px;
+  }
+
+  .iconButton {
+    margin-right: 6px;
+    font-size: 1.2rem;
+    width: 2rem;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    max-width: 160px;
+    width: 160px;
+    padding: 8px;
+    margin: 10px;
+    height: 220px;
+    max-height: 220px;
+    overflow-x: hidden;
+  }
+
+  .bgEffect {
+    width: 480px;
+  }
+}
