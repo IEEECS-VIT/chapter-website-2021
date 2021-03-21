@@ -6,10 +6,6 @@ import { useThemeValue } from "../../utils/context"
 const AboutUs = () => {
   const { isDark } = useThemeValue()
   return (
-<<<<<<< HEAD
-    <div id ="About">
-      <h1>About Us</h1>
-=======
     <div className={styles.about}>
                 <div className={styles.hollowcircle}></div>
                 <img className={styles.dot} src={dot} alt="dotted"></img>
@@ -22,7 +18,6 @@ const AboutUs = () => {
                 <div className={styles.circle4}></div>
                 <div className={styles.circle5}></div>
                 <div className={styles.circle6}></div>
->>>>>>> issue2
     </div>
   )
 }
