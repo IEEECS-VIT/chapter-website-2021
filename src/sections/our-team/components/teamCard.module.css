@@ -100,7 +100,7 @@
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 320px) {
   .card {
     max-width: 160px;
     width: 160px;
@@ -108,6 +108,7 @@
     margin: 10px;
     height: 220px;
     max-height: 220px;
+    overflow-x: hidden;
   }
 
   .name {
@@ -120,7 +121,7 @@
   }
 
   .bgEffect {
-    width: 350px;
+    width: 300px;
     height: 230px;
   }
 
@@ -139,5 +140,21 @@
     font-size: 1.2rem;
     width: 2rem;
     margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    max-width: 160px;
+    width: 160px;
+    padding: 8px;
+    margin: 10px;
+    height: 220px;
+    max-height: 220px;
+    overflow-x: hidden;
+  }
+
+  .bgEffect {
+    width: 480px;
   }
 }
