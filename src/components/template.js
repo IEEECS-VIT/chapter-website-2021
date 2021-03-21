@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React from "react"
 import ThemeProvider from "../utils/theme"
 import Navbar from "./sidebar/navbar"
 

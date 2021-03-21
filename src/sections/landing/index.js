@@ -5,7 +5,7 @@ import LightArrow from "../../images/Down_light.png"
 import DarkArrow from "../../images/Down_dark.png"
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
-import {useState} from "react"
+
 
 const Landing = () => {
   const { isDark } = useThemeValue()

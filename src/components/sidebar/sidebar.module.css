@@ -83,9 +83,9 @@ body{
     position: relative;
     transform-origin: 1px;
   }
-    /*change the opacity of hamburger lines rotating first and third */
-
-  div:first-child.open{
+   
+  /*change the opacity of hamburger lines rotating first and third */
+    div:first-child.open{
        transform: rotate(45deg);
     }
     div:nth-child(2).open{
