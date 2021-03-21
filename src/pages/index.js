@@ -1,8 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import AboutUs from "../sections/about-us"
-import Achievements from "../sections/achievement"
-import Announcement from "../sections/announcement"
 import ContactUs from "../sections/contact-us"
 import Events from "../sections/events"
 import OurTeam from "../sections/our-team"
@@ -26,8 +24,6 @@ const Index = () => {
           <Circle />
           <Landing />
           <AboutUs />
-          <Achievements />
-          <Announcement />
           <Events />
           <div id="Team">
             <OurTeam />

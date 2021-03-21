@@ -1,206 +1,174 @@
-
-.heading{
-    padding-top: 30px;
+.heading {
+  padding-top: 30px;
 }
 
-.heading p
-{
-    font-family: 'Montserrat', sans-serif;
-    font-weight:300;
-    margin: 2% 0 0 22%;
-    font-size: 130%;
-    
+.heading p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: 2% 0 0 22%;
+  font-size: 130%;
 }
-.heading h1:first-of-type{
-    margin: 0 0 0 22%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 330%;
-    font-weight: 500;
+.heading h1:first-of-type {
+  margin: 0 0 0 22%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 330%;
+  font-weight: 500;
+}
+.heading h1:nth-last-of-type(1) {
+  margin: 0 0 0 22%;
+  color: #efca53;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 330%;
+}
+.announcement {
+  margin: 0 0 0 25%;
+  height: 20px;
+  padding: 2%;
+  display: inline-block;
+}
+.announcementOuter {
+  border: black;
+  width: 100%;
+  /* margin: auto; */
+  text-align: center;
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  margin: 10% 10% 0 20%;
+  height: 10%;
+  width: 60%;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-top: 2%;
+  text-align: center;
+}
+.backg {
+  background-image: url("../../images/darkbg.png");
+  background-color: #dfdfdf;
+  background-repeat: no-repeat;
+  background-position: 50% -20%;
+  background-size: 65% 60%;
+  animation-name: movebg;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+.dark {
+  color: white;
+  background-color: black;
+  background-image: url("../../images/lightbg.png");
+}
 
-}
-.heading h1:nth-last-of-type(1){
-    margin: 0 0 0 22%; 
-    color:#EFCA53;
-    font-family: 'Montserrat', sans-serif; 
-    font-weight: 500;
-    font-size: 330%; 
-}
-.announcement{
-    margin: 0 0  0 25%;
-    height: 20px;
-    padding: 2%;
-    display: inline-block;
-    
-}
-.text{
-    
-    font-family: 'Montserrat', sans-serif;
-    display: inline-block;
-    margin: 10% 10% 0 20%;
-    height: 10%;
-    width: 60%;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-top: 2%;
-    text-align: center;
-}
-
-.backg{
-    background-image: url('../../images/darkbg.png');
-    background-color:#DFDFDF;
-    background-repeat: no-repeat;
+@keyframes movebg {
+  0% {
     background-position: 50% -20%;
-    background-size: 65% 60%;
-    animation-name: movebg;
-    animation-duration: 2s;
-    animation-iteration-count: 2;
-    animation-direction:alternate-reverse;
-    
-
-}
-.dark{
-    color:white;
-    background-color: black;
-    background-image: url('../../images/lightbg.png');
-}
-
-
-
-@keyframes movebg{
-    0% {background-position: 50% -20%;}
-    50% {background-position: 50% 0% }
-    100% {background-position: 50% -20% }
+  }
+  50% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 50% -20%;
+  }
 }
 
 /* Button styling */
-.btn{
-    background-color: transparent;
-    border: none;
-    padding-left: 2rem; 
-    position:absolute;
-    bottom: 80px;
-   
-    left:0;
-}
-.btn .arrow{
-   
-height: auto;
-width: 30px;
+.btn {
+  background-color: transparent;
+  border: none;
+  padding-left: 2rem;
+  position: absolute;
+  bottom: 80px;
 
+  left: 0;
 }
-.btn{
-    outline: none;
+.btn .arrow {
+  height: auto;
+  width: 30px;
 }
-.btn:hover{
-    cursor: pointer;
+.btn {
+  outline: none;
 }
-@media(max-width:320px)
-{
-    .heading {
-        font-size: 59%;
-        padding-top: 20%;
-        margin-left: -11%;
-      
-     }  
-     .text{
-        font-size: 60%;
-        height: 20%;
-        width: 72%;
-        margin: 40% 5% 0 15%;
-     }
-    
-    .btn{
-        bottom: 7%;
-    }
-    .backg{
-        background-size: 72% 55% ;
-        animation-name: movebg;
-        
-       
-    }
-    
-    
+.btn:hover {
+  cursor: pointer;
 }
-@media (min-width: 330px ) and (max-width:600px) {
-    .heading {
-        font-size: 68%;
-        padding-top: 45px;
-        margin-left: -40px;
-        
-     
-       
-       
-     }
-    .text{
-        font-size: 68%;
-        height: 20%;
-        width: 72%;
-        margin: 35% 5% 0 15%;
-        
-        
-    }
-    .backg{
-        background-size: 58% 52% ;
-        animation-name: movebg;
-        background-image: url('../../images/Landing_bg_mobile_light.png');
-       
-    }
-    .dark{
-        background-image: url('../../images/Landing_bg_mobile_dark.png');
-    }
-   
-    .btn{
-        bottom: 7%;
-    }
-    
-   
-}  
+@media (max-width: 320px) {
+  .heading {
+    font-size: 59%;
+    padding-top: 20%;
+    margin-left: -11%;
+  }
+  .text {
+    font-size: 60%;
+    height: 20%;
+    width: 72%;
+    margin: 40% 5% 0 15%;
+  }
 
- @media(min-width:601px) and (max-width:1100px)   
- {
-    .heading{
-        font-size: 16px;
-        margin-left: -60px;
-        padding-top: 10px;
-       
-        
-    }
-    .text{
-        padding-top: 24px;
-        font-size: 13px;
-    }
- }
-    
+  .btn {
+    bottom: 7%;
+  }
+  .backg {
+    background-size: 72% 55%;
+    animation-name: movebg;
+  }
+}
+@media (min-width: 330px) and (max-width: 600px) {
+  .heading {
+    font-size: 68%;
+    padding-top: 45px;
+    margin-left: -40px;
+  }
+  .text {
+    font-size: 68%;
+    height: 20%;
+    width: 72%;
+    margin: 35% 5% 0 15%;
+  }
+  .backg {
+    background-size: 58% 52%;
+    animation-name: movebg;
+    background-image: url("../../images/Landing_bg_mobile_light.png");
+  }
+  .dark {
+    background-image: url("../../images/Landing_bg_mobile_dark.png");
+  }
 
+  .btn {
+    bottom: 7%;
+  }
+}
 
+@media (min-width: 601px) and (max-width: 1100px) {
+  .heading {
+    font-size: 16px;
+    margin-left: -60px;
+    padding-top: 10px;
+  }
+  .text {
+    padding-top: 24px;
+    font-size: 13px;
+  }
+}
 
 @media (min-width: 1101px) {
-    .heading {
-        font-size: 24px;
-       padding-top: 5px;
-       
-       
-        
-       }
-    .text{
-        font-size: 14px;
-        margin: 5% 15% 5% 25%;
-        width: 45%;
-        
-    }
-    .backg{
-        background-size: 50% 72% ;
-        
-    }
-    
-     
-    }
-.home{
-    position: relative;
-    margin-top: 0;
-    padding-top:5%;
-    height: 100vh;
-   
+  .heading {
+    font-size: 24px;
+    padding-top: 5px;
+  }
+  .text {
+    font-size: 14px;
+    margin: 5% 15% 5% 25%;
+    width: 45%;
+  }
+  .backg {
+    background-size: 50% 72%;
+  }
 }
-
-
+.home {
+  position: relative;
+  margin-top: 0;
+  padding-top: 5%;
+  height: 100vh;
+}
