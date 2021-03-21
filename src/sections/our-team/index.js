@@ -59,6 +59,13 @@ const OurTeamSection = () => {
         <TeamCard cardInfo={cardInfo1} />
         <TeamCard cardInfo={cardInfo2} />
         <TeamCard cardInfo={cardInfo3} />
+        <TeamCard cardInfo={cardInfo1} />
+        <TeamCard cardInfo={cardInfo2} />
+        <TeamCard cardInfo={cardInfo3} />
+        <TeamCard cardInfo={cardInfo1} />
+        <TeamCard cardInfo={cardInfo2} />
+        <TeamCard cardInfo={cardInfo3} />
+        <TeamCard cardInfo={cardInfo3} />
       </div>
     </div>
   )
