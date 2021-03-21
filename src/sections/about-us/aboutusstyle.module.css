@@ -139,7 +139,7 @@ box-sizing: border-box;
 @media screen and (max-width: 768px) {
     .about
     {         
-    
+        grid-template-rows: min-content;
     text-align: center;
 }
     .aboutus {
@@ -155,7 +155,10 @@ box-sizing: border-box;
       grid-column: span 12;
       text-align: justify;
       max-width: 70vw;
-      font-size: 11px;
+      /* max-height: 45vh; */
+      margin-bottom: 0;
+      
+      font-size: 12px;
       
      
       
@@ -163,53 +166,59 @@ box-sizing: border-box;
     .clubimg{
         grid-row:3;
         grid-column:span 12;
-        margin-top:5vh;
-        width:65vw;
+        margin-top: 1vh;
+        width:60vw;
+        height: 40vw;
         margin-left: auto;
         margin-right: auto;
-
+        border-radius: 0;
     }
     .circle1{
         position: absolute;
-        width: 100vw;
-        height:100vw;
-        bottom:-45% ;
-        left: 0%;
+        width: 111vw;
+        height:109vw;
+        bottom:-52% ;
+        left: -7%;
     }
     .circle2{
         position: absolute;
-        width: 100vw;
-        height:107vw;
-        bottom:-43% ;
-        left: 0%;
+        width: 111vw;
+        height:109vw;
+        left: -7%;
+        bottom:-48% ;
+        
     }
     .circle3{
         position: absolute;
-        width: 100vw;
-        height:114vw;
-        bottom:-41% ;
-        left: 0%;
+        width: 111vw;
+        height:109vw;
+        left: -7%;
+        bottom:-44% ;
+        
     }
     .circle4{
         position: absolute;
-        width: 100vw;
-        height:121vw;
-        bottom:-38% ;
-        left: 0%;
+        width: 111vw;
+        height:109vw;
+        left: -7%;
+        bottom:-40% ;
+        
     }
     .circle5{
         position: absolute;
-        width: 100vw;
-        height:128vw;
-        bottom:-35% ;
-        left: 0%;
+        width: 111vw;
+        height:109vw;
+        left: -7%;
+        bottom:-36% ;
+        
     }
     .circle6{
         position: absolute;
-        width: 100vw;
-        height:135vw;
+        width: 111vw;
+        height:109vw;
+        left: -7%;
         bottom:-32% ;
-        left: 0%;
+        
     }
     .dot{
         
