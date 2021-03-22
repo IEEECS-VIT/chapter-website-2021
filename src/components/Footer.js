@@ -57,7 +57,7 @@ const Footer=()=>
            </div>
 
            <div className="col1" >
-                <span className="title">Contact us </span>
+                <span className="title">Contact&nbsp;us </span>
                 <div className="para">
                 <p>ieeecs@vit.ac.in</p>
                 </div>

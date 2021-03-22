@@ -8,29 +8,28 @@ import './socialstyles.css'
  
 const Social=()=>{
 
-    let box={display:"inline-flex",borderRadius:"40%",background:"black",padding:"3px",fontSize:"40px"};
-    let iconstyle={color:"white",fontSize:"25px"};
-
 
 return(
      <div className="social">
      <a  className="s1" href="https://www.linkedin.com/company/ieee-computer-society-vit-vellore/">
-   <span style={box}> 
-   <FaLinkedinIn  style={iconstyle}/>
+   <span className="boxx"> 
+   <FaLinkedinIn className="iconstyle"/>
    </span>
    </a>
    <a  className="s1"href="https://twitter.com/ieeecsvit?lang=en">
-   <span style={box}>
+   <span className="boxx">
      
-   <FaTwitter  style={iconstyle}/>
+   <FaTwitter  className="iconstyle"/>
    </span>
    </a>
-   {/* <span style={box}>
-   <FaFacebookF style={iconstyle}/>
-</span> */}
+   <a className="s1">
+    <span className="boxx">
+   <FaFacebookF className="iconstyle"/>
+</span> 
+</a>
 <a  className="s1" href="https://www.instagram.com/ieeecs_vit/">
-   <span style={box}>
-   <FaInstagram  style={iconstyle}/>
+   <span className="boxx">
+   <FaInstagram  className="iconstyle"/>
    </span>
 </a>
 </div>

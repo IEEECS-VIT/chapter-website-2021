@@ -4,29 +4,27 @@
     justify-content: center;
     padding-left: 30px;
     padding-bottom: 50px;
-    padding-top: 50px;
-    
+    padding-top: 50px;   
+    margin-right: 40px;
+}
 
+.boxx{
+    display:inline-flex;
+    border-radius:40%;
+    background:black;
+    padding:5px;
+    font-size:40px;
     
-}
-span{
-    margin-right: 30px;
-  
-   
-}
-/* .box{
-    display:"inline-flex";
-    border-radius:"40%";
-    background:"black";
-    padding:"3px";
-    font-size:"40px";
 }
 .iconstyle{
-    color:"white";
-    font-size:"25px";
-} */
+    color:white;
+    font-size:25px;
+} 
 @media only screen and (max-width: 768px){
-   .s1{
-            font-size: 200px;
+   .boxx{
+     font-size: 50px;
+   }
+   .iconstyle{
+       font-size: 30px;
    }
 }

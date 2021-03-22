@@ -17,14 +17,10 @@ const Background=({ children })=>{
          <img className="cir2" src={require('./Circle.png')}/>
          <div className="cir3"></div>
          <div className="inner_cir"></div>
+         <img className="triangle3" src={require('./Triangle.png')}/> 
         
          { children } 
-        
-     
-     
-       
-      
-    
+
      </div>
         
     )}

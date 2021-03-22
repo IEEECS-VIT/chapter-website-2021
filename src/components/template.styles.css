@@ -95,6 +95,8 @@
     height: 100%;
     
 }
+}
+
 /* .columns{
     margin-left: 20%;
     margin-top: 2%;
@@ -102,7 +104,11 @@
   
 } */
 @media only screen and (max-width :768px)
-{ 
+{  .footer{
+
+    width: 370%;
+   
+}
 
     #ieee{
         font-size: 18px;
@@ -124,11 +130,7 @@
     #text{
         font-size: 23px;
     }
-    /* .footer{
-        width: 100hw;
-    } */
-
-    .mainbox{
+   .mainbox{
         /* grid-template-columns: repeat(1, 1fr); */
         display: flex;
         flex-direction: column-reverse;
@@ -152,7 +154,6 @@
     }
 
 }
-    
-}
- 
+
+
 
