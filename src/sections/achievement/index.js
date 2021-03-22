@@ -8,27 +8,8 @@ const Achievements = () => {
 import './achievements.styles.css'
 
 
-// import Circle from './components/circle'
-
-
 const Achievements = () => {
-  // const circle1={
-  //   text:"15+",
-  //   caption:"Hackathon Winnners"
-  // }
-  // const circle2={
-  //   text:"1",
-  //   caption:"Merwin Scholar"
-  // }
-  // const circle3={
-  //   text:"2",
-  //   caption:"Best Chapter Awards"
-  // }
-  // const c1={
-  //   textIndent:'30px',
-  //   fontSize: '140px',
-  //   fontWeight: '550'
-  // };
+  
   return (
     <div className="header">
      
@@ -46,10 +27,7 @@ const Achievements = () => {
                Our members have also served as the team leads for IEEE CSIS and AICSSYC’19.
                </div>
                <div className="container">
-{/*                  
-                 <Circle style={c1} info={circle1}/>
-                 <Circle style={c1} info={circle2}/>
-                 <Circle style={c1} info={circle3}/> */}
+
                   <div className="box">
              <div className="bgimg">
                 <img className="background" src={require("./bg.png")}/>
