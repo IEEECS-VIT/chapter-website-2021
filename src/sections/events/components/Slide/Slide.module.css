@@ -88,7 +88,7 @@
     z-index: -5;
     top: 50%;
     left: 50%;
-    transform: translate(calc(-50% 0px) ,calc(-50% + 150px));
+    transform: translate(calc(-50% + 0px) ,calc(-50% + 150px));
     background-color: #EFCA53;
     border-radius: 50%;
     transition: 0.5s;
@@ -141,7 +141,7 @@
     transform: translate(calc(-50% + 200px) ,calc(-50% - 150px));
 }
 .Left .Yellow{
-    transform: translate(calc(-50% 0px) ,calc(-50% + 150px));
+    transform: translate(calc(-50% + 0px) ,calc(-50% + 150px));
 }
 .Active.Left .Yellow{
     transform: translate(calc(-50% - 130px) ,calc(-50% + 150px));
