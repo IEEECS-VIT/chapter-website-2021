@@ -1,0 +1,229 @@
+.Slide{
+    display: flex;
+    min-width: 100vw;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+    user-select: none;
+    font-family: 'Montserrat',sans-serif;
+    position: relative;
+    opacity:0;
+    transition: 1s;
+}
+.Slide.Active{
+    opacity: 1;
+}
+.Ellipse{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    z-index: -100;
+    top: 0px;
+    left: -30px;
+}
+.Tside{
+    width: 40%;
+    position: relative;
+}
+.Iside{
+    width: 60%;
+    position: relative;
+}
+.Dark .Tside img{
+    display: none;
+}
+.Tside img{
+    z-index: -10;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 300px;
+    height: 300px;
+}
+.DisImg{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Text{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+.Text h1{
+    margin: 5px 0px;
+    font-size: 2.5em;
+}
+.Text h2{
+    color:#EFCA53;
+    margin: 0;
+    font-size: 2em;
+}
+.Text p{
+    width: 75%;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+.SmallYellow{
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% - 50px) ,calc(-50% - 150px));
+    background-color: #EFCA53;
+    border-radius: 50%;
+    transition: 0.5s ease 0.5s;
+}
+.Yellow{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: -5;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% 0px) ,calc(-50% + 150px));
+    background-color: #EFCA53;
+    border-radius: 50%;
+    transition: 0.5s;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.Active .Yellow{
+    transform: translate(calc(-50% + 130px) ,calc(-50% + 150px));
+}
+.Active .SmallYellow{
+    transform: translate(calc(-50% - 200px) ,calc(-50% - 150px));
+}
+.Dot1,.Dot2{
+    z-index: -30;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 600px;
+    height: 500px;
+}
+.Dot1{
+    transform: translate(calc(-50% + 150px ),calc(-50% - 150px  ));
+}
+.Dot2{
+    transform: translate(calc(-50% - 150px ),calc(-50% + 150px  ));
+}
+.Left .Ellipse{
+    bottom: 75px;
+    left: -50px;
+    top: auto;
+}
+.Left.Slide{
+    flex-direction: row-reverse;
+}
+.Left .Text{
+    left: 0;
+}
+.Left .Tside img{
+    left: 0;
+}
+.Left .Dot1{
+    transform: translate(calc(-50% + 150px ),calc(-50% + 150px  ));
+}
+.Left .Dot2{
+    transform: translate(calc(-50% - 150px ),calc(-50% - 150px  ));
+}
+.Left .SmallYellow{
+    transform: translate(calc(-50% + 50px) ,calc(-50% - 150px));
+}
+.Active.Left .SmallYellow{
+    transform: translate(calc(-50% + 200px) ,calc(-50% - 150px));
+}
+.Left .Yellow{
+    transform: translate(calc(-50% 0px) ,calc(-50% + 150px));
+}
+.Active.Left .Yellow{
+    transform: translate(calc(-50% - 130px) ,calc(-50% + 150px));
+}
+@media screen and (max-width:700px){
+    .Slide .Ellipse{
+        bottom: 75px;
+        top: auto;
+        left: -50px;
+    }
+    .Slide, .Left.Slide{
+        flex-direction: column;
+    }
+    .Tside,.Iside{
+        width: 100%;
+        height: 50%;
+    }
+    .DisImg{
+        width: 250px;
+        height: 250px;
+        top:40%;
+    }
+    .Slide .Text{
+        top: 20%;
+        width: 90%;
+        left: 5%;
+        font-size: 12px;
+    }
+    .Tside img{
+        top: 5px;
+        width: 150px;
+        height: 150px;
+    }
+    .Text p{
+        width: 100%;
+    }
+    .Dot1,.Dot2{
+        width: 300px;
+        height: 200px;
+    }
+    .Yellow{
+        width: 150px;
+        height: 150px;
+    }
+    .SmallYellow{
+        width: 75px;
+        height: 75px;
+    }
+    .Left .Dot1{
+        transform: translate(calc(-50% + 75px ),calc(-50% + 75px  ));
+    }
+    .Left .Dot2{
+        transform: translate(calc(-50% - 100px ),calc(-50% - 100px  ));
+    }
+    .Left .SmallYellow{
+        transform: translate(calc(-50% + 150px) ,calc(-50% - 110px));
+    }
+    .Active.Left .SmallYellow{
+        transform: translate(calc(-50% + 105px) ,calc(-50% - 110px));
+    }
+    .Left .Yellow{
+        transform: translate(calc(-50% + 0px) ,calc(-50% + 50px));
+    }
+    .Active.Left .Yellow{
+        transform: translate(calc(-50% - 70px) ,calc(-50% + 50px));
+    }
+    .Dot1{
+        transform: translate(calc(-50% + 100px ),calc(-50% - 100px  ));
+    }
+    .Dot2{
+        transform: translate(calc(-50% - 100px ),calc(-50% + 100px  ));
+    }
+    .Active .Yellow{
+        transform: translate(calc(-50% + 65px) ,calc(-50% + 65px));
+    }
+    .Active .SmallYellow{
+        transform: translate(calc(-50% - 100px) ,calc(-50% - 100px));
+    }
+     .Yellow{
+        transform: translate(calc(-50% + 100px) ,calc(-50% + 65px));
+    }
+     .SmallYellow{
+        transform: translate(calc(-50% - 150px) ,calc(-50% - 100px));
+    }
+}
