@@ -1,57 +1,67 @@
 import React from "react"
-import "./template.styles.css"
+import { useThemeValue } from "../utils/context"
+import classes from "./styles.module.css"
 
 const Footer = () => {
+  const { isDark } = useThemeValue()
   return (
-    <div className="footer">
-      <div className="main">
-        <div className="line"></div>
+    <div className={`${classes.footer} ${isDark && classes.dark}`}>
+      <div className={`${classes.main} ${isDark && classes.dark}`}>
+        {isDark ? (
+          <div className={classes.lineDark}></div>
+        ) : (
+          <div className={classes.line}></div>
+        )}
 
-        <div id="ieee">IEEE Computer Society</div>
+        <div className={classes.ieee}>IEEE Computer Society</div>
 
-        <div className="line"></div>
+        {isDark ? (
+          <div className={classes.lineDark}></div>
+        ) : (
+          <div className={classes.line}></div>
+        )}
       </div>
-      <div id="vit">VIT Chapter</div>
-      <div className="mainbox">
-        <div className="logo">
+      <div className={classes.vit}>VIT Chapter</div>
+      <div className={classes.mainbox}>
+        <div className={classes.logo}>
           <img
-            className="ieee_logo"
+            className={classes.ieee_logo}
             src={require("./logo.png")}
             alt="ieeecs-logo"
           />
           <br></br>
-          <span id="text">Accrete Your Knowledge</span>
+          <span className={classes.text}>Accrete Your Knowledge</span>
         </div>
-        <div className="columns">
-          <div className="col1">
-            <span className="title">Menu</span>
-            <div className="para">
+        <div className={classes.columns}>
+          <div className={classes.col1}>
+            <span className={classes.title}>Menu</span>
+            <div className={classes.para}>
               <p>About</p>
               <p>Events</p>
               <p>Gallery</p>
               <p>Contact</p>
             </div>
           </div>
-          <div className="col1">
-            <span className="title">Events</span>
-            <div className="para">
+          <div className={classes.col1}>
+            <span className={classes.title}>Events</span>
+            <div className={classes.para}>
               <p>Arcs</p>
               <p>Hackbattle</p>
               <p>Mozdev</p>
             </div>
           </div>
-          <div className="col1">
-            <span className="title">Projects</span>
-            <div className="para">
+          <div className={classes.col1}>
+            <span className={classes.title}>Projects</span>
+            <div className={classes.para}>
               <p>Project_1</p>
               <p>Project_2</p>
               <p>Project_3</p>
             </div>
           </div>
 
-          <div className="col1">
-            <span className="title">Contact&nbsp;us </span>
-            <div className="para">
+          <div className={classes.col1}>
+            <span className={classes.title}>Contact&nbsp;us </span>
+            <div className={classes.para}>
               <p>ieeecs@vit.ac.in</p>
             </div>
           </div>
