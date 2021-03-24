@@ -2,6 +2,7 @@ import React from "react"
 
 <<<<<<< HEAD
 const Achievements = () => {
+<<<<<<< HEAD
   return (
     <h1>Achievements</h1>
 =======
@@ -126,6 +127,9 @@ const Achievements = () => {
         
 >>>>>>> closes #3
   )
+=======
+  return <h1>Achievements</h1>
+>>>>>>> 🎨 format with prettier
 }
 
 export default Achievements
