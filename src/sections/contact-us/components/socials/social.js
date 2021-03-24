@@ -5,32 +5,33 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa"
-import "./socialstyles.css"
+
+import classes from "./socialstyles.module.css"
 
 const Social = () => {
   return (
-    <div className="social">
+    <div className={classes.social}>
       <a
-        className="s1"
+        className={classes.s1}
         href="https://www.linkedin.com/company/ieee-computer-society-vit-vellore/"
       >
-        <span className="boxx">
-          <FaLinkedinIn className="iconstyle" />
+        <span className={classes.boxx}>
+          <FaLinkedinIn className={classes.iconstyle} />
         </span>
       </a>
-      <a className="s1" href="https://twitter.com/ieeecsvit?lang=en">
-        <span className="boxx">
-          <FaTwitter className="iconstyle" />
+      <a className={classes.s1} href="https://twitter.com/ieeecsvit?lang=en">
+        <span className={classes.boxx}>
+          <FaTwitter className={classes.iconstyle} />
         </span>
       </a>
-      <a className="s1" href="https://www.facebook.com">
-        <span className="boxx">
-          <FaFacebookF className="iconstyle" />
+      <a className={classes.s1} href="https://www.facebook.com">
+        <span className={classes.boxx}>
+          <FaFacebookF className={classes.iconstyle} />
         </span>
       </a>
-      <a className="s1" href="https://www.instagram.com/ieeecs_vit/">
-        <span className="boxx">
-          <FaInstagram className="iconstyle" />
+      <a className={classes.s1} href="https://www.instagram.com/ieeecs_vit/">
+        <span className={classes.boxx}>
+          <FaInstagram className={classes.iconstyle} />
         </span>
       </a>
     </div>

@@ -8,7 +8,7 @@
 
 .flipAnimate {
   font-size: 50px;
-  color: #efca53;
+  color: rgba(239, 202, 83, 1);
   -webkit-animation: flip 3s;
   animation: flip 3s;
 }
@@ -78,7 +78,7 @@
 .circle {
   height: 180px;
   width: 180px;
-  background-color: #efca53;
+  background-color: rgba(239, 202, 83, 1);
   border-radius: 50%;
   display: inline-block;
   justify-content: space-evenly;

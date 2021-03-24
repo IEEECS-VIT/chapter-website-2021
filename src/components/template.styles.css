@@ -1,100 +1,88 @@
-.footer{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 5%;
-    font-family: 'Montserrat';
-
-    
-}
-.line{
-    border:none;
-    background-color: none;
-    border-bottom: solid 1px white;
-    width: 33%;
-    margin-left: 60px;
-    margin-right: 60px;
-}
-#ieee{
-    color: white;
-    font-size: 16px;
-    text-align: center;
-
-}
-#vit{
-    color: white;
-    font-size: 12px;
-    text-align: center;
-   
+.footer {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+  font-family: "Montserrat";
 }
 
-.main{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    
-}
-.logo{
-    margin-left: 80px;
-    float: left;
-    margin-top: 40px;
-    
-    
-}
-.ieee_logo{
-    width: 150px;
-    height: 50px;
-}
-#text{
-    color: white;
-    font-size: 13px;
-    
-}
-.mainbox{
-    display: grid;
-    grid-template-columns: repeat(5,300px);
-    
-}
-.columns{
-    display: inline-flex;
-    margin-left: 90px;
-    margin-top: 20px;
-}
-.col1{
-    float: left;
-     color: white;
-     margin-left: 50px;
-    
-   
-     
+.line {
+  border: none;
+  background-color: none;
+  border-bottom: solid 1px white;
+  width: 33%;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
-
-
-.title{
-    font-size: 16px;
-    border-bottom: #EFCA53 solid 2px;
-    
-    
-}
-.para{
-    font-size: 13px;
+#ieee {
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
 
+#vit {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
 
+.main {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.logo {
+  margin-left: 80px;
+  float: left;
+  margin-top: 40px;
+}
+
+.ieee_logo {
+  width: 150px;
+  height: 50px;
+}
+
+#text {
+  color: white;
+  font-size: 13px;
+}
+
+.mainbox {
+  display: grid;
+  grid-template-columns: repeat(5, 300px);
+}
+
+.columns {
+  display: inline-flex;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+.col1 {
+  float: left;
+  color: white;
+  margin-left: 50px;
+}
+
+.title {
+  font-size: 16px;
+  border-bottom: #efca53 solid 2px;
+}
+
+.para {
+  font-size: 13px;
+}
 
 /* /////////////////////////////////////Responsive////////////////////////////////////////////////////////// */
-@media only screen and (max-width: 1054px){
-.footer{
-
-     width: 330%;
+@media only screen and (max-width: 1054px) {
+  .footer {
+    width: 330%;
     height: 100%;
-    
-}
+  }
 }
 
 /* .columns{
@@ -103,57 +91,48 @@
     flex-basis: 100%;
   
 } */
-@media only screen and (max-width :768px)
-{  .footer{
-
+@media only screen and (max-width: 768px) {
+  .footer {
     width: 370%;
-   
+  }
+
+  #ieee {
+    font-size: 18px;
+  }
+  #vit {
+    font-size: 15px;
+  }
+  .line {
+    width: 30%;
+  }
+  .logo {
+    padding-left: 52%;
+    margin-top: -7%;
+  }
+  .ieee_logo {
+    width: 260px;
+    height: 80px;
+  }
+  #text {
+    font-size: 23px;
+  }
+  .mainbox {
+    /* grid-template-columns: repeat(1, 1fr); */
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .columns {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-left: 15%;
+    grid-row-gap: 20px;
+  }
+
+  .title {
+    font-size: 45px;
+    border-bottom: #efca53 solid 5px;
+  }
+  .para {
+    font-size: 30px;
+  }
 }
-
-    #ieee{
-        font-size: 18px;
-    }
-    #vit{
-        font-size: 15px;
-    }
-    .line{
-        width:30%;
-    }
-    .logo{
-        padding-left: 52%;
-        margin-top: -7%;
-    }
-    .ieee_logo{
-        width: 260px;
-        height: 80px;
-    }
-    #text{
-        font-size: 23px;
-    }
-   .mainbox{
-        /* grid-template-columns: repeat(1, 1fr); */
-        display: flex;
-        flex-direction: column-reverse;
-        
-    }
-    .columns{
-        display: grid;
-        grid-template-columns: repeat(2,auto );
-        margin-left: 15%;
-        grid-row-gap: 20px;
-    }
-     
-    .title{
-        font-size: 45px;
-        border-bottom: #EFCA53 solid 5px;
-        
-        
-    }
-    .para{
-        font-size: 30px;
-    }
-
-}
-
-
-
