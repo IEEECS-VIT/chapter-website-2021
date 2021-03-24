@@ -116,6 +116,10 @@
   background-color: #1a1a1a;
 }
 
+.darkOne {
+  color: #1a1a1a;
+}
+
 @media only screen and (max-width: 1024px) {
   .content {
     text-align: justify;

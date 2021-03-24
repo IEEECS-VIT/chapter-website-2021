@@ -43,7 +43,9 @@ const Achievements = () => {
             </div>
 
             <div className={classes.circle}>
-              <span className={classes.num}>15+</span>
+              <span className={`${classes.num} ${isDark && classes.darkOne}`}>
+                15+
+              </span>
             </div>
 
             <br></br>
@@ -51,6 +53,7 @@ const Achievements = () => {
 
             <div className={classes.caption}>Hackathon Winnners</div>
           </div>
+
           <div className={classes.box}>
             <div className={classes.bgimg}>
               <img
@@ -61,7 +64,9 @@ const Achievements = () => {
             </div>
 
             <div className={classes.circle}>
-              <span className={classes.one}>1</span>
+              <span className={`${classes.one} ${isDark && classes.darkOne}`}>
+                1
+              </span>
             </div>
 
             <br></br>
@@ -79,7 +84,9 @@ const Achievements = () => {
             </div>
 
             <div className={classes.circle}>
-              <span className={classes.one}>2</span>
+              <span className={`${classes.one} ${isDark && classes.darkOne}`}>
+                2
+              </span>
             </div>
 
             <br></br>
