@@ -26,7 +26,7 @@ const Footer = () => {
         <div className={classes.logo}>
           <img
             className={classes.ieee_logo}
-            src={require("./logo.png")}
+            src={isDark ? require("./logo-dark.png") : require("./logo.png")}
             alt="ieeecs-logo"
           />
           <br></br>
