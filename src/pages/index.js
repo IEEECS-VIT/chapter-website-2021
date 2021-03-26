@@ -1,11 +1,10 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import AboutUs from "../sections/about-us"
-<<<<<<< HEAD
-=======
+
 import Achievements from "../sections/achievement"
 import Announcement from "../sections/announcement"
->>>>>>> closes #3
+
 import ContactUs from "../sections/contact-us"
 import Events from "../sections/events"
 import OurTeam from "../sections/our-team"

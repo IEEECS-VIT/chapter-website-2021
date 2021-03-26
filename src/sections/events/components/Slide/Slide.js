@@ -3,6 +3,7 @@ import Style from "./Slide.module.css"
 import dots from "../svg/dots.svg"
 import ldots from "../svg/dots.png"
 import ellipse from "../svg/ellipse.svg"
+
 const Slide = props => {
   return (
     <div
