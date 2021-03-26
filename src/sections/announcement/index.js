@@ -26,6 +26,7 @@ const Announcement = () => {
           src={source}
           className={styles.close}
           onClick={handleClick}
+          alt="cross"
         ></img>
       </div>
     </div>

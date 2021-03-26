@@ -9,6 +9,9 @@ import Landing from "../sections/landing"
 import Circle from "../sections/Circle"
 
 const Index = () => {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}; 
   return (
     <div>
       <Helmet>
