@@ -65,6 +65,20 @@ const Footer = () => {
               <p>ieeecs@vit.ac.in</p>
             </div>
           </div>
+
+          <div className={classes.col1} style={{ flexGrow: 2 }}>
+            <div className={classes.logo_2}>
+              <img
+                className={classes.ieee_logo}
+                src={
+                  isDark ? require("./logo-dark.png") : require("./logo.png")
+                }
+                alt="ieeecs-logo"
+              />
+              <br></br>
+              <span className={classes.text}>Accrete Your Knowledge</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
