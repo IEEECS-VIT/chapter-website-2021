@@ -3,6 +3,7 @@ import styles from "./aboutusstyle.module.css"
 import clubimg from "../../images/club.png"
 import dot from "../../images/Bg_Lisght.png"
 import { useThemeValue } from "../../utils/context"
+
 const AboutUs = () => {
   const { isDark } = useThemeValue()
   return (

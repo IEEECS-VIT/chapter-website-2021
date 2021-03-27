@@ -82,16 +82,20 @@ div:nth-child(2).open {
   transform: translateX(20px);
   opacity: 0;
 }
+
 div:nth-child(3).open {
   transform: rotate(-45deg);
 }
+
 div:first-child.closed {
   transform: rotate(0);
 }
+
 div :nth-child(2).closed {
   transform: translateX(0);
   opacity: 1;
 }
+
 div :nth-child(3).closed {
   transform: rotate(0);
 }
@@ -132,7 +136,7 @@ input:checked + label:after {
   transform: translateX(-100%);
 }
 
-span {
+.toggleSpan {
   color: white;
   display: inline-block;
   position: absolute;
