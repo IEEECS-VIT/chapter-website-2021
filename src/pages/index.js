@@ -20,6 +20,7 @@ const Index = () => {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
           rel="stylesheet"
         ></link>
+        
         <link rel="stylesheet" href="./global.css" />
       </Helmet>
       <div>

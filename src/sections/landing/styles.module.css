@@ -12,13 +12,13 @@
   margin: 0 0 0 22%;
   font-family: "Montserrat", sans-serif;
   font-size: 330%;
-  font-weight: 500;
+  font-weight: 600;
 }
 .heading h1:nth-last-of-type(1) {
   margin: 0 0 0 22%;
-  color: #efca53;
+  color: orange;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 330%;
 }
  
@@ -34,7 +34,7 @@
   height: 10%;
   width: 60%;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   padding-top: 2%;
   text-align:justify;
  
@@ -111,7 +111,7 @@
 }
 @media (min-width: 330px) and (max-width: 600px) {
   .heading {
-    font-size: 68%;
+    font-size: 65%;
     padding-top: 70px;
     margin-left: -40px;
    
@@ -124,7 +124,7 @@
     
   }
   .backg {
-    background-size: 65% 50%;
+    background-size: 70% 50%;
     animation-name: movebg;
     background-image: url("../../images/Landing_bg_mobile_light.png");
   }
@@ -143,6 +143,7 @@
     margin-left: -60px;
     padding-top: 35px;
     
+    
   
   }
   .text {
@@ -153,23 +154,36 @@
   .btn{
     margin-bottom: -15px;
   }
+  
 }
 
-@media (min-width: 1101px) {
+@media (min-width: 1101px)  {
   .heading {
-    font-size: 24px;
+    font-size: 23px;
     margin-top: 0;
     
   }
   .text {
-    font-size: 14px;
+    font-size: 15px;
     margin:2% 15% 5% 25%;
-    width: 45%;
+    width: 48%;
  
     
   }
   .backg {
-    background-size: 51% 69%;
+    background-size: 55% 69%;
+  }
+}
+@media(min-width:1300px){
+  .backg {
+    background-size: 55% 58%;
+  }
+  .heading{
+    margin-left: -10px;
+    font-size: 26px;
+  }
+  .text{
+    font-size: 23px;
   }
 }
 .home {
