@@ -1,5 +1,10 @@
 .bgg {
-  background-color: #dfdfdf;
+  margin: 0 auto;
+  padding: 20px 10px;
+  max-width: 1400px;
+  position: relative;
+  background-color: #e9e7e9;
+  z-index: 0;
 }
 
 .cir {

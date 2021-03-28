@@ -19,7 +19,7 @@ const Forms = () => {
           type="email"
           className="form-control"
           required
-          placeholder="&#x2709;Your Email"
+          placeholder="&#x2709; Your Email"
         ></input>
 
         <br></br>

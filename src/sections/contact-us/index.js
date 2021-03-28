@@ -9,12 +9,12 @@ const ContactUs = () => {
   const { isDark } = useThemeValue()
 
   return (
-    <div className={isDark && classes.dark}>
-      <Background>
-        <h1 className={classes.heading}>Contact Us</h1>
-        <Forms />
-        <Social />
-      </Background>
+    <div className={`${classes.container} ${isDark && classes.dark}`}>
+      {/* <Background> */}
+      <h1 className={classes.title}>Contact Us</h1>
+      <Forms />
+      <Social />
+      {/* </Background> */}
     </div>
   )
 }

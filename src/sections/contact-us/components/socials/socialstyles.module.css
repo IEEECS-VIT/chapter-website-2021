@@ -7,16 +7,21 @@
   margin-right: 40px;
 }
 
-.boxx {
+.icon {
   display: inline-flex;
   border-radius: 40%;
   background-color: #1a1a1a;
   padding: 5px;
   font-size: 40px;
 }
+
 .iconstyle {
   color: white;
   font-size: 25px;
+}
+
+.link {
+  margin: 8px;
 }
 
 .dark {
