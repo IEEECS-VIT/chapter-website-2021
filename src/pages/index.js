@@ -9,6 +9,11 @@ import Landing from "../sections/landing"
 import Circle from "../sections/Circle"
 
 const Index = () => {
+  if (typeof window !== "undefined") {
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0)
+    }
+  }
   return (
     <div>
       <Helmet>
@@ -17,6 +22,7 @@ const Index = () => {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
           rel="stylesheet"
         ></link>
+
         <link rel="stylesheet" href="./global.css" />
       </Helmet>
       <div>

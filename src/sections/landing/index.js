@@ -21,16 +21,16 @@ const Landing = () => {
           <h1>An Elite Group of</h1>
           <h1>Engineers</h1>
         </div>
-        <div className={styles.announcement}></div>
+        <div className={styles.announcementOuter}>
+        <Announcement />
+        </div>
         <p className={styles.text}>
           We strive to be the leading provider of technical information,
           community services, and personalized support to the world’s computer
           science and technology communities{" "}
         </p>
-        {/* <Achievements /> */}
-        <div className={styles.announcementOuter}>
-          <Announcement />
-        </div>
+        
+      
         <button onClick={() => scrollTo("#About")} className={styles.btn}>
           <img
             className={styles.arrow}

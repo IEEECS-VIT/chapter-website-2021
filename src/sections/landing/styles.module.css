@@ -1,5 +1,5 @@
 .heading {
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .heading p {
@@ -12,27 +12,21 @@
   margin: 0 0 0 22%;
   font-family: "Montserrat", sans-serif;
   font-size: 330%;
-  font-weight: 500;
+  font-weight: 600;
 }
 .heading h1:nth-last-of-type(1) {
   margin: 0 0 0 22%;
-  color: #efca53;
+  color: orange;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 330%;
 }
-.announcement {
-  margin: 0 0 0 25%;
-  height: 20px;
-  padding: 2%;
-  display: inline-block;
-}
+ 
 .announcementOuter {
   border: black;
-  width: 100%;
-  /* margin: auto; */
   text-align: center;
 }
+
 .text {
   font-family: "Montserrat", sans-serif;
   display: inline-block;
@@ -40,9 +34,10 @@
   height: 10%;
   width: 60%;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   padding-top: 2%;
-  text-align: center;
+  text-align:justify;
+ 
 }
 .backg {
   background-image: url("../../images/darkbg.png");
@@ -69,7 +64,7 @@
     background-position: 50% 0%;
   }
   100% {
-    background-position: 50% -20%;
+    background-position: 50% -25%;
   }
 }
 
@@ -79,7 +74,7 @@
   border: none;
   padding-left: 2rem;
   position: absolute;
-  bottom: 80px;
+  bottom: 50px;
 
   left: 0;
 }
@@ -103,7 +98,7 @@
     font-size: 60%;
     height: 20%;
     width: 72%;
-    margin: 40% 5% 0 15%;
+    margin: 10% 5% 0 15%;
   }
 
   .btn {
@@ -116,18 +111,20 @@
 }
 @media (min-width: 330px) and (max-width: 600px) {
   .heading {
-    font-size: 68%;
-    padding-top: 45px;
+    font-size: 65%;
+    padding-top: 70px;
     margin-left: -40px;
+   
   }
   .text {
     font-size: 68%;
     height: 20%;
     width: 72%;
-    margin: 35% 5% 0 15%;
+    margin: 10% 5% 0 15%;
+    
   }
   .backg {
-    background-size: 58% 52%;
+    background-size: 70% 50%;
     animation-name: movebg;
     background-image: url("../../images/Landing_bg_mobile_light.png");
   }
@@ -136,7 +133,7 @@
   }
 
   .btn {
-    bottom: 7%;
+    bottom: 10%;
   }
 }
 
@@ -144,31 +141,54 @@
   .heading {
     font-size: 16px;
     margin-left: -60px;
-    padding-top: 10px;
+    padding-top: 35px;
+    
+    
+  
   }
   .text {
-    padding-top: 24px;
+    margin-top: 30px;
     font-size: 13px;
+    
   }
+  .btn{
+    margin-bottom: -15px;
+  }
+  
 }
 
-@media (min-width: 1101px) {
+@media (min-width: 1101px)  {
   .heading {
-    font-size: 24px;
-    padding-top: 5px;
+    font-size: 23px;
+    margin-top: 0;
+    
   }
   .text {
-    font-size: 14px;
-    margin: 5% 15% 5% 25%;
-    width: 45%;
+    font-size: 15px;
+    margin:2% 15% 5% 25%;
+    width: 48%;
+ 
+    
   }
   .backg {
-    background-size: 50% 72%;
+    background-size: 55% 69%;
+  }
+}
+@media(min-width:1300px){
+  .backg {
+    background-size: 55% 58%;
+  }
+  .heading{
+    margin-left: -10px;
+    font-size: 26px;
+  }
+  .text{
+    font-size: 23px;
   }
 }
 .home {
   position: relative;
   margin-top: 0;
-  padding-top: 5%;
+  padding-top: 1%;
   height: 100vh;
 }

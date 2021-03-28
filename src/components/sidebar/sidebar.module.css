@@ -166,7 +166,7 @@ span {
   background-color: black;
 }
 .darkmode {
-  background-color: white;
+  background-color:#ddd;
 }
 .darkmode button,
 .darkmode span {
@@ -182,16 +182,22 @@ span {
     width: 100%;
     opacity: 0.8;
     z-index: 2;
+
   }
 
   .StyledMenu button {
     font-size: 1.5em;
     text-align: center;
     padding: 2% 5% 2% 60%;
+    
   }
 
-  .darkmode.StyledMenu {
+  .darkmode.StyledMenu ,.darkmode.StyledMenu button{
     background: #a9a9a9;
+    opacity: 0.9;
+   
+    
+    
   }
   span {
     margin-top: 80%;
