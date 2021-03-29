@@ -1,5 +1,7 @@
 .heading {
   padding-top: 15px;
+  /* border: solid 1px white; */
+  margin-bottom: 15%;
 }
 
 .heading p {
@@ -25,6 +27,9 @@
 .announcementOuter {
   border: black;
   text-align: center;
+  /* margin-top: 10% !important; */
+  /* border: solid 1px white; */
+  /* position: relative; */
 }
 
 .text {
@@ -46,9 +51,9 @@
   background-position: 50% -20%;
   background-size: 65% 60%;
   animation-name: movebg;
-  animation-duration: 2s;
-  animation-iteration-count: 2;
-  animation-direction: alternate-reverse;
+  animation-duration: 1.75s;
+  /* animation-iteration-count: 2; */
+  /* animation-direction: alternate-reverse; */
 }
 .dark {
   color: white;
@@ -58,13 +63,19 @@
 
 @keyframes movebg {
   0% {
-    background-position: 50% -20%;
+    background-position: 50% -40%;
+  }
+  25% {
+    background-position: 50% 20%;
   }
   50% {
+    background-position: 50% -20%;
+  }
+  75% {
     background-position: 50% 0%;
   }
   100% {
-    background-position: 50% -25%;
+    background-position: 50% -20%;
   }
 }
 
@@ -174,7 +185,7 @@
     background-size: 55% 69%;
   }
 }
-@media(min-width:1300px){
+/* @media(min-width:1300px){
   .backg {
     background-size: 55% 58%;
   }
@@ -185,7 +196,7 @@
   .text{
     font-size: 23px;
   }
-}
+} */
 .home {
   position: relative;
   margin-top: 0;
