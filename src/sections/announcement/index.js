@@ -22,13 +22,13 @@ const Announcement = () => {
     >
       <div className={styles.text}>
         Announcement: Lorem ipsum dolor sit amet,
-        <img
+      </div>
+      <img
           src={source}
           className={styles.close}
           onClick={handleClick}
           alt="cross"
         ></img>
-      </div>
     </div>
   )
 }
