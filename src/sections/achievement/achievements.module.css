@@ -121,11 +121,11 @@
 
 .dark {
   color: #e9e7e9;
-  background-color: #1a1a1a;
+  background-color: #000000;
 }
 
 .darkOne {
-  color: #1a1a1a;
+  color: #000000;
 }
 
 @media only screen and (max-width: 768px) {
