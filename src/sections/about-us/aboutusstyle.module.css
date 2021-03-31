@@ -10,8 +10,10 @@ body {
   overflow: hidden !important;
   position: relative;
   height: 100vh;
+  background-color: #E5E5E5;
 }
 .aboutus {
+  z-index: 1;
   font-weight: 700;
   grid-column: span 6;
   font-size: 45px;
@@ -28,10 +30,11 @@ body {
   text-align: justify;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
+  z-index: 1;
 }
 .dark {
   color: #e9e7e9;
-  background-color: #1a1a1a;
+  background-color: #000000;
 }
 .clubimg {
   grid-column: span 6;
@@ -43,6 +46,7 @@ body {
   margin-top: 28vh;
   margin-left: 20%;
   border-radius: 50%;
+  z-index: 1;
 }
 .hollowcircle {
   position: absolute;
@@ -53,10 +57,11 @@ body {
   border-radius: 50%;
   border: 17px solid #efca53;
   box-sizing: border-box;
+  z-index: 1;
 }
 .dot {
   position: absolute;
-  z-index: -2;
+  z-index: 0;
   left: -330px;
   top: -40%;
 }
@@ -68,7 +73,7 @@ body {
   position: absolute;
   width: 104vh;
   height: 103vh;
-  z-index: -1;
+  z-index: 0;
   overflow-x: hidden;
 }
 .circle2 {
@@ -79,7 +84,7 @@ body {
   position: absolute;
   width: 104vh;
   height: 103vh;
-  z-index: -1;
+  z-index: 0;
   overflow-x: hidden;
 }
 .circle3 {
@@ -90,7 +95,7 @@ body {
   position: absolute;
   width: 104vh;
   height: 103vh;
-  z-index: -1;
+  z-index: 0;
   overflow-x: hidden;
 }
 .circle4 {
@@ -101,7 +106,7 @@ body {
   position: absolute;
   width: 104vh;
   height: 103vh;
-  z-index: -1;
+  z-index: 0;
   overflow-x: hidden;
 }
 .circle5 {
@@ -112,7 +117,7 @@ body {
   position: absolute;
   width: 104vh;
   height: 103vh;
-  z-index: -1;
+  z-index: 0;
   overflow-x: hidden;
 }
 .circle6 {
@@ -123,7 +128,7 @@ body {
   position: absolute;
   width: 104vh;
   height: 103vh;
-  z-index: -1;
+  z-index: 0;
   overflow-x: hidden;
 }
 .mcircle1 {
