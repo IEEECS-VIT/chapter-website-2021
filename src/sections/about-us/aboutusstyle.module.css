@@ -10,6 +10,7 @@ body {
   overflow: hidden !important;
   position: relative;
   height: 100vh;
+  background-color: #E5E5E5;
 }
 .aboutus {
   z-index: 1;
@@ -33,7 +34,7 @@ body {
 }
 .dark {
   color: #e9e7e9;
-  background-color: #1a1a1a;
+  background-color: #000000;
 }
 .clubimg {
   grid-column: span 6;
