@@ -10,12 +10,14 @@
   margin: 2% 0 0 22%;
   font-size: 130%;
 }
+
 .heading h1:first-of-type {
   margin: 0 0 0 22%;
   font-family: "Montserrat", sans-serif;
   font-size: 330%;
   font-weight: 600;
 }
+
 .heading h1:nth-last-of-type(1) {
   margin: 0 0 0 22%;
   color: orange;
@@ -23,7 +25,7 @@
   font-weight: 600;
   font-size: 330%;
 }
- 
+
 .announcementOuter {
   border: black;
   text-align: center;
@@ -41,12 +43,12 @@
   text-transform: uppercase;
   font-weight: 500;
   padding-top: 2%;
-  text-align:justify;
- 
+  text-align: justify;
 }
+
 .backg {
   background-image: url("../../images/darkbg.png");
-  background-color: #dfdfdf;
+  background-color: #e9e7e9;
   background-repeat: no-repeat;
   background-position: 50% -20%;
   background-size: 65% 60%;
@@ -55,9 +57,10 @@
   /* animation-iteration-count: 2; */
   /* animation-direction: alternate-reverse; */
 }
+
 .dark {
-  color: white;
-  background-color: black;
+  color: #e9e7e9;
+  background-color: #000000;
   background-image: url("../../images/lightbg.png");
 }
 
@@ -99,6 +102,7 @@
 .btn:hover {
   cursor: pointer;
 }
+
 @media (max-width: 320px) {
   .heading {
     font-size: 59%;
@@ -125,14 +129,12 @@
     font-size: 65%;
     padding-top: 70px;
     margin-left: -40px;
-   
   }
   .text {
     font-size: 68%;
     height: 20%;
     width: 72%;
     margin: 10% 5% 0 15%;
-    
   }
   .backg {
     background-size: 70% 50%;
@@ -153,33 +155,25 @@
     font-size: 16px;
     margin-left: -60px;
     padding-top: 35px;
-    
-    
-  
   }
   .text {
     margin-top: 30px;
     font-size: 13px;
-    
   }
-  .btn{
+  .btn {
     margin-bottom: -15px;
   }
-  
 }
 
-@media (min-width: 1101px)  {
+@media (min-width: 1101px) {
   .heading {
     font-size: 23px;
     margin-top: 0;
-    
   }
   .text {
     font-size: 15px;
-    margin:2% 15% 5% 25%;
+    margin: 2% 15% 5% 25%;
     width: 48%;
- 
-    
   }
   .backg {
     background-size: 55% 69%;
