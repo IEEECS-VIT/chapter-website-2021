@@ -9,6 +9,7 @@
     position: relative;
     opacity:0;
     transition: 1s;
+    overflow: hidden;
 }
 .Slide.Active{
     opacity: 1;
