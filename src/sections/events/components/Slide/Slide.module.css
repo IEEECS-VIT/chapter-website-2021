@@ -122,6 +122,8 @@
 }
 .Left.Slide{
     flex-direction: row-reverse;
+    padding-right: 60px;
+    box-sizing: border-box;
 }
 .Left .Text{
     left: 0;
@@ -146,6 +148,44 @@
 }
 .Active.Left .Yellow{
     transform: translate(calc(-50% - 130px) ,calc(-50% + 150px));
+}
+@media screen and (max-width:1200px) {
+    .Text p{
+        font-size: 1em;
+        width: 100%;
+    }
+    .DisImg{
+        width: 350px;
+        height: 350px;
+    }
+    .Active.Left .Yellow{
+        transform: translate(calc(-50% - 100px) ,calc(-50% + 120px));
+    }
+    .Active.Left .SmallYellow{
+        transform: translate(calc(-50% + 170px) ,calc(-50% - 120px));
+    }
+    .Active .Yellow{
+        transform: translate(calc(-50% + 100px) ,calc(-50% + 120px));
+    }
+    .Active .SmallYellow{
+        transform: translate(calc(-50% - 170px) ,calc(-50% - 120px));
+    }
+    .Dot1,.Dot2{
+        width: 500px;
+        height: 400px;
+    }
+    .Dot1{
+        transform: translate(calc(-50% + 120px ),calc(-50% - 120px  ));
+    }
+    .Dot2{
+        transform: translate(calc(-50% - 120px ),calc(-50% + 120px  ));
+    }
+    .Left .Dot1{
+        transform: translate(calc(-50% + 120px ),calc(-50% + 120px  ));
+    }
+    .Left .Dot2{
+        transform: translate(calc(-50% - 120px ),calc(-50% - 120px  ));
+    }
 }
 @media screen and (max-width:700px){
     .Slide .Ellipse{
@@ -226,5 +266,8 @@
     }
      .SmallYellow{
         transform: translate(calc(-50% - 150px) ,calc(-50% - 100px));
+    }
+    .Left.Slide{
+        padding-right: 0;
     }
 }
