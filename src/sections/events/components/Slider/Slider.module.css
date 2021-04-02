@@ -1,7 +1,7 @@
 .Slider{
     display: flex;
     opacity: 0;
-    animation: enter 1s ease-in 0s  forwards;
+    animation: enter 0.5s ease-in 0s  forwards;
     position: absolute;
     top:0;
     left: 0;
@@ -92,7 +92,7 @@
 @keyframes enter{
     from{
         opacity: 0;
-        transform: translate(100%,0%);
+        transform: translate(10px,0%);
     }
     to{
         opacity: 1;

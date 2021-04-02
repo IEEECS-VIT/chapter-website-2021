@@ -195,10 +195,9 @@ const Slider = props => {
           isLeft={true}
         >
           MozDev is a hands-on workshop, which provides you an insight into the
-          vast field of web development. Join us and learn the basics of one of
-          the most marketable skills in the technical world. This 6-hour
-          technical session conducted by industry experts from Mozilla
-          Open-Source Community will ensure that you get the best possible
+          field of web development. This 6-hour
+          workshop conducted by industry experts from Mozilla
+          Open-Source Community will get you the best possible
           exposure.
         </Slide>
         <Slide
