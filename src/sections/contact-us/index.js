@@ -2,7 +2,7 @@ import React from "react"
 import classes from "./contact.module.css"
 // import Background from "./components/background/bg"
 import Social from "./components/socials/social"
-import Forms from "./components/contact_form/Forms"
+import Forms from "./components/contact_form/"
 import { useThemeValue } from "../../utils/context"
 
 const ContactUs = () => {

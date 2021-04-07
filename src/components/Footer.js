@@ -50,14 +50,14 @@ const Footer = () => {
               <p>Mozdev</p>
             </div>
           </div>
-          <div className={classes.col1}>
+          {/* <div className={classes.col1}>
             <span className={classes.title}>Projects</span>
             <div className={classes.para}>
               <p>Project_1</p>
               <p>Project_2</p>
               <p>Project_3</p>
             </div>
-          </div>
+          </div> */}
 
           <div className={classes.col1}>
             <span className={classes.title}>Contact&nbsp;us </span>

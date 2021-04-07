@@ -48,12 +48,12 @@
   font-size: 1.5rem;
   text-align: justify;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .numberContainer {
   display: flex;
-  max-width: 1400px;
+  max-width: 1200px;
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
@@ -95,6 +95,7 @@
 }
 
 .one {
+  margin: 0;
   vertical-align: middle;
   display: inline-block;
   text-indent: 30px;
@@ -104,6 +105,7 @@
 }
 
 .num {
+  margin: 0;
   display: inline-block;
   text-indent: 25px;
   font-size: 100px;
@@ -125,7 +127,7 @@
 }
 
 .darkOne {
-  color: #000000;
+  color: #e9e7e9;
 }
 
 @media only screen and (max-width: 768px) {
@@ -134,16 +136,16 @@
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 322px) {
   .container {
     margin: 0;
     padding: 10px;
     z-index: 0;
-    width: 100%;
   }
 
   .content {
-    font-size: 1rem;
+    max-width: 300px;
+    font-size: 0.2rem;
   }
 
   .title {

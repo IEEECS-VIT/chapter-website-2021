@@ -93,11 +93,10 @@
   display: none;
   justify-content: flex-end;
   flex-grow: 2;
-  margin-left: 45%;
   margin-top: -25%;
 }
 
-/* /////////////////////////////////////Responsive////////////////////////////////////////////////////////// */
+/* Responsive */
 
 @media only screen and (max-width: 768px) {
   .ieee {

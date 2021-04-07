@@ -1,4 +1,4 @@
-form {
+.form-div {
   width: 300px;
   margin: 0 auto;
   margin-top: 50px;
@@ -47,23 +47,39 @@ form {
     width: 500px;
   }
 
-  input[type="text"],
-  [type="email"] {
-    height: 60px;
-  }
-
   .btn {
     margin-top: 20px;
     width: 300px;
     height: 60px;
-    margin-left: -10px;
-    font-size: 30px;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 322px) {
+  .form-div {
+    display: grid;
+  }
+
   .form-control {
-    font-size: 1.5rem;
-    width: 300px;
+    font-size: 1rem;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  input[type="text"],
+  [type="email"] {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  #msg {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    margin-left: 75px;
+    max-width: 100px;
+    margin: 0 auto;
+    height: 40px;
   }
 }

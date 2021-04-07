@@ -68,7 +68,12 @@ const Menu = ({ open, setOpen }) => {
         <br />
         <br />
         <span className={styles.toggleSpan}>Toggle Theme</span>
-        <input type="checkbox" id="switch" onClick={toggleTheme} />
+        <input
+          type="checkbox"
+          id="switch"
+          onClick={toggleTheme}
+          checked={isDark}
+        />
         <label for="switch" aria-label="toggle"></label>
         
       </nav>
