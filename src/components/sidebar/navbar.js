@@ -71,7 +71,7 @@ const Menu = ({ open, setOpen }) => {
         <input
           type="checkbox"
           id="switch"
-          onClick={toggleTheme}
+          onChange={toggleTheme}
           checked={isDark}
         />
         <label for="switch" aria-label="toggle"></label>

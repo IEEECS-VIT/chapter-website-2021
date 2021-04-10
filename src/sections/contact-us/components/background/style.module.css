@@ -1,0 +1,145 @@
+.background {
+  z-index: -1;
+}
+
+.dark {
+  background: #000000 !important;
+}
+
+.top_left_circle {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 1%;
+  width: 6.5rem;
+}
+
+.left_dots {
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 15%;
+  width: 14rem;
+}
+
+.left_triangles {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 25%;
+  width: 4.5rem;
+}
+
+.left_square {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 26%;
+  width: 1rem;
+}
+
+.right_triangles {
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 66%;
+  transform: rotate(180deg);
+  width: 4.5rem;
+}
+
+.right_square {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 80%;
+  width: 1rem;
+}
+
+.right_dots {
+  position: absolute;
+  margin-top: 280px;
+  margin-left: 63%;
+  transform: rotate(90deg);
+  width: 12rem;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(239, 202, 83, 1);
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-top: 200px;
+  margin-left: 90%;
+}
+
+.bottom_right_circle {
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 80%;
+  height: 2rem;
+}
+
+.quarter_circle {
+  margin-left: 93%;
+}
+
+.outer_quarter_circle {
+  position: absolute;
+  margin-top: 585px;
+  /* margin-left: 92%; */
+  width: 100px;
+  height: 100px;
+  background-color: rgba(239, 202, 83, 1);
+  border-radius: 100px 0 0 0;
+  -moz-border-radius: 100px 0 0 0;
+  -webkit-border-radius: 100px 0 0 0;
+}
+
+.inner_quarter_circle {
+  position: absolute;
+  z-index: 2;
+  margin-top: 615px;
+  margin-left: 28px;
+  width: 72px;
+  height: 70px;
+  background-color: #e9e7e9;
+  border-radius: 100px 0 0 0;
+  -moz-border-radius: 100px 0 0 0;
+  -webkit-border-radius: 100px 0 0 0;
+}
+
+@media only screen and (max-width: 1025px) {
+  .top_left_circle {
+    width: 4.5rem;
+  }
+
+  .quarter_circle {
+    margin-left: 90%;
+  }
+
+  .left_dots {
+    width: 10rem;
+  }
+  .right_dots {
+    width: 10rem;
+  }
+
+  .right_triangles {
+    width: 3.5rem;
+  }
+  .left_triangles {
+    width: 3.5rem;
+  }
+  .left_square {
+    width: 0.8rem;
+  }
+  .right_square {
+    width: 0.8rem;
+  }
+
+  .ball {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .background {
+    display: none;
+  }
+}

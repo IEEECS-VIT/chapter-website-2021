@@ -11,8 +11,7 @@ import OurTeam from "../sections/our-team"
 import Template from "../components/template"
 import Landing from "../sections/landing"
 import Circle from "../sections/Circle"
-import favicon from '../images/logoicon.png';
-
+import favicon from "../images/logoicon.png"
 
 const Index = () => {
   if (typeof window !== "undefined") {
@@ -29,12 +28,12 @@ const Index = () => {
           rel="stylesheet"
         ></link>
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
-        
+
         <link rel="stylesheet" href="./global.css" />
       </Helmet>
       <div>
         <Template>
-          <Circle />
+          {/* <Circle /> */}
           <Landing />
           <div id="About">
             <AboutUs />
@@ -47,8 +46,10 @@ const Index = () => {
           </div>
           <div id="Team">
             <OurTeam />
+          </div>{" "}
+          <div id="Contact">
+            <ContactUs />
           </div>
-          <ContactUs />
         </Template>
       </div>
     </div>

@@ -7,7 +7,6 @@ import semiEllipse from "../svg/semiEllipse.svg"
 
 const EventsMain = props => {
   let classList = [Style.EventsMain]
-  console.log("here")
   if (props.showSlider) {
     classList.push(Style.Disappear)
   } else {

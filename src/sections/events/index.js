@@ -10,7 +10,7 @@ const Events = () => {
   useEffect(() => {
     window.onscroll = () => {
       const EventDiv = document.getElementsByClassName(Style.Events)[0]
-      console.log(window.scrollY)
+      // console.log(window.scrollY)
       if (EventDiv.offsetTop - EventDiv.clientHeight / 3 < window.scrollY) {
         setshowMain(true)
       } else if (EventDiv.offsetTop - EventDiv.clientHeight > window.scrollY) {
