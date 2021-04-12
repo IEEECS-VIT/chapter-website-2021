@@ -41,3 +41,20 @@
   margin-bottom: 2%;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 322px) {
+  .formContainer {
+    width: 300px;
+  }
+
+  .formInput {
+    line-height: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .submitButton {
+    height: 30px;
+    line-height: 0.8rem;
+    font-size: 0.8rem;
+  }
+}

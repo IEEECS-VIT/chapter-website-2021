@@ -6,7 +6,7 @@ import {
   FaTwitter,
 } from "react-icons/fa"
 
-import classes from "./socialstyles.module.css"
+import classes from "./styles.module.css"
 
 const Social = () => {
   return (

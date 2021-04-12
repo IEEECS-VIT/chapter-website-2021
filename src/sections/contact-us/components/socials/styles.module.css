@@ -37,3 +37,24 @@
     font-size: 30px;
   }
 }
+
+@media only screen and (max-width: 322px) {
+  .boxx {
+    font-size: 30px;
+  }
+  .iconstyle {
+    font-size: 20px;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-right: 20px;
+    z-index: 2;
+  }
+}
