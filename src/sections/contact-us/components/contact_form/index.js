@@ -1,40 +1,39 @@
 import React from "react"
-import "./styles.css"
+import classes from "./styles.module.css"
 
-const Forms = () => {
-  return (
-    <form className="form-div">
+const ContactForm = () => (
+  <form className={classes.formContainer}>
+    <div className={classes.formgroup}>
       <input
         id="contact_name"
         type="text"
-        className="form-control"
+        className={classes.formInput}
         required
         placeholder="Your Name"
-      ></input>
-
-      <br></br>
-
+      />
+    </div>
+    <div className={classes.formgroup}>
       <input
         type="email"
-        className="form-control"
+        className={classes.formInput}
         required
         placeholder="Your Email"
-      ></input>
-
-      <br></br>
-
+      />
+    </div>
+    <div className={classes.formgroup}>
       <textarea
         id="msg"
         cols="30"
         rows="7"
-        className="form-control"
+        className={classes.formInput}
         required
         placeholder="Your Message"
-      ></textarea>
+      />
+    </div>
+    <div className={classes.formgroup}>
+      <button className={classes.submitButton}>Submit</button>
+    </div>
+  </form>
+)
 
-      <br></br>
-      <button className="btn">Submit</button>
-    </form>
-  )
-}
-export default Forms
+export default ContactForm
