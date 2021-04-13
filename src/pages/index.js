@@ -33,7 +33,7 @@ const Index = () => {
       </Helmet>
       <div>
         <Template>
-          {/* <Circle /> 
+          <Circle />
           <Landing />
           <div id="About">
             <AboutUs />
@@ -43,10 +43,10 @@ const Index = () => {
           </div>
           <div id="Achievements">
             <Achievements />
-          </div> 
+          </div>
           <div id="Team">
             <OurTeam />
-          </div> */}
+          </div>
           <div id="Contact">
             <ContactUs />
           </div>

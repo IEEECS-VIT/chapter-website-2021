@@ -132,7 +132,32 @@
 
 @media only screen and (max-width: 768px) {
   .content {
-    max-width: 800px;
+    padding: 1rem 2rem;
+    max-width: 600px;
+    font-size: 0.8rem;
+  }
+
+  .numberContainer {
+    max-width: 600px;
+  }
+
+  .circle {
+    height: 160px;
+    width: 160px;
+  }
+
+  .num {
+    text-indent: 12px;
+    font-size: 90px;
+    font-weight: 550;
+    line-height: 150px;
+  }
+
+  .one {
+    text-indent: 12px;
+    font-size: 90px;
+    font-weight: 550;
+    line-height: 150px;
   }
 }
 
@@ -144,7 +169,7 @@
   }
 
   .content {
-    max-width: 300px;
+    max-width: 280px;
     font-size: 0.2rem;
   }
 

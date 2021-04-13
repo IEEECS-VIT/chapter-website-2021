@@ -157,5 +157,6 @@
 
   .bgEffect {
     width: 480px;
+    display: none;
   }
 }
