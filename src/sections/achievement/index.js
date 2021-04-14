@@ -1,9 +1,6 @@
 import React from "react"
 import { useThemeValue } from "../../utils/context"
-
-
-import "./achievements.styles.css"
-
+// import "./achievements.styles.css"
 import classes from "./achievements.module.css"
 
 const Achievements = () => {

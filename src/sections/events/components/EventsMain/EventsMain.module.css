@@ -1,16 +1,16 @@
-.EventsMain {
+.EventsMain{
   display: block;
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
-.Semi2 {
+.Semi2{
   position: absolute;
-  top: 40px;
+  top:40px;
   left: -50px;
   transition: 0.5s;
   transform: rotateZ(-0deg);
@@ -18,499 +18,237 @@
   opacity: 0.5;
   width: 100px;
 }
-.Active .Semi2 {
+.Active .Semi2{
   transform: rotateZ(-90deg);
 }
-.Semi1 {
+.Semi1{
   position: absolute;
-  top: 40px;
+  top:40px;
   left: -50px;
   transition: 0.5s 0.1s;
   transform: rotateZ(-0deg);
   transform-origin: 40% 10%;
   width: 100px;
 }
-.Active .Semi1 {
+.Active .Semi1{
   transform: rotateZ(-90deg);
 }
-.Half1 {
+.Half1{
   position: absolute;
-  top: 10%;
-  right: -30px;
+  top:10%;
+  right:-30px;
   transform: rotateZ(-90deg);
 }
-.Half2 {
+.Half2{
   position: absolute;
   transform: translateY(30px);
-  bottom: 0%;
-  left: 10%;
+  bottom:0%;
+  left:10%;
+  
 }
-.Middle {
+.Middle{
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left:50%;
+  transform: translate(-50%,-50%);
   opacity: 0;
   width: 80%;
   height: 80%;
   transition: 1s;
 }
-.Active .Middle {
-  top: 50%;
+.Active .Middle{
+  top:50%;
   opacity: 1;
 }
-.Mirror {
+.Mirror{
   height: 70vh;
   width: 70vh;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left:50%;
+  transform: translate(-50%,-50%);
   overflow: hidden;
-  background: linear-gradient(
-    146.51deg,
-    rgba(255, 255, 255, 0.3) 11.69%,
-    rgba(255, 255, 255, 0) 93.09%
-  );
+  background: linear-gradient(146.51deg, rgba(255, 255, 255, 0.3) 11.69%, rgba(255, 255, 255, 0) 93.09%);
   backdrop-filter: blur(40px);
   filter: blur(5px);
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
   border-radius: 50%;
   z-index: 20;
-  border: 2px solid;
-  border-image-source: linear-gradient(
-    136.57deg,
-    #ffffff 13.4%,
-    rgba(255, 255, 255, 0) 91.73%
-  );
+  border:2px solid;
+  border-image-source: linear-gradient(136.57deg, #FFFFFF 13.4%, rgba(255, 255, 255, 0) 91.73%);
 }
-.Dark .Mirror {
-  background: linear-gradient(
-    143.16deg,
-    rgba(255, 255, 255, 0.2) 11.28%,
-    rgba(255, 255, 255, 0) 92.57%
-  );
+.Dark .Mirror{
+  background: linear-gradient(143.16deg, rgba(255, 255, 255, 0.2) 11.28%, rgba(255, 255, 255, 0) 92.57%);
   backdrop-filter: blur(60px);
   border: 2px solid;
-  border-image-source: linear-gradient(
-    135.93deg,
-    #ffffff 13.26%,
-    rgba(255, 255, 255, 0) 91.71%
-  );
+  border-image-source: linear-gradient(135.93deg, #FFFFFF 13.26%, rgba(255, 255, 255, 0) 91.71%);
+
+
 }
-.Text {
+.Text{
   width: 70%;
   text-align: center;
   position: absolute;
-  top: 55%;
+  top:55%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   z-index: 40;
 }
-.Text h3 {
+.Text h3{
   font-size: 2.5em;
   margin: 10px;
   font-weight: 500;
   letter-spacing: 7px;
 }
-.Text h1 {
+.Text h1{
   font-size: 6.5em;
   margin: 10px;
   font-weight: 700;
   transform: translateX(30px);
   transition: 1s ease-in;
 }
-.Active .Text h1 {
+.Active .Text h1{
   transform: translateX(0);
 }
-.Text div {
+.Text div{
   font-size: 1.7em;
   margin: 10px 20px;
   font-style: italic;
 }
-.Text button {
+.Text button{
   padding: 10px 30px;
   border-radius: 50px;
-  border: 1px solid white;
-  background-color: #c4c4c4;
-  outline: none;
-  font-family: "Montserrat", sans-serif;
+  border:1px solid white;
+  background-color: #C4C4C4;
+  outline:none;
+  font-family: 'Montserrat',sans-serif;
   font-weight: 600;
+  cursor: pointer;
   font-size: 15px;
+  transition: all ease-in-out 0.2s;
 }
-.EventsMain.Disappear {
+.Text button:hover{
+  background-color: #EFCA53;
+}
+.EventsMain.Disappear{
   opacity: 0;
 }
-.Dot1,
-.Dot2 {
+.Dot1,.Dot2{
   z-index: 0;
   opacity: 0.5;
   width: 700px;
   height: 500px;
   position: absolute;
+  
 }
-.Dark .Dot1,
-.Dark .Dot2 {
+.Dark .Dot1,.Dark .Dot2{
   width: 1000px;
   height: 500px;
 }
-.Dot1 {
-  top: 50%;
-  left: 50%;
-  transform: translate(calc(-50% + 25vh), calc(-50% - 25vh));
+.Dot1{
+  top:50%;
+  left:50%;
+  transform: translate(calc(-50% + 25vh ),calc(-50% - 25vh));
+  
 }
-.Dot2 {
-  top: 50%;
-  left: 50%;
-  transform: translate(calc(-50% - 25vh), calc(-50% + 25vh));
+.Dot2{
+  top:50%;
+  left:50%;
+  transform: translate(calc(-50% - 25vh ),calc(-50% + 25vh));
 }
-.Dark .Dot1 {
-  transform: translate(calc(-50% + 25vh), calc(-50% - 25vh));
+.Dark .Dot1{
+  transform: translate(calc(-50% + 25vh ),calc(-50% - 25vh));
+  
 }
-.Dark .Dot2 {
-  transform: translate(calc(-50% - 25vh), calc(-50% + 35vh));
+.Dark .Dot2{
+  transform: translate(calc(-50% - 25vh ),calc(-50% + 35vh));
 }
-.Gray {
+.Gray{
   width: 100px;
   height: 100px;
-  background-color: #c4c4c4;
+  background-color: #C4C4C4;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
+  top:50%;
   left: 50%;
   opacity: 1;
   z-index: 30;
-  transform: translate(calc(-50% - 30vh), calc(-50% - 18vh + 700px));
+  transform: translate(calc(-50% - 30vh),calc(-50% - 18vh + 700px));
   transition: 1s;
 }
-.Active .Gray {
-  transform: translate(calc(-50% - 30vh), calc(-50% - 18vh));
+.Active .Gray{
+  transform: translate(calc(-50% - 30vh),calc(-50% - 18vh));
 }
-.Yellow {
+.Yellow{
   width: 200px;
   height: 200px;
-  background-color: #efca53;
+  background-color: #EFCA53;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(calc(-50% + 25vh), calc(-50% + 25vh));
+  top:50%;
+  left:50%;
+  transform: translate(calc(-50% + 25vh ),calc(-50% + 25vh));
   opacity: 1;
   z-index: 10;
   transition: 1s;
 }
-.Yellow::after {
-  content: "";
+.Yellow::after{
+  content: '';
   width: 200px;
   height: 200px;
-  background-color: #efca53;
+  background-color: #EFCA53;
   border-radius: 50%;
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-25vh, -25vh);
+  top:0;
+  left:0;
+  transform: translate(-25vh ,-25vh);
   opacity: 0.5;
   z-index: -20;
   transition: 1s;
 }
-@media screen and (max-width: 700px) {
-  .Middle {
-    width: 100%;
-  }
-  .Mirror {
-    height: 50vh;
-    width: 50vh;
-  }
-  .Dot1,
-  .Dot2 {
-    width: 500px;
-    height: 300px;
-  }
-  .Dot1 {
-    transform: translate(calc(-50% + 15vh), calc(-50% - 15vh));
-  }
-  .Dot2 {
-    transform: translate(calc(-50% - 15vh), calc(-50% + 15vh));
-  }
-  .Text {
-    width: 100%;
-<<<<<<< HEAD
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    transition: 0.5s;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-.Semi2{
-    position: absolute;
-    top:40px;
-    left: -50px;
-    transition: 0.5s;
-    transform: rotateZ(-0deg);
-    transform-origin: 40% 10%;
-    opacity: 0.5;
-    width: 100px;
-}
-.Active .Semi2{
-    transform: rotateZ(-90deg);
-}
-.Semi1{
-    position: absolute;
-    top:40px;
-    left: -50px;
-    transition: 0.5s 0.1s;
-    transform: rotateZ(-0deg);
-    transform-origin: 40% 10%;
-    width: 100px;
-}
-.Active .Semi1{
-    transform: rotateZ(-90deg);
-}
-.Half1{
-    position: absolute;
-    top:10%;
-    right:-30px;
-    transform: rotateZ(-90deg);
-}
-.Half2{
-    position: absolute;
-    transform: translateY(30px);
-    bottom:0%;
-    left:10%;
-    
-}
-.Middle{
-    position: absolute;
-    top: 100%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    opacity: 0;
-    width: 80%;
-    height: 80%;
-    transition: 1s;
-}
-.Active .Middle{
-    top:50%;
-    opacity: 1;
-}
-.Mirror{
-    height: 70vh;
-    width: 70vh;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    overflow: hidden;
-    background: linear-gradient(146.51deg, rgba(255, 255, 255, 0.3) 11.69%, rgba(255, 255, 255, 0) 93.09%);
-    backdrop-filter: blur(40px);
-    filter: blur(5px);
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    border-radius: 50%;
-    z-index: 20;
-    border:2px solid;
-    border-image-source: linear-gradient(136.57deg, #FFFFFF 13.4%, rgba(255, 255, 255, 0) 91.73%);
-}
-.Dark .Mirror{
-    background: linear-gradient(143.16deg, rgba(255, 255, 255, 0.2) 11.28%, rgba(255, 255, 255, 0) 92.57%);
-    backdrop-filter: blur(60px);
-    border: 2px solid;
-    border-image-source: linear-gradient(135.93deg, #FFFFFF 13.26%, rgba(255, 255, 255, 0) 91.71%);
-
-
-}
-.Text{
-    width: 70%;
-    text-align: center;
-    position: absolute;
-    top:55%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 40;
-}
-.Text h3{
-    font-size: 2.5em;
-    margin: 10px;
-    font-weight: 500;
-    letter-spacing: 7px;
-}
-.Text h1{
-    font-size: 6.5em;
-    margin: 10px;
-    font-weight: 700;
-    transform: translateX(30px);
-    transition: 1s ease-in;
-}
-.Active .Text h1{
-    transform: translateX(0);
-}
-.Text div{
-    font-size: 1.7em;
-    margin: 10px 20px;
-    font-style: italic;
-}
-.Text button{
-    padding: 10px 30px;
-    border-radius: 50px;
-    border:1px solid white;
-    background-color: #C4C4C4;
-    outline:none;
-    font-family: 'Montserrat',sans-serif;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 15px;
-    transition: all ease-in-out 0.2s;
-}
-.Text button:hover{
-    background-color: #EFCA53;
-}
-.EventsMain.Disappear{
-    opacity: 0;
-}
-.Dot1,.Dot2{
-    z-index: 0;
-    opacity: 0.5;
-    width: 700px;
-    height: 500px;
-    position: absolute;
-    
-}
-.Dark .Dot1,.Dark .Dot2{
-    width: 1000px;
-    height: 500px;
-}
-.Dot1{
-    top:50%;
-    left:50%;
-    transform: translate(calc(-50% + 25vh ),calc(-50% - 25vh));
-    
-}
-.Dot2{
-    top:50%;
-    left:50%;
-    transform: translate(calc(-50% - 25vh ),calc(-50% + 25vh));
-}
-.Dark .Dot1{
-    transform: translate(calc(-50% + 25vh ),calc(-50% - 25vh));
-    
-}
-.Dark .Dot2{
-    transform: translate(calc(-50% - 25vh ),calc(-50% + 35vh));
-}
-.Gray{
-    width: 100px;
-    height: 100px;
-    background-color: #C4C4C4;
-    border-radius: 50%;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    opacity: 1;
-    z-index: 30;
-    transform: translate(calc(-50% - 30vh),calc(-50% - 18vh + 700px));
-    transition: 1s;
-}
-.Active .Gray{
-    transform: translate(calc(-50% - 30vh),calc(-50% - 18vh));
-}
-.Yellow{
-    width: 200px;
-    height: 200px;
-    background-color: #EFCA53;
-    border-radius: 50%;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(calc(-50% + 25vh ),calc(-50% + 25vh));
-    opacity: 1;
-    z-index: 10;
-    transition: 1s;
-}
-.Yellow::after{
-    content: '';
-    width: 200px;
-    height: 200px;
-    background-color: #EFCA53;
-    border-radius: 50%;
-    position: absolute;
-    top:0;
-    left:0;
-    transform: translate(-25vh ,-25vh);
-    opacity: 0.5;
-    z-index: -20;
-    transition: 1s;
-}
 @media screen and (max-width:700px){
-    .Middle{
-        width: 100%;
-    }
-    .Mirror{
-        height: 50vh;
-        width: 50vh;
-    }
-    .Dot1,.Dot2{
-        width: 500px;
-        height: 300px;
-    }
-    .Dot1{
-        transform: translate(calc(-50% + 15vh ),calc(-50% - 15vh));
-    }
-    .Dot2{
-        transform: translate(calc(-50% - 15vh ),calc(-50% + 15vh));
-    }
-    .Text{
-        width: 100%;
-        font-size: 9px;
-    }
-    .Gray{
-        width: 75px;
-        height: 75px;
-        transform: translate(calc(-50% - 22vh),calc(-50% - 15vh + 700px ));
+  .Middle{
+      width: 100%;
+  }
+  .Mirror{
+      height: 50vh;
+      width: 50vh;
+  }
+  .Dot1,.Dot2{
+      width: 500px;
+      height: 300px;
+  }
+  .Dot1{
+      transform: translate(calc(-50% + 15vh ),calc(-50% - 15vh));
+  }
+  .Dot2{
+      transform: translate(calc(-50% - 15vh ),calc(-50% + 15vh));
+  }
+  .Text{
+      width: 100%;
+      font-size: 9px;
+  }
+  .Gray{
+      width: 75px;
+      height: 75px;
+      transform: translate(calc(-50% - 22vh),calc(-50% - 15vh + 700px ));
 
-    }
-    .Active .Gray{
-        transform: translate(calc(-50% - 22vh),calc(-50% - 15vh));
-    }
-    .Yellow,.Yellow::after{
-        width: 125px;
-        height: 125px;
-    }
-    .Yellow{
-        transform: translate(calc(-50% + 20vh ),calc(-50% + 20vh));
-    }
-    .Yellow::after{
-        transform: translate(-20vh ,-20vh);
-    }
-    .Text button{
-        padding: 5px 10px;
-        margin-bottom: 10px;
-    }
-}
-=======
-    font-size: 9px;
   }
-  .Gray {
-    width: 75px;
-    height: 75px;
-    transform: translate(calc(-50% - 22vh), calc(-50% - 15vh + 700px));
+  .Active .Gray{
+      transform: translate(calc(-50% - 22vh),calc(-50% - 15vh));
   }
-  .Active .Gray {
-    transform: translate(calc(-50% - 22vh), calc(-50% - 15vh));
+  .Yellow,.Yellow::after{
+      width: 125px;
+      height: 125px;
   }
-  .Yellow,
-  .Yellow::after {
-    width: 125px;
-    height: 125px;
+  .Yellow{
+      transform: translate(calc(-50% + 20vh ),calc(-50% + 20vh));
   }
-  .Yellow {
-    transform: translate(calc(-50% + 20vh), calc(-50% + 20vh));
+  .Yellow::after{
+      transform: translate(-20vh ,-20vh);
   }
-  .Yellow::after {
-    transform: translate(-20vh, -20vh);
-  }
-  .Text button {
-    padding: 5px 10px;
-    margin-bottom: 10px;
+  .Text button{
+      padding: 5px 10px;
+      margin-bottom: 10px;
   }
 }
->>>>>>> 🎨 format with prettier
