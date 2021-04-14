@@ -48,14 +48,14 @@ const BigScreenBackground = () => {
         src={require("../circle.png")}
         alt="circle"
       />
-      <div className={classes.quarter_circle}>
+      {/* <div className={classes.quarter_circle}>
         <div className={classes.outer_quarter_circle}></div>
         <div
           className={`${classes.inner_quarter_circle}  ${
             isDark && classes.dark
           }`}
         ></div>
-      </div>
+      </div> */}
     </div>
   )
 }

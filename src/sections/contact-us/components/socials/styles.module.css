@@ -17,16 +17,20 @@
 }
 
 .iconstyle {
-  color: white;
+  color: inherit;
   font-size: 25px;
 }
 
 .link {
   margin: 8px;
+  color: white;
 }
 
 .dark {
   background-color: #e9e7e9;
+}
+.link:hover {
+  color: gold !important;
 }
 
 @media only screen and (max-width: 768px) {

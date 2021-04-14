@@ -10,12 +10,14 @@ const ContactUs = () => {
 
   return (
     <div className={`${classes.container} ${isDark && classes.dark}`}>
-      <Background />
-      <div className={classes.headerWrapper}>
-        <h1 className={classes.title}>Contact Us</h1>
+      <div className={classes.containerWrapper}>
+        <Background />
+        <div className={classes.headerWrapper}>
+          <h1 className={classes.title}>Contact Us</h1>
+        </div>
+        <ContactForm />
+        <Social />
       </div>
-      <ContactForm />
-      <Social />
     </div>
   )
 }
