@@ -6,6 +6,8 @@ import {
   FaInstagram,
   FaTwitter,
   FaGlobe,
+  FaGithub,
+  FaYoutube,
 } from "react-icons/fa"
 
 const TeamCard = ({ cardInfo }) => {
@@ -18,6 +20,8 @@ const TeamCard = ({ cardInfo }) => {
     twitter,
     facebook,
     personal,
+    github,
+    youtube
   } = cardInfo
 
   return (
@@ -74,6 +78,26 @@ const TeamCard = ({ cardInfo }) => {
                 rel="noopener noreferrer"
               >
                 <FaGlobe />
+              </a>
+            )}
+            {github && (
+              <a
+                href={github}
+                className={classes.iconButton}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+              </a>
+            )}
+            {youtube && (
+              <a
+                href={youtube}
+                className={classes.iconButton}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaYoutube />
               </a>
             )}
           </div>
