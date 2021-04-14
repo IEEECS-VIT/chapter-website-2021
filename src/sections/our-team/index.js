@@ -26,7 +26,7 @@ const OurTeamSection = () => {
 
   const cardInfo3 = {
     name: "Prerna Sultania",
-    image: require("./images/aayushi.jpg"),
+    image: require("./images/prerna.jpeg"),
     position: "HR & Operations Head",
     linkedIn: "https://www.linkedin.com/in/prerna-sultania-762b79177/",
     github: "https://github.com/PrernaSultania"
