@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { ThemeContext } from "./context"
 
 const ThemeProvider = ({ children }) => {
-  let prefersDark = false
+  let prefersDark = true
   if (typeof window !== "undefined") {
     prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
   }
