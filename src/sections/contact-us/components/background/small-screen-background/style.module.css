@@ -1,0 +1,56 @@
+.background {
+  z-index: -1;
+  display: none;
+}
+
+.dark {
+  background: #000000 !important;
+}
+
+.top_triangles {
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 10%;
+  width: 4rem;
+}
+
+.left_triangles {
+  position: absolute;
+  margin-top: 220px;
+  margin-left: 80%;
+  transform: rotate(-90deg);
+  width: 4rem;
+}
+
+.bottom_triangles {
+  position: absolute;
+  transform: rotate(-90deg);
+  margin-top: 520px;
+  margin-left: 40px;
+  width: 4rem;
+}
+
+.ball {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  border-radius: 50%;
+  background-color: rgba(239, 202, 83, 1);
+  width: 30px;
+  border-radius: 100px 0 0 100px;
+  -moz-border-radius: 100px 0 0 100px;
+  -webkit-border-radius: 100px 0 0 100px;
+  height: 3.5rem;
+  margin-top: 600px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 786px) {
+  .background {
+    display: block;
+  }
+  .bottom_triangles,
+  .top_triangles {
+    display: none;
+  }
+}

@@ -1,5 +1,5 @@
 .card {
-  max-width: 200px;
+  max-width: 300px;
   width: 250px;
   height: 280px;
   /* max-height: 280px; */
@@ -157,5 +157,6 @@
 
   .bgEffect {
     width: 480px;
+    display: none;
   }
 }

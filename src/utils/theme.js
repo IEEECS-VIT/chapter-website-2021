@@ -3,7 +3,8 @@ import React, { useState } from "react"
 import { ThemeContext } from "./context"
 
 const ThemeProvider = ({ children }) => {
-  const [isDark, setIsDark] = useState(false)
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+  const [isDark, setIsDark] = useState(prefersDark)
 
   const toggleTheme = () => {
     isDark ? setIsDark(false) : setIsDark(true)

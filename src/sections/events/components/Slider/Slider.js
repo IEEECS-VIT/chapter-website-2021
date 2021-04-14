@@ -9,6 +9,7 @@ import img2 from "../../components/svg/sliderImg/img2.png"
 import img3 from "../../components/svg/sliderImg/img3.png"
 import img4 from "../../components/svg/sliderImg/img4.png"
 import img5 from "../../components/svg/sliderImg/img5.png"
+
 const Slider = props => {
   const [isDragging, setisDragging] = useState(false)
   const [currentTranslate, setcurrentTranslate] = useState(0)

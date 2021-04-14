@@ -1,14 +1,17 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import AboutUs from "../sections/about-us"
+
+import Achievements from "../sections/achievement"
+import Announcement from "../sections/announcement"
+
 import ContactUs from "../sections/contact-us"
 import Events from "../sections/events"
 import OurTeam from "../sections/our-team"
 import Template from "../components/template"
 import Landing from "../sections/landing"
 import Circle from "../sections/Circle"
-import favicon from '../images/logoicon.png';
-
+import favicon from "../images/logoicon.png"
 
 const Index = () => {
   if (typeof window !== "undefined") {
@@ -25,7 +28,7 @@ const Index = () => {
           rel="stylesheet"
         ></link>
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
-        
+
         <link rel="stylesheet" href="./global.css" />
       </Helmet>
       <div>
@@ -38,10 +41,15 @@ const Index = () => {
           <div id="Events">
             <Events />
           </div>
+          <div id="Achievements">
+            <Achievements />
+          </div>
           <div id="Team">
             <OurTeam />
           </div>
-          <ContactUs />
+          <div id="Contact">
+            <ContactUs />
+          </div>
         </Template>
       </div>
     </div>

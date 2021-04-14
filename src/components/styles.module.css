@@ -1,0 +1,147 @@
+.footer {
+  color: white;
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  font-family: "Montserrat";
+}
+
+.footerWrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.dark {
+  color: #1a1a1a;
+  background-color: #e6e7e6;
+}
+
+.lineDark {
+  border: none;
+  background-color: #1a1a1a;
+  border-bottom: solid 1px #1a1a1a;
+  width: 33%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.line {
+  border: none;
+  background-color: white;
+  border-bottom: solid 1px white;
+  width: 33%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.ieee {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.vit {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  float: left;
+  margin-left: 2rem;
+  margin-top: 40px;
+}
+
+.ieee_logo {
+  width: 150px;
+}
+
+.text {
+  font-size: 0.8rem;
+}
+
+.mainbox {
+  display: flex;
+}
+
+.columns {
+  display: inline-flex;
+  flex-flow: row wrap;
+  margin-left: 4rem;
+  margin-top: 20px;
+}
+
+.col1 {
+  float: left;
+  margin-left: 50px;
+}
+
+.title {
+  font-size: 1rem;
+  border-bottom: 2px solid rgba(239, 202, 83, 1);
+}
+
+.para {
+  font-size: 0.8rem;
+}
+
+.logo_2 {
+  display: none;
+  justify-content: flex-end;
+  flex-grow: 2;
+  margin-top: -25%;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+  .ieee {
+    font-size: 0.8rem;
+  }
+  .title {
+    font-size: 0.5rem;
+  }
+  .mainbox {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .columns {
+    margin-left: 0;
+  }
+
+  .col1 {
+    flex-basis: 40%;
+    margin: 16px 0 16px 32px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo_2 {
+    display: block;
+  }
+
+  .ieee_logo {
+    width: 120px;
+  }
+
+  .text {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .ieee_logo {
+    width: 100px;
+  }
+}

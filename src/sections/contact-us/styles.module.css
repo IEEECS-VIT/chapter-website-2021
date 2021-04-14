@@ -1,0 +1,43 @@
+.container {
+  padding: 20px 10px;
+  font-family: Montserrat;
+  position: relative;
+  background-color: #e9e7e9;
+  z-index: 0;
+}
+
+.containerWrapper {
+  max-width: 1400px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.title {
+  color: rgba(239, 202, 83, 1);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  margin: 8px;
+  line-height: 1.2;
+}
+
+.dark {
+  background-color: #000000;
+}
+
+.headerWrapper {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 320px) {
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    margin: 4px;
+    margin-bottom: 12px;
+    line-height: 0.8;
+  }
+}
