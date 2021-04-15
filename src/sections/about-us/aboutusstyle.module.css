@@ -9,8 +9,8 @@ body {
   width: 100%;
   overflow: hidden !important;
   position: relative;
-  height: 100vh;
-  background-color: #E5E5E5;
+  height: 105vh;
+  background-color: #e9e7e9;
 }
 .aboutus {
   z-index: 1;
