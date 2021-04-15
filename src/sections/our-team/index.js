@@ -126,7 +126,7 @@ const OurTeamSection = () => {
         <h1 className={classes.title}>Our Team</h1>
         <h6 className={`${classes.subTitle} ${isDark && classes.dark}`}>
           "Teamwork is the ability to work together towards a common vision. It
-          is the fuel that allows common people to attain uncommin results."
+          is the fuel that allows common people to attain uncommon results."
         </h6>
         <h6 className={`${classes.subTitle} ${isDark && classes.dark}`}>
           -Andrew Carnegie
