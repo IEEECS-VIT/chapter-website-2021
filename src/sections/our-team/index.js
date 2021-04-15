@@ -76,7 +76,7 @@ const OurTeamSection = () => {
 
   const cardInfo9 = {
     name: "Ayush Roy",
-    image: require("./images/ayush.jpeg"),
+    image: require("./images/ayush.jpg"),
     position: "Events Head",
     linkedIn: "https://www.linkedin.com/in/ayush-roy-40838b191/",
     github: "https://github.com/ayushroy64"
@@ -84,7 +84,7 @@ const OurTeamSection = () => {
 
   const cardInfo10 = {
     name: "Ipsita Goel",
-    image: require("./images/aayushi.jpg"),
+    image: require("./images/ipsita.jpg"),
     position: "Marketing & Outreach Head",
     linkedIn: "https://www.linkedin.com/in/ipsitagoel/",
     github:"https://github.com/ipsitagoel",

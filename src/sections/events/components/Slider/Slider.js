@@ -118,7 +118,7 @@ const Slider = props => {
           bgImg={bg1}
           isDark={props.isDark}
           head="Rivera Cyber Hunt"
-          subHead="coding treasure hunt"
+          subHead="Coding Treasure Hunt"
           img={img1}
           isLeft={true}
         >
@@ -137,7 +137,7 @@ const Slider = props => {
           bgImg={bg2}
           isDark={props.isDark}
           head="ARCS"
-          subHead="Our flagship event"
+          subHead="Our Flagship Event"
           img={img2}
         >
           ARCS is a technical colloquium hosted by IEEE-Computer Society (VIT),
@@ -156,7 +156,7 @@ const Slider = props => {
           bgImg={bg3}
           isDark={props.isDark}
           head="Convoke"
-          subHead="A 2-day conclave"
+          subHead="A 2-Day Conclave"
           img={img3}
           isLeft={true}
         >
@@ -174,7 +174,7 @@ const Slider = props => {
           bgImg={bg3}
           isDark={props.isDark}
           head="HackBattle"
-          subHead="36 hour hack-a-thon"
+          subHead="36 hour Hack-A-Thon"
           img={img4}
         >
           A 2-Day Conclave which will give you an opportunity to stand witness
@@ -191,7 +191,7 @@ const Slider = props => {
           bgImg={bg3}
           isDark={props.isDark}
           head="MozDev"
-          subHead="hands-on web development workshop"
+          subHead="Hands-on Web Development Workshop"
           img={img5}
           isLeft={true}
         >
