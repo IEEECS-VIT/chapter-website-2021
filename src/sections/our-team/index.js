@@ -9,8 +9,13 @@ const OurTeamSection = () => {
 
   const cardInfo1 = {
     name: "Aayushi Tated",
+<<<<<<< HEAD
     image: require("./images/aayushi.png"),
     position: "Vice Chair",
+=======
+    image: require("./images/aayushi.jpg"),
+    position: "Vice Chairperson",
+>>>>>>> updated announcement div
     linkedIn: "https://www.linkedin.com/in/aayushi-tated-898805193/",
     github: "https://github.com/aayushi2000",
     personal: "https://auth.geeksforgeeks.org/user/aayushitated2000/articles"
@@ -18,8 +23,13 @@ const OurTeamSection = () => {
 
   const cardInfo2 = {
     name: "Mohit Hotwani",
+<<<<<<< HEAD
     image: require("./images/mohit.png"),
     position: "Chair",
+=======
+    image: require("./images/mohit.jpg"),
+    position: "Chairperson",
+>>>>>>> updated announcement div
     linkedIn: "https://www.linkedin.com/in/mohit-hotwani-719492167/",
 	  github: "https://github.com/mohithotwani01",
   }

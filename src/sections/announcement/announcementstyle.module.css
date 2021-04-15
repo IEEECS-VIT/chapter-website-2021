@@ -17,11 +17,24 @@
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
+.text
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Montserrat;
+}
+a
+{
+  color: rgba(59, 132, 216, 0.959);
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .dark{
   border: 2px solid rgba(255, 255, 255, 0.76);
   box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.25);
+  background-color: #000;
 
 }
 .hideclass {
