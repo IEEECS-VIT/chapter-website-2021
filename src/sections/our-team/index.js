@@ -9,7 +9,7 @@ const OurTeamSection = () => {
 
   const cardInfo1 = {
     name: "Aayushi Tated",
-    image: require("./images/aayushi.jpg"),
+    image: require("./images/aayushi.png"),
     position: "Vice Chair",
     linkedIn: "https://www.linkedin.com/in/aayushi-tated-898805193/",
     github: "https://github.com/aayushi2000",
@@ -18,7 +18,7 @@ const OurTeamSection = () => {
 
   const cardInfo2 = {
     name: "Mohit Hotwani",
-    image: require("./images/mohit.jpg"),
+    image: require("./images/mohit.png"),
     position: "Chair",
     linkedIn: "https://www.linkedin.com/in/mohit-hotwani-719492167/",
 	  github: "https://github.com/mohithotwani01",
@@ -26,7 +26,7 @@ const OurTeamSection = () => {
 
   const cardInfo3 = {
     name: "Prerna Sultania",
-    image: require("./images/prerna.jpeg"),
+    image: require("./images/prerna.png"),
     position: "HR & Operations Head",
     linkedIn: "https://www.linkedin.com/in/prerna-sultania-762b79177/",
     github: "https://github.com/PrernaSultania"
@@ -34,7 +34,7 @@ const OurTeamSection = () => {
 
   const cardInfo4 = {
     name: "Lakhan Nad",
-    image: require("./images/lakhan.jpg"),
+    image: require("./images/lakhan.png"),
     position: "Technical Head",
     linkedIn: "https://www.linkedin.com/lakhan-nad",
     github:"https://github.com/Lakhan-Nad",
@@ -42,7 +42,7 @@ const OurTeamSection = () => {
 
   const cardInfo5 = {
     name: "Aditya Menon",
-    image: require("./images/aditya.jpg"),
+    image: require("./images/aditya.png"),
     position: "Projects Head",
     personal: "https://www.supraditya.com/",
     linkedIn: "https://www.linkedin.com/in/supraditya/",
@@ -51,7 +51,7 @@ const OurTeamSection = () => {
 
   const cardInfo6 = {
     name: "Nikita Anand",
-    image: require("./images/nikita.jpg"),
+    image: require("./images/nikita.png"),
     position: "Design Head",
     linkedIn: "https://www.linkedin.com/in/nikita-anand-381608195/",
     github:"https://github.com/nikitaanand16",
@@ -67,7 +67,7 @@ const OurTeamSection = () => {
 
   const cardInfo8 = {
     name: "Kaustubh Singh",
-    image: require("./images/kaustubh.jpg"),
+    image: require("./images/kaustubh.png"),
     position: "Public Relations Head",
     personal: "http://www.kaustubh.live/",
     linkedIn: "https://www.linkedin.com/in/kaustubh72/",
@@ -76,7 +76,7 @@ const OurTeamSection = () => {
 
   const cardInfo9 = {
     name: "Ayush Roy",
-    image: require("./images/ayush.jpg"),
+    image: require("./images/ayush.png"),
     position: "Events Head",
     linkedIn: "https://www.linkedin.com/in/ayush-roy-40838b191/",
     github: "https://github.com/ayushroy64"
@@ -84,7 +84,7 @@ const OurTeamSection = () => {
 
   const cardInfo10 = {
     name: "Ipsita Goel",
-    image: require("./images/ipsita.jpg"),
+    image: require("./images/ipsita.png"),
     position: "Marketing & Outreach Head",
     linkedIn: "https://www.linkedin.com/in/ipsitagoel/",
     github:"https://github.com/ipsitagoel",
@@ -92,7 +92,7 @@ const OurTeamSection = () => {
 
   const cardInfo11 = {
     name: "Shaolin Kataria",
-    image: require("./images/shaolin.jpg"),
+    image: require("./images/shaolin.png"),
     position: "Research Head",
     linkedIn: "https://www.linkedin.com/in/shaolink/",
     github: "https://github.com/shaolink8",
@@ -101,7 +101,7 @@ const OurTeamSection = () => {
 
   const cardInfo12 = {
     name: "Kamlendra Pratap Singh",
-    image: require("./images/kamlendra.jpg"),
+    image: require("./images/kamlendra.png"),
     position: "Strategic Head",
     linkedIn: "https://www.linkedin.com/in/kamlendra-pratap-singh-372427192/",
     github: "https://github.com/kps1310"
@@ -109,7 +109,7 @@ const OurTeamSection = () => {
 
   const cardInfo13 = {
     name: "Sunjol Singh",
-    image: require("./images/sunjol.jpg"),
+    image: require("./images/sunjol.png"),
     position: "Technical Lead",
     linkedIn: "https://www.linkedin.com/in/sunjol-singh-paul",
     github: "https://github.com/sunjol",
