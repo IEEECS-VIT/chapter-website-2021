@@ -4,22 +4,22 @@ import { ThemeContext } from "./context"
 
 const ThemeProvider = ({ children }) => {
   let prefersDark = true
-  if (typeof localStorage !== "undefined") {
-    let savedState = localStorage.getItem("theme-data")
+  if (typeof window !== "undefined") {
+    let savedState = window.localStorage.getItem("theme-data")
     if (savedState === "lightTheme") {
       prefersDark = false
     } else {
       savedState = "darkTheme"
     }
-    localStorage.setItem("theme-data", savedState)
+    window.localStorage.setItem("theme-data", savedState)
   }
   const [isDark, setIsDark] = useState(prefersDark)
   const toggleTheme = () => {
-    if (typeof localStorage !== "undefined") {
+    if (typeof window !== "undefined") {
       if (isDark) {
-        localStorage.setItem("theme-data", "lightTheme")
+        window.localStorage.setItem("theme-data", "lightTheme")
       } else {
-        localStorage.setItem("theme-data", "darkTheme")
+        window.localStorage.setItem("theme-data", "darkTheme")
       }
     }
     isDark ? setIsDark(false) : setIsDark(true)
