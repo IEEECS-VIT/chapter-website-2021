@@ -188,7 +188,7 @@ const Slider = props => {
           }}
           touchEnd={touchEnd}
           touchMove={touchMove}
-          bgImg={bg3}
+          bgImg={bg1}
           isDark={props.isDark}
           head="MozDev"
           subHead="Hands-on Web Development Workshop"
@@ -208,7 +208,7 @@ const Slider = props => {
           }}
           touchEnd={touchEnd}
           touchMove={touchMove}
-          bgImg={bg3}
+          bgImg={bg2}
           isDark={props.isDark}
           head="Cicada 3302"
           subHead="Cryptography Event"

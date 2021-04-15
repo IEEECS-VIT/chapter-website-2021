@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet"
 import AboutUs from "../sections/about-us"
 
 import Achievements from "../sections/achievement"
-import Announcement from "../sections/announcement"
 
 import ContactUs from "../sections/contact-us"
 import Events from "../sections/events"
@@ -28,8 +27,7 @@ const Index = () => {
           rel="stylesheet"
         ></link>
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
-
-        <link rel="stylesheet" href="./global.css" />
+        {/* <link rel="stylesheet" href="./global.css" /> */}
       </Helmet>
       <div>
         <Template>

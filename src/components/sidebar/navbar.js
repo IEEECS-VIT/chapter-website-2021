@@ -8,6 +8,11 @@ import styles from "./sidebar.module.css"
 
 const Menu = ({ open, setOpen }) => {
   const { toggleTheme, isDark } = useThemeValue()
+  const [checked, setChecked] = useState(Boolean(isDark))
+  const handleChange = () => {
+    toggleTheme()
+    setChecked(!checked)
+  }
   return (
     <div>
       <nav
@@ -70,12 +75,11 @@ const Menu = ({ open, setOpen }) => {
         <span className={styles.toggleSpan}>Toggle Theme</span>
         <input
           type="checkbox"
-          id="switch"
-          onChange={toggleTheme}
-          checked={isDark}
+          id="toggle-dark-switch"
+          onChange={handleChange}
+          checked={checked}
         />
-        <label for="switch" aria-label="toggle"></label>
-        
+        <label htmlFor="toggle-dark-switch" aria-label="toggle"></label>
       </nav>
     </div>
   )
