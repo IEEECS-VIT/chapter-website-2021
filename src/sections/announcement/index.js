@@ -6,9 +6,9 @@ import { useThemeValue } from "../../utils/context"
 
 const Announcement = () => {
   const [isClosed, setIsClosed] = useState(false)
- 
+
   const { isDark } = useThemeValue()
-  const source=isDark?closeWhite:close
+  const source = isDark ? closeWhite : close
 
   const handleClick = () => {
     setIsClosed(true)
@@ -16,19 +16,20 @@ const Announcement = () => {
 
   return (
     <div
-      className={`${isClosed && styles.hideclass} ${
-        styles.announcement
-      } ${isDark && styles.dark}`}
+      className={`${isClosed && styles.hideclass} ${styles.announcement} ${
+        isDark && styles.dark
+      }`}
     >
       <div className={styles.text}>
         Announcement: Lorem ipsum dolor sit amet,
       </div>
-      <img
-          src={source}
-          className={styles.close}
-          onClick={handleClick}
-          alt="cross"
-        ></img>
+      <button
+        onKeyPress={handleClick}
+        onClick={handleClick}
+        style={{ display: "contents" }}
+      >
+        <img src={source} className={styles.close} alt="cross" />
+      </button>
     </div>
   )
 }

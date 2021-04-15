@@ -7,18 +7,21 @@ const Events = () => {
   const [showSlider, setshowSlider] = useState(false)
   const [showMain, setshowMain] = useState(false)
   const { isDark } = useThemeValue()
-  useEffect(() => {
-    window.onscroll = () => {
-      const EventDiv = document.getElementsByClassName(Style.Events)[0]
-      // console.log(window.scrollY)
-      if (EventDiv.offsetTop - EventDiv.clientHeight / 3 < window.scrollY) {
-        setshowMain(true)
-      } else if (EventDiv.offsetTop - EventDiv.clientHeight > window.scrollY) {
-        setshowMain(false)
-        setshowSlider(false)
-      }
+  const scrollFunc = () => {
+    const EventDiv = document.getElementsByClassName(Style.Events)[0]
+    if (EventDiv.offsetTop - EventDiv.clientHeight / 3 < window.scrollY) {
+      setshowMain(true)
+    } else if (EventDiv.offsetTop - EventDiv.clientHeight > window.scrollY) {
+      setshowMain(false)
+      setshowSlider(false)
     }
-  })
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", scrollFunc)
+    return () => {
+      window.removeEventListener("scroll", scrollFunc)
+    }
+  }, [])
   return (
     <div className={`${Style.Events} ${isDark && Style.Dark}`}>
       <EventsMain

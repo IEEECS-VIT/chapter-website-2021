@@ -17,7 +17,7 @@ const Slide = props => {
       className={`${classes.Slide} ${props.isLeft && classes.Left} ${
         props.isDark && classes.Dark
       } ${props.isActive && classes.Active}`}
-      aria-role="slide"
+      role="slideable"
     >
       <img className={classes.Ellipse} src={ellipse} alt="ellipse" />
       <div className={classes.Tside}>
@@ -31,7 +31,7 @@ const Slide = props => {
       <div className={classes.Iside}>
         <div className={classes.SmallYellow}></div>
         <div className={classes.Yellow}></div>
-        <img className={classes.DisImg} src={props.img} alt="display image" />
+        <img className={classes.DisImg} src={props.img} alt="main" />
         <img
           className={classes.Dot1}
           src={!props.isDark ? ldots : dots}

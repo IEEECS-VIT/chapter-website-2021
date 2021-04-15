@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import Style from "./Slider.module.css"
 import Slide from "../Slide/Slide"
 import bg1 from "../../components/svg/bgSvg/bgSvg1.png"
@@ -11,6 +11,8 @@ import img4 from "../../components/svg/sliderImg/img4.png"
 import img5 from "../../components/svg/sliderImg/img5.png"
 
 const Slider = props => {
+  const prevBtnRef = useRef(null)
+  const nextButtonRef = useRef(null)
   const [isDragging, setisDragging] = useState(false)
   const [currentTranslate, setcurrentTranslate] = useState(0)
   const [prevTranslate, setprevTranslate] = useState(0)
@@ -56,12 +58,10 @@ const Slider = props => {
       return state
     })
   }
-
   const animation = () => {
     setSliderPosition()
     if (isDragging) requestAnimationFrame(animation)
   }
-
   const buttonSelect = i => {
     if (i >= 0 && i <= 6) {
       setcurrentIndex(i)
@@ -74,7 +74,25 @@ const Slider = props => {
   const setSliderPosition = (state = currentTranslate) => {
     setTransform(`translateX(${state}px)`)
   }
-  window.addEventListener("resize", setPositionByIndex)
+  const handleKeyDown = function (event) {
+    if (event.key === "ArrowLeft") {
+      if (prevBtnRef.current !== null) {
+        prevBtnRef.current.click()
+      }
+    } else if (event.key === "ArrowRight") {
+      if (nextButtonRef.current !== null) {
+        nextButtonRef.current.click()
+      }
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("resize", setPositionByIndex)
+    window.addEventListener("keydown", handleKeyDown)
+    return function cleanUp() {
+      window.removeEventListener("resize", setPositionByIndex)
+      window.removeEventListener("keydown", handleKeyDown)
+    }
+  }, [])
   let buttons = []
   for (let i = 0; i < 7; i++) {
     buttons.push(
@@ -90,18 +108,32 @@ const Slider = props => {
     )
   }
   return (
-    <div className={`${Style.Slider} ${props.isDark && Style.Dark}`}>
+    <div
+      className={`${Style.Slider} ${props.isDark && Style.Dark}`}
+      role="slider"
+      aria-valuenow={currentIndex}
+    >
       <div
+        ref={prevBtnRef}
         className={[Style.Arrow, Style.Prev].join(" ")}
         onClick={() => {
+          buttonSelect(currentIndex - 1)
+        }}
+        role="button"
+        onKeyPress={() => {
           buttonSelect(currentIndex - 1)
         }}
       >
         previous
       </div>
       <div
+        ref={nextButtonRef}
         className={[Style.Arrow, Style.Next].join(" ")}
         onClick={() => {
+          buttonSelect(currentIndex + 1)
+        }}
+        role="button"
+        onKeyPress={() => {
           buttonSelect(currentIndex + 1)
         }}
       >
@@ -196,10 +228,9 @@ const Slider = props => {
           isLeft={true}
         >
           MozDev is a hands-on workshop, which provides you an insight into the
-          field of web development. This 6-hour
-          workshop conducted by industry experts from Mozilla
-          Open-Source Community will get you the best possible
-          exposure.
+          field of web development. This 6-hour workshop conducted by industry
+          experts from Mozilla Open-Source Community will get you the best
+          possible exposure.
         </Slide>
         <Slide
           isActive={currentIndex === 5}
@@ -234,9 +265,9 @@ const Slider = props => {
           isLeft={true}
         >
           It has always been an incredible adventure for a programmer to learn
-          and to compete when it comes to coding. Wouldn't it be
-          interesting if you could solve programs with more than
-          one algorithm? Get ready with all your coding skills and you gonna enjoy the ride of this
+          and to compete when it comes to coding. Wouldn't it be interesting if
+          you could solve programs with more than one algorithm? Get ready with
+          all your coding skills and you gonna enjoy the ride of this
           competitive programming competition,
         </Slide>
       </div>
