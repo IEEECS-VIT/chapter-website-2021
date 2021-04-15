@@ -1,19 +1,9 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 import { ThemeContext } from "./context"
 
 const ThemeProvider = ({ children }) => {
-  let prefersDark = true
-  if (typeof window !== "undefined") {
-    let savedState = window.localStorage.getItem("theme-data")
-    if (savedState === "lightTheme") {
-      prefersDark = false
-    } else {
-      savedState = "darkTheme"
-    }
-    window.localStorage.setItem("theme-data", savedState)
-  }
-  const [isDark, setIsDark] = useState(prefersDark)
+  const [isDark, setIsDark] = useState(true)
   const toggleTheme = () => {
     if (typeof window !== "undefined") {
       if (isDark) {
@@ -22,8 +12,23 @@ const ThemeProvider = ({ children }) => {
         window.localStorage.setItem("theme-data", "darkTheme")
       }
     }
-    isDark ? setIsDark(false) : setIsDark(true)
+    setIsDark(!isDark)
   }
+  useEffect(() => {
+    let prefersDark = true
+    if (typeof window !== "undefined") {
+      let savedState = window.localStorage.getItem("theme-data")
+      if (savedState === "lightTheme") {
+        prefersDark = false
+      } else {
+        savedState = "darkTheme"
+      }
+      window.localStorage.setItem("theme-data", savedState)
+    }
+    if (prefersDark === false) {
+      toggleTheme()
+    }
+  }, [])
   return (
     <ThemeContext.Provider value={{ toggleTheme, isDark }}>
       {children}

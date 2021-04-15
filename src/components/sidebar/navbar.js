@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useThemeValue } from "../../utils/context"
 import useWindowScrollPosition from "@rehooks/window-scroll-position"
 import scrollTo from "gatsby-plugin-smoothscroll"
@@ -8,7 +8,12 @@ import styles from "./sidebar.module.css"
 
 const Menu = ({ open, setOpen }) => {
   const { toggleTheme, isDark } = useThemeValue()
-  const [checked, setChecked] = useState(Boolean(isDark))
+  const [checked, setChecked] = useState(isDark)
+  useEffect(() => {
+    if (isDark !== checked) {
+      setChecked(isDark)
+    }
+  })
   const handleChange = () => {
     toggleTheme()
     setChecked(!checked)
@@ -48,18 +53,18 @@ const Menu = ({ open, setOpen }) => {
         <button
           onClick={() => {
             setOpen(!open)
-            scrollTo("#Team")
+            scrollTo("#Achievements")
           }}
         >
-          Team
+          Achievements
         </button>
         <button
           onClick={() => {
             setOpen(!open)
-            scrollTo("#Gallery")
+            scrollTo("#Team")
           }}
         >
-          Gallery
+          Team
         </button>
         <button
           onClick={() => {
@@ -87,9 +92,13 @@ const Menu = ({ open, setOpen }) => {
 
 const Burger = ({ open, setOpen, change }) => {
   const { isDark } = useThemeValue()
-  var openClose = open ? styles.open : styles.close
-  var mode = isDark || (change && !open) ? styles.darkmode : styles.lightmode
-
+  var openClose = open ? styles.open : styles.closed
+  var lightStyle = isDark ? styles.lightmode : styles.darkmode
+  var mode = !open
+    ? change || isDark
+      ? styles.darkmode
+      : styles.lightmode
+    : lightStyle
   return (
     <button onClick={() => setOpen(!open)} className={styles.styledBurger}>
       <div className={`${openClose} ${mode}`} />
@@ -102,41 +111,30 @@ const Burger = ({ open, setOpen, change }) => {
 const Header = () => {
   const { isDark } = useThemeValue()
   const [open, setOpen] = React.useState(false)
-  const node = React.useRef()
   var openClose = open ? styles.Open : styles.Close
   const [change, setChange] = useState(false)
   const changePosition = 100
-
   let position = useWindowScrollPosition()
 
   if (position.y > changePosition && !change) {
     setChange(true)
-  }
-
-  if (position.y <= changePosition && change) {
+  } else if (position.y <= changePosition && change) {
     setChange(false)
   }
-
   return (
     <>
-      <div className={`${styles.Blur} ${openClose}`}></div>
+      <div className={`${styles.Blur} ${openClose}`} />
       <div
-        ref={node}
         className={`${styles.showNav} ${
           isDark ? styles.dark : null
         } ${openClose}`}
         style={{
-          backgroundColor: change ? "rgb(102,102,102,0.9)" : "transparent",
+          backgroundColor: change ? "rgb(59,59,59,0.9)" : "transparent",
         }}
       >
         <img
           className={`${styles.logo} ${openClose}`}
-          src={isDark || change ? darklogo : logo}
-          alt="IEEE logo"
-        />
-        <img
-          className={`${styles.logo2} ${openClose}`}
-          src={darklogo}
+          src={change || isDark ? darklogo : logo}
           alt="IEEE logo"
         />
         <Burger open={open} setOpen={setOpen} change={change} />
