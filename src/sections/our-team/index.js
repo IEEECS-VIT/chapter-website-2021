@@ -8,20 +8,20 @@ const OurTeamSection = () => {
   const { isDark } = useThemeValue()
 
   const cardInfo1 = {
-    name: "Aayushi Tated",
-    image: require("./images/aayushi.png"),
-    position: "Vice Chair",
-    linkedIn: "https://www.linkedin.com/in/aayushi-tated-898805193/",
-    github: "https://github.com/aayushi2000",
-    personal: "https://auth.geeksforgeeks.org/user/aayushitated2000/articles"
+    name: "Mohit Hotwani",
+    image: require("./images/mohit.jpg"),
+    position: "Chairperson",
+    linkedIn: "https://www.linkedin.com/in/mohit-hotwani-719492167/",
+	  github: "https://github.com/mohithotwani01",
   }
 
   const cardInfo2 = {
-    name: "Mohit Hotwani",
-    image: require("./images/mohit.png"),
-    position: "Chair",
-    linkedIn: "https://www.linkedin.com/in/mohit-hotwani-719492167/",
-	  github: "https://github.com/mohithotwani01",
+    name: "Aayushi Tated",
+    image: require("./images/aayushi.jpg"),
+    position: "Vice Chairperson",
+    linkedIn: "https://www.linkedin.com/in/aayushi-tated-898805193/",
+    github: "https://github.com/aayushi2000",
+    personal: "https://auth.geeksforgeeks.org/user/aayushitated2000/articles"
   }
 
   const cardInfo3 = {
@@ -126,7 +126,7 @@ const OurTeamSection = () => {
         <h1 className={classes.title}>Our Team</h1>
         <h6 className={`${classes.subTitle} ${isDark && classes.dark}`}>
           "Teamwork is the ability to work together towards a common vision. It
-          is the fuel that allows common people to attain uncommin results."
+          is the fuel that allows common people to attain uncommon results."
         </h6>
         <h6 className={`${classes.subTitle} ${isDark && classes.dark}`}>
           -Andrew Carnegie

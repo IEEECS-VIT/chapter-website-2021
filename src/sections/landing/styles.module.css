@@ -20,7 +20,7 @@
 
 .heading h1:nth-last-of-type(1) {
   margin: 0 0 0 22%;
-  color: orange;
+  color: #efca53;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 330%;
@@ -50,10 +50,11 @@
   background-image: url("../../images/darkbg.png");
   background-color: #e9e7e9;
   background-repeat: no-repeat;
-  background-position: 50% -20%;
-  background-size: 65% 60%;
+  background-position: 50% -35%;
+  /* background-size: 65% 57.8%; */
   animation-name: movebg;
   animation-duration: 1.75s;
+  background-size: auto;
   /* animation-iteration-count: 2; */
   /* animation-direction: alternate-reverse; */
 }
@@ -66,19 +67,19 @@
 
 @keyframes movebg {
   0% {
-    background-position: 50% -40%;
+    background-position: 50% -50%;
   }
   25% {
-    background-position: 50% 20%;
+    background-position: 50% -17.5%;
   }
   50% {
-    background-position: 50% -20%;
+    background-position: 50% -50%;
   }
   75% {
-    background-position: 50% 0%;
+    background-position: 50% -17.5%;
   }
   100% {
-    background-position: 50% -20%;
+    background-position: 50% -35%;
   }
 }
 
@@ -120,7 +121,7 @@
     bottom: 7%;
   }
   .backg {
-    background-size: 72% 55%;
+    background-size: 92% 55%;
     animation-name: movebg;
   }
 }
@@ -150,6 +151,24 @@
   }
 }
 
+@media (min-width: 801px) and (max-width: 900px) {
+  .backg
+  {
+    background-size: 70% 70% !important;
+  }
+}
+@media (min-width: 901px) and (max-width: 1000px) {
+  .backg
+  {
+    background-size: 60% 70% !important;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1100px) {
+  .backg
+  {
+    background-size: 55% 70% !important;
+  }
+}
 @media (min-width: 601px) and (max-width: 1100px) {
   .heading {
     font-size: 16px;
@@ -162,6 +181,10 @@
   }
   .btn {
     margin-bottom: -15px;
+  }
+  .backg
+  {
+    background-size: 70% 60%;
   }
 }
 
@@ -176,7 +199,7 @@
     width: 48%;
   }
   .backg {
-    background-size: 55% 69%;
+    background-size: 46% 69%;
   }
 }
 /* @media(min-width:1300px){
