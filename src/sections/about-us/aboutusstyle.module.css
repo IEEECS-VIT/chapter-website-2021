@@ -22,7 +22,7 @@ body {
   margin-top: 27vh;
 }
 .text {
-  max-width: 27vw;
+  max-width: 33vw;
   margin-left: 15vw;
   margin-top: 7vh;
   top: 10vh;
@@ -43,8 +43,8 @@ body {
   height: 300px;
   object-fit: cover;
   display: inline-flex;
-  margin-top: 28vh;
-  margin-left: 20%;
+  margin-top: 30vh;
+  margin-left: 24%;
   border-radius: 50%;
   z-index: 1;
 }
