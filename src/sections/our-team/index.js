@@ -9,7 +9,7 @@ const OurTeamSection = () => {
 
   const cardInfo1 = {
     name: "Mohit Hotwani",
-    image: require("./images/mohit.jpg"),
+    image: require("./images/mohit.png"),
     position: "Chairperson",
     linkedIn: "https://www.linkedin.com/in/mohit-hotwani-719492167/",
 	  github: "https://github.com/mohithotwani01",
@@ -17,7 +17,7 @@ const OurTeamSection = () => {
 
   const cardInfo2 = {
     name: "Aayushi Tated",
-    image: require("./images/aayushi.jpg"),
+    image: require("./images/aayushi.png"),
     position: "Vice Chairperson",
     linkedIn: "https://www.linkedin.com/in/aayushi-tated-898805193/",
     github: "https://github.com/aayushi2000",
