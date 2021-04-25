@@ -36,7 +36,7 @@ const OurTeamSection = () => {
     name: "Lakhan Nad",
     image: require("./images/lakhan.jpg"),
     position: "Technical Head",
-    linkedIn: "https://www.linkedin.com/lakhan-nad",
+    linkedIn: "https://www.linkedin.com/in/lakhan-nad",
     github:"https://github.com/Lakhan-Nad",
   }
 
