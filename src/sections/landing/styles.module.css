@@ -83,6 +83,24 @@
   }
 }
 
+@keyframes movebgMobile {
+  0% {
+    background-position: 50% -30%;
+  }
+  25% {
+    background-position: 50% 8%;
+  }
+  50% {
+    background-position: 50% -10%;
+  }
+  75% {
+    background-position: 50% 5%;
+  }
+  100% {
+    background-position: 50% -5%;
+  }
+}
+
 /* Button styling */
 .btn {
   background-color: transparent;
@@ -121,7 +139,7 @@
     bottom: 7%;
   }
   .backg {
-    background-size: 92% 55%;
+    background-size: 92% auto;
     animation-name: movebg;
   }
 }
@@ -138,8 +156,9 @@
     margin: 10% 5% 0 15%;
   }
   .backg {
-    background-size: 70% 50%;
-    animation-name: movebg;
+    background-size: 70% auto;
+    background-position: 50% -5%;
+    animation-name: movebgMobile;
     background-image: url("../../images/Landing_bg_mobile_light.png");
   }
   .dark {
@@ -154,19 +173,19 @@
 @media (min-width: 801px) and (max-width: 900px) {
   .backg
   {
-    background-size: 70% 70% !important;
+    background-size: 70% auto !important;
   }
 }
 @media (min-width: 901px) and (max-width: 1000px) {
   .backg
   {
-    background-size: 60% 70% !important;
+    background-size: 60% auto !important;
   }
 }
 @media (min-width: 1001px) and (max-width: 1100px) {
   .backg
   {
-    background-size: 55% 70% !important;
+    background-size: 55% auto !important;
   }
 }
 @media (min-width: 601px) and (max-width: 1100px) {
@@ -184,7 +203,7 @@
   }
   .backg
   {
-    background-size: 70% 60%;
+    background-size: 70% auto;
   }
 }
 
@@ -199,7 +218,7 @@
     width: 48%;
   }
   .backg {
-    background-size: 46% 69%;
+    background-size: 46% auto;
   }
 }
 /* @media(min-width:1300px){
