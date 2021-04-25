@@ -29,6 +29,7 @@
 .announcementOuter {
   border: black;
   text-align: center;
+  min-height: 5% !important;
   /* margin-top: 10% !important; */
   /* border: solid 1px white; */
   /* position: relative; */
@@ -85,19 +86,19 @@
 
 @keyframes movebgMobile {
   0% {
-    background-position: 50% -30%;
+    background-position: 50% -40%;
   }
   25% {
-    background-position: 50% 8%;
-  }
-  50% {
-    background-position: 50% -10%;
-  }
-  75% {
     background-position: 50% 5%;
   }
+  50% {
+    background-position: 50% -20%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
   100% {
-    background-position: 50% -5%;
+    background-position: 50% -10%;
   }
 }
 
@@ -157,7 +158,7 @@
   }
   .backg {
     background-size: 70% auto;
-    background-position: 50% -5%;
+    background-position: 50% -10%;
     animation-name: movebgMobile;
     background-image: url("../../images/Landing_bg_mobile_light.png");
   }
@@ -167,6 +168,10 @@
 
   .btn {
     bottom: 10%;
+  }
+  .announcementOuter {
+    min-height: 25% !important;
+    /* border: solid 1px black; */
   }
 }
 
