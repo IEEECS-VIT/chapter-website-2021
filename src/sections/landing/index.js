@@ -22,7 +22,7 @@ const Landing = () => {
           <h1>Engineers</h1>
         </div>
         <div className={styles.announcementOuter}>
-        <Announcement />
+        {/* <Announcement /> */}
         </div>
         <p className={styles.text}>
           We strive to be the leading provider of technical information,
