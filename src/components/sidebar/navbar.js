@@ -56,7 +56,7 @@ const Menu = ({ open, setOpen }) => {
             scrollTo("#Achievements")
           }}
         >
-          Achievements
+          Accolades
         </button>
         <button
           onClick={() => {

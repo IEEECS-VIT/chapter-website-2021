@@ -3,7 +3,7 @@ body {
 }
 
 .showNav {
-  padding-bottom: 2.5%;
+  padding-bottom: 17px;
   position: fixed;
   width: 100%;
   margin: 0;
@@ -11,6 +11,7 @@ body {
   opacity: 1;
   transition: 0.3s ease-in-out;
   z-index: 2;
+  vertical-align: middle;
 }
 
 .StyledMenu {
@@ -137,12 +138,13 @@ input:checked + label:after {
 
 .toggleSpan {
   color: white;
-  display: inline-block;
   position: absolute;
   margin-top: 140%;
-  margin-left: 28%;
   font-family: "Montserrat", "sans-serif";
+  display: inline-block;
+  margin-left: 30%;
 }
+
 .logo {
   z-index: 3;
   height: 35px;
@@ -189,14 +191,12 @@ input:checked + label:after {
     background: #a9a9a9;
     opacity: 0.9;
   }
-  span {
+  .toggleSpan {
     margin-top: 80%;
   }
-
   label {
     margin-top: 80%;
   }
-
   .logo2.Open {
     display: inline-block;
     z-index: 3;
@@ -209,8 +209,5 @@ input:checked + label:after {
   }
   .logo.Open {
     display: none;
-  }
-  .logo.Close {
-    display: block;
   }
 }
