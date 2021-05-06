@@ -52,6 +52,8 @@ const Slider = props => {
       setcurrentIndex(currentIndex + 1)
     } else if (movedBy > 50 && currentIndex > 0) {
       setcurrentIndex(currentIndex - 1)
+    } else if (movedBy > 50 && currentIndex == 0) {
+      props.setshowSlider(false)
     }
     setcurrentIndex(state => {
       setPositionByIndex(state)
@@ -69,6 +71,8 @@ const Slider = props => {
         setPositionByIndex(state)
         return state
       })
+    } else if (i === -1) {
+      props.setshowSlider(false)
     }
   }
   const setSliderPosition = (state = currentTranslate) => {

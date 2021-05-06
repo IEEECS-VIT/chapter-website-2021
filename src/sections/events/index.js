@@ -30,7 +30,7 @@ const Events = () => {
         showSlider={showSlider}
         setshowSlider={setshowSlider}
       />
-      {showSlider ? <Slider isDark={isDark} /> : null}
+      {showSlider ? <Slider isDark={isDark} setshowSlider={setshowSlider} /> : null}
     </div>
   )
 }
