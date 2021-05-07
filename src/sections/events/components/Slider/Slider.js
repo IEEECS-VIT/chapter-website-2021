@@ -29,7 +29,7 @@ const Slider = props => {
     setisDragging(true)
     setanimationID(requestAnimationFrame(animation))
   }
-
+  const totalEvents = 7
   function touchMove(event) {
     if (isDragging) {
       const currentPosition = getPositionX(event)
@@ -48,12 +48,10 @@ const Slider = props => {
     cancelAnimationFrame(animationID)
     setisDragging(false)
     const movedBy = currentTranslate - prevTranslate
-    if (movedBy < -50 && currentIndex < 5) {
-      setcurrentIndex(currentIndex + 1)
-    } else if (movedBy > 50 && currentIndex > 0) {
-      setcurrentIndex(currentIndex - 1)
-    } else if (movedBy > 50 && currentIndex == 0) {
-      props.setshowSlider(false)
+    if (movedBy < -50) {
+      setcurrentIndex((currentIndex + 1) % totalEvents)
+    } else if (movedBy > 50) {
+      setcurrentIndex((currentIndex - 1 + totalEvents) % totalEvents)
     }
     setcurrentIndex(state => {
       setPositionByIndex(state)
@@ -65,15 +63,12 @@ const Slider = props => {
     if (isDragging) requestAnimationFrame(animation)
   }
   const buttonSelect = i => {
-    if (i >= 0 && i <= 6) {
-      setcurrentIndex(i)
-      setcurrentIndex(state => {
-        setPositionByIndex(state)
-        return state
-      })
-    } else if (i === -1) {
-      props.setshowSlider(false)
-    }
+    i = (i + totalEvents) % totalEvents
+    setcurrentIndex(i)
+    setcurrentIndex(state => {
+      setPositionByIndex(state)
+      return state
+    })
   }
   const setSliderPosition = (state = currentTranslate) => {
     setTransform(`translateX(${state}px)`)
@@ -98,7 +93,7 @@ const Slider = props => {
     }
   }, [])
   let buttons = []
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < totalEvents; i++) {
     buttons.push(
       <button
         key={i}

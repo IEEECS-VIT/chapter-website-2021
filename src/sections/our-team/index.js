@@ -121,7 +121,7 @@ const OurTeamSection = () => {
       <div className={classes.headerWrapper}>
         {/* Header */}
         <h3 className={`${classes.header} ${isDark && classes.dark}`}>
-          We Have
+          And Here We Have
         </h3>
         <h1 className={classes.title}>Our Team</h1>
         <h6 className={`${classes.subTitle} ${isDark && classes.dark}`}>

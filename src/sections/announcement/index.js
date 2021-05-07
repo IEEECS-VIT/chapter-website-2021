@@ -3,7 +3,7 @@ import styles from "./announcementstyle.module.css"
 import close from "../../images/close.png"
 import closeWhite from "../../images/close_white.png"
 import { useThemeValue } from "../../utils/context"
-import {AiOutlineInfoCircle} from "react-icons/ai"
+import { AiOutlineInfoCircle } from "react-icons/ai"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Announcement = () => {
@@ -23,14 +23,15 @@ const Announcement = () => {
       }`}
     >
       <div className={styles.text}>
-       <AiOutlineInfoCircle size="1.5rem"/>&ensp; Want to get in touch?&nbsp;
-       <a
+        <AiOutlineInfoCircle size="1.5rem" />
+        &ensp; Want to get in touch?&nbsp;
+        <button
           onClick={() => {
             scrollTo("#Contact")
           }}
         >
           Message Us!
-        </a> 
+        </button>
       </div>
       <button
         onKeyPress={handleClick}

@@ -13,7 +13,7 @@ const Menu = ({ open, setOpen }) => {
     if (isDark !== checked) {
       setChecked(isDark)
     }
-  })
+  }, [isDark, checked])
   const handleChange = () => {
     toggleTheme()
     setChecked(!checked)
