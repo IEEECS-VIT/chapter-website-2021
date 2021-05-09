@@ -17,15 +17,15 @@ const Landing = () => {
         className={`${styles.home} ${styles.backg} ${isDark && styles.dark}`}
       >
         <div className={styles.heading}>
-          <p> WHAT ARE WE ?</p>
-          <h1>An Elite Group of</h1>
-          <h1>Engineers</h1>
+          <p>&nbsp;</p>
+          <h1>If It's Digital, Then </h1>
+          <h1>We're The <span className={`${styles.caption}`}>Ones</span> You Need.</h1>
         </div>
         <div className={styles.announcementOuter}>
         {/* <Announcement /> */}
         </div>
         <p className={styles.text}>
-          We strive to be the leading provider of technical information,
+          We, at IEEE Computer Society, strive to be the leading provider of technical information,
           community services, and personalized support to the world’s computer
           science and technology communities{" "}
         </p>

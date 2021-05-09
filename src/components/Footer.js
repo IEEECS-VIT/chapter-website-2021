@@ -43,14 +43,14 @@ const Footer = () => {
                 <p>Contact</p>
               </div>
             </div>
-            <div className={classes.col1}>
+            {/* <div className={classes.col1}>
               <span className={classes.title}>Events</span>
               <div className={classes.para}>
                 <p>Arcs</p>
                 <p>Hackbattle</p>
                 <p>Mozdev</p>
               </div>
-            </div>
+            </div> */}
             {/* <div className={classes.col1}>
             <span className={classes.title}>Projects</span>
             <div className={classes.para}>
@@ -66,8 +66,12 @@ const Footer = () => {
                 <p>ieeecs@vit.ac.in</p>
               </div>
             </div>
-
-            <div className={classes.col1} style={{ flexGrow: 2 }}>
+            <div className={classes.footerAbout}>
+              <p>We, here at IEEECS, nurture the coders and leaders of tomorrow. We empower and support new ideas giving them a platform to shine. 
+                IEEECS has been a home to great ideas capable of bringing a better future for all. </p>
+            </div>
+          </div>
+          <div className={`${classes.mobileLogoDiv}`} style={{ flexGrow: 2 }}>
               <div className={classes.logo_2}>
                 <img
                   className={classes.ieee_logo}
@@ -79,9 +83,9 @@ const Footer = () => {
                 <br></br>
                 <span className={classes.text}>Accrete Your Knowledge</span>
               </div>
-            </div>
-          </div>
+           </div>
         </div>
+        <div></div>
       </div>
     </div>
   )
