@@ -1,4 +1,5 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 import { useThemeValue } from "../utils/context"
 import classes from "./styles.module.css"
 
@@ -37,10 +38,38 @@ const Footer = () => {
             <div className={classes.col1}>
               <span className={classes.title}>Menu</span>
               <div className={classes.para}>
-                <p>About</p>
+              <p
+                onClick={() => {
+                  scrollTo("#About")
+                }}
+              >
+                About
+              </p>
+              <p
+                onClick={() => {
+                  scrollTo("#Events")
+                }}
+              >
+                Events
+              </p>
+              <p
+                onClick={() => {
+                  scrollTo("#Team")
+                }}
+              >
+                Team
+              </p>
+              <p
+                onClick={() => {
+                  scrollTo("#Contact")
+                }}
+              >
+                Contact
+              </p>
+                {/* <p>About</p>
                 <p>Events</p>
                 <p>Gallery</p>
-                <p>Contact</p>
+                <p>Contact</p> */}
               </div>
             </div>
             {/* <div className={classes.col1}>
@@ -63,7 +92,7 @@ const Footer = () => {
             <div className={classes.col1}>
               <span className={classes.title}>Contact&nbsp;us </span>
               <div className={classes.para}>
-                <p>ieeecs@vit.ac.in</p>
+                <p><a href="mailto:ieeecsvit@gmail.com">ieeecsvit@gmail.com</a></p>
               </div>
             </div>
             <div className={classes.footerAbout}>
