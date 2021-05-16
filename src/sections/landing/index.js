@@ -17,9 +17,9 @@ const Landing = () => {
         className={`${styles.home} ${styles.backg} ${isDark && styles.dark}`}
       >
         <div className={styles.heading}>
-          <p> WHAT ARE WE ?</p>
-          <h1>An Elite Group of</h1>
-          <h1>Engineers</h1>
+          <p>&nbsp;</p>
+          <h1>We Live in a</h1>
+          <h1><span className={`${styles.caption}`}>Computer</span> Society.</h1>
         </div>
         <div className={styles.announcementOuter}>
         {/* <Announcement /> */}
@@ -27,7 +27,7 @@ const Landing = () => {
         <p className={styles.text}>
           We strive to be the leading provider of technical information,
           community services, and personalized support to the world’s computer
-          science and technology communities{" "}
+          science and technology communities. We are IEEE Computer Society.{" "}
         </p>
         
       

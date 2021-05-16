@@ -16,19 +16,21 @@ const Achievements = () => {
       </div>
 
       <div className={classes.content}>
-        Having won the award for "Best Chapter" twice, once in 2017 and then
-        again in 2019, we at IEEE Computer Society VIT have no shortage of
-        achievements. Our members have won 18 hackathons some of which were
-        conducted by giants such as PayPal, AngelHack and NASA. We are also
-        recognized globally, our members represented the country at CANSAT18
-        organised by NASA and the European Rover challenge 18 organized by
-        European space agency. 14 research papers have been published by our
-        members, 2 being featured in the IEEE journal itself. Not just this, but
-        our members have been the recipient of the prestigious Richard E Merwin
-        scholarship. It’s not just about winning but also participation and
-        leadership. Our members actively work with IEEE, by volunteering for
-        IEEE Compute and other such features. Our members have also served as
-        the team leads for IEEE CSIS and AICSSYC’19.
+        2-time ‘Most Outstanding Student Chapter’ Award Winners in the years
+        2017 and 2019 at All India IEEE Computer Society Student &amp; Young
+        Professional Congress , 22+ Hack-a-thons conquered, some organized by
+        NASA, AngelHack, and PayPal and 23 research papers published with 2
+        being featured in the IEEE journal are just the tip of the iceberg. We
+        have represented the country at CanSat 18 and the European Rover
+        Challenge’18 organized by the European Space Agency. The prestigious
+        Richard E. Merwin scholarship has been awarded to 3 of our very own
+        members for their valuable contributions to the Computer Society. The
+        Student branch has been a remarkable administrator for providing
+        proactive volunteers in official IEEE events like IEEE YESIST12, IEEE
+        WIE PBL, IEEE Compute, TechX’19 IEEE Kolkata Section, IEEE IPL to name a
+        few. Some of our members have headed and set new bars for the events
+        like IEEE CSIS, AICSSYC'19, STEP’20 IEEE Madras Section by serving there
+        as Team Leads.
       </div>
       <div className={classes.numberContainer}>
         <div className={classes.box}>
@@ -95,7 +97,6 @@ const Achievements = () => {
       </div>
     </div>
   )
-
 }
 
 export default Achievements

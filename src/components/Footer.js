@@ -1,4 +1,5 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 import { useThemeValue } from "../utils/context"
 import classes from "./styles.module.css"
 
@@ -37,20 +38,48 @@ const Footer = () => {
             <div className={classes.col1}>
               <span className={classes.title}>Menu</span>
               <div className={classes.para}>
-                <p>About</p>
+              <p
+                onClick={() => {
+                  scrollTo("#About")
+                }}
+              >
+                About
+              </p>
+              <p
+                onClick={() => {
+                  scrollTo("#Events")
+                }}
+              >
+                Events
+              </p>
+              <p
+                onClick={() => {
+                  scrollTo("#Team")
+                }}
+              >
+                Team
+              </p>
+              <p
+                onClick={() => {
+                  scrollTo("#Contact")
+                }}
+              >
+                Contact
+              </p>
+                {/* <p>About</p>
                 <p>Events</p>
                 <p>Gallery</p>
-                <p>Contact</p>
+                <p>Contact</p> */}
               </div>
             </div>
-            <div className={classes.col1}>
+            {/* <div className={classes.col1}>
               <span className={classes.title}>Events</span>
               <div className={classes.para}>
                 <p>Arcs</p>
                 <p>Hackbattle</p>
                 <p>Mozdev</p>
               </div>
-            </div>
+            </div> */}
             {/* <div className={classes.col1}>
             <span className={classes.title}>Projects</span>
             <div className={classes.para}>
@@ -63,11 +92,15 @@ const Footer = () => {
             <div className={classes.col1}>
               <span className={classes.title}>Contact&nbsp;us </span>
               <div className={classes.para}>
-                <p>ieeecs@vit.ac.in</p>
+                <p><a href="mailto:ieeecsvit@gmail.com">ieeecsvit@gmail.com</a></p>
               </div>
             </div>
-
-            <div className={classes.col1} style={{ flexGrow: 2 }}>
+            <div className={classes.footerAbout}>
+              <p>We, here at IEEECS, nurture the coders and leaders of tomorrow. We empower and support new ideas giving them a platform to shine. 
+                IEEECS has been a home to great ideas capable of bringing a better future for all. </p>
+            </div>
+          </div>
+          <div className={`${classes.mobileLogoDiv}`} style={{ flexGrow: 2 }}>
               <div className={classes.logo_2}>
                 <img
                   className={classes.ieee_logo}
@@ -79,9 +112,9 @@ const Footer = () => {
                 <br></br>
                 <span className={classes.text}>Accrete Your Knowledge</span>
               </div>
-            </div>
-          </div>
+           </div>
         </div>
+        <div></div>
       </div>
     </div>
   )
