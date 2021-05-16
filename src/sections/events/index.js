@@ -9,9 +9,12 @@ const Events = () => {
   const { isDark } = useThemeValue()
   const scrollFunc = () => {
     const EventDiv = document.getElementsByClassName(Style.Events)[0]
-    if (EventDiv.offsetTop - EventDiv.clientHeight / 3 < window.scrollY) {
+    if (
+      EventDiv.offsetTop - EventDiv.clientHeight / 3 < window.scrollY &&
+      window.scrollY < EventDiv.offsetTop + (2 * EventDiv.clientHeight) / 3
+    ) {
       setshowMain(true)
-    } else if (EventDiv.offsetTop - EventDiv.clientHeight > window.scrollY) {
+    } else {
       setshowMain(false)
       setshowSlider(false)
     }

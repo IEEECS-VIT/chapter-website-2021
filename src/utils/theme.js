@@ -26,7 +26,8 @@ const ThemeProvider = ({ children }) => {
       window.localStorage.setItem("theme-data", savedState)
     }
     if (prefersDark === false) {
-      toggleTheme()
+      window.localStorage.setItem("theme-data", "lightTheme")
+      setIsDark(false)
     }
   }, [])
   return (

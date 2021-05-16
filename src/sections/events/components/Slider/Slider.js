@@ -6,7 +6,6 @@ import bg2 from "../../components/svg/bgSvg/bgSvg2.png"
 import bg3 from "../../components/svg/bgSvg/bgSvg3.png"
 import img1 from "../../components/svg/sliderImg/img1.png"
 import img2 from "../../components/svg/sliderImg/img2.png"
-import img3 from "../../components/svg/sliderImg/img3.png"
 import img4 from "../../components/svg/sliderImg/img4.png"
 import img5 from "../../components/svg/sliderImg/img5.png"
 
@@ -29,7 +28,7 @@ const Slider = props => {
     setisDragging(true)
     setanimationID(requestAnimationFrame(animation))
   }
-
+  const totalEvents = 6
   function touchMove(event) {
     if (isDragging) {
       const currentPosition = getPositionX(event)
@@ -48,10 +47,10 @@ const Slider = props => {
     cancelAnimationFrame(animationID)
     setisDragging(false)
     const movedBy = currentTranslate - prevTranslate
-    if (movedBy < -50 && currentIndex < 5) {
-      setcurrentIndex(currentIndex + 1)
-    } else if (movedBy > 50 && currentIndex > 0) {
-      setcurrentIndex(currentIndex - 1)
+    if (movedBy < -50) {
+      setcurrentIndex((currentIndex + 1) % totalEvents)
+    } else if (movedBy > 50) {
+      setcurrentIndex((currentIndex - 1 + totalEvents) % totalEvents)
     }
     setcurrentIndex(state => {
       setPositionByIndex(state)
@@ -63,13 +62,12 @@ const Slider = props => {
     if (isDragging) requestAnimationFrame(animation)
   }
   const buttonSelect = i => {
-    if (i >= 0 && i <= 6) {
-      setcurrentIndex(i)
-      setcurrentIndex(state => {
-        setPositionByIndex(state)
-        return state
-      })
-    }
+    i = (i + totalEvents) % totalEvents
+    setcurrentIndex(i)
+    setcurrentIndex(state => {
+      setPositionByIndex(state)
+      return state
+    })
   }
   const setSliderPosition = (state = currentTranslate) => {
     setTransform(`translateX(${state}px)`)
@@ -94,7 +92,7 @@ const Slider = props => {
     }
   }, [])
   let buttons = []
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < totalEvents; i++) {
     buttons.push(
       <button
         key={i}
@@ -147,17 +145,17 @@ const Slider = props => {
           }}
           touchEnd={touchEnd}
           touchMove={touchMove}
-          bgImg={bg1}
+          bgImg={bg2}
           isDark={props.isDark}
-          head="Rivera Cyber Hunt"
-          subHead="Coding Treasure Hunt"
-          img={img1}
-          isLeft={true}
+          head="ARCS"
+          subHead="The Flagship event"
+          img={img2}
         >
-          Riviera is the Annual International Sports and Cultural Carnival of
-          the VIT, Vellore. In the spirit of the carnival, IEEE- Computer
-          Society organizes informal events for the students. For Riviera IEEE
-          Computer Society organized Cyber Hunt.
+          A Technical colloquium where participants learn and get inspired from
+          the best in the business through numerous workshops and a Convoke. It
+          also has a 36-hr Hack-a-thon wherein ideas come to life. With a big
+          prize pool and an even larger participant base, it is one of the most
+          popular Solo Events in VIT.
         </Slide>
         <Slide
           isActive={currentIndex === 1}
@@ -166,17 +164,16 @@ const Slider = props => {
           }}
           touchEnd={touchEnd}
           touchMove={touchMove}
-          bgImg={bg2}
+          bgImg={bg3}
           isDark={props.isDark}
-          head="ARCS"
-          subHead="Our Flagship Event"
-          img={img2}
+          head="HackBattle"
+          subHead="The Battle of Bright Minds"
+          img={img4}
         >
-          ARCS is a technical colloquium hosted by IEEE-Computer Society (VIT),
-          which aims at improving the knowledge of the young enthusiastic minds.
-          The 2019 edition of ARCS had five workshops, a Hack-A-Thon of 36 hours
-          and convoke . It witnessed participation of thousands of students from
-          all over the country.
+          A 2-day race to innovation, of developers where the most staunch and
+          inventive prevail. Where inspiration is served in heaps and bounds by
+          our most astounding guests, as they take the stage to shower their
+          knowledge.
         </Slide>
         <Slide
           isActive={currentIndex === 2}
@@ -185,16 +182,17 @@ const Slider = props => {
           }}
           touchEnd={touchEnd}
           touchMove={touchMove}
-          bgImg={bg3}
+          bgImg={bg1}
           isDark={props.isDark}
-          head="Convoke"
-          subHead="A 2-Day Conclave"
-          img={img3}
+          head="MozDev"
+          subHead="The Legacy Event"
+          img={img5}
           isLeft={true}
         >
-          A 2-Day Conclave which will give you an opportunity to stand witness
-          to amazing sessions from impactful orators and spell-bounding artists,
-          who have a lot to offer for our future endeavors.
+          A premium 6 hour hands-on session on Web Development for the
+          developers of tomorrow. The workshop is delivered by an industry
+          experts from the Mozilla Open-Source Community. Novice learners
+          looking for a perfect kick-start to their career are most welcomed!
         </Slide>
         <Slide
           isActive={currentIndex === 3}
@@ -203,15 +201,15 @@ const Slider = props => {
           }}
           touchEnd={touchEnd}
           touchMove={touchMove}
-          bgImg={bg3}
+          bgImg={bg2}
           isDark={props.isDark}
-          head="HackBattle"
-          subHead="36 hour Hack-A-Thon"
-          img={img4}
+          head="Cicada 3302"
+          subHead="The Colossal Conundrum"
+          img={img1}
         >
-          A 2-Day Conclave which will give you an opportunity to stand witness
-          to amazing sessions from impactful orators and spell-bounding artists,
-          who have a lot to offer for our future endeavors.
+          A virtual maze filled with a series of mind-boggling puzzles and
+          hidden messages. The event enjoys extreme popularity amongst the
+          cryptic geeks and is one of the most sought-after.
         </Slide>
         <Slide
           isActive={currentIndex === 4}
@@ -220,17 +218,16 @@ const Slider = props => {
           }}
           touchEnd={touchEnd}
           touchMove={touchMove}
-          bgImg={bg1}
+          bgImg={bg3}
           isDark={props.isDark}
-          head="MozDev"
-          subHead="Hands-on Web Development Workshop"
-          img={img5}
+          head="Think Before Code"
+          subHead="The World is Competitive."
+          img={img2}
           isLeft={true}
         >
-          MozDev is a hands-on workshop, which provides you an insight into the
-          field of web development. This 6-hour workshop conducted by industry
-          experts from Mozilla Open-Source Community will get you the best
-          possible exposure.
+          An adventure ride for the competitive coders, TBC is your chance to
+          unleash the problem solver within you. Get your head gears on, fasten
+          the seatbelts you dive into the ocean of critical thinking!
         </Slide>
         <Slide
           isActive={currentIndex === 5}
@@ -239,36 +236,16 @@ const Slider = props => {
           }}
           touchEnd={touchEnd}
           touchMove={touchMove}
-          bgImg={bg2}
+          bgImg={bg1}
           isDark={props.isDark}
-          head="Cicada 3302"
-          subHead="Cryptography Event"
+          head="Cyber Hunt"
+          subHead="A hunt with Code-Snippets"
           img={img1}
-        >
-          Have a knack for puzzles and cryptography? Then Cicada 3302 is just
-          the event for you, an event which has unique and brain teasing puzzle
-          tracks, paying homage to ancient and modern methods of code-breaking,
-          with endless fun and hidden meanings.
-        </Slide>
-        <Slide
-          isActive={currentIndex === 6}
-          touchStart={event => {
-            touchStart(event, 6)
-          }}
-          touchEnd={touchEnd}
-          touchMove={touchMove}
-          bgImg={bg3}
-          isDark={props.isDark}
-          head="Think Before Code"
-          subHead="Competitive Coding Event"
-          img={img2}
           isLeft={true}
         >
-          It has always been an incredible adventure for a programmer to learn
-          and to compete when it comes to coding. Wouldn't it be interesting if
-          you could solve programs with more than one algorithm? Get ready with
-          all your coding skills and you gonna enjoy the ride of this
-          competitive programming competition,
+          Nothing screams adventure more than a Treasure Hunt. IEEE-CS brings
+          forth the greatest cyber odyssey every Riviera! Read between the lines
+          and rally your coding skills to the ultimate prize.
         </Slide>
       </div>
       <div className={Style.Buttons}>{buttons}</div>
