@@ -30,13 +30,11 @@ const EventsMain = props => {
       <img className={Style.Half2} src={ellipse} alt="half2" />
       <div className={Style.Middle}>
         <div className={Style.Text}>
-          <h3>We have amazing</h3>
-          <h1>EVENTS</h1>
-          <div>
-            Planning an event feels like a dream that reality can never live up
-            to, till we end up pulling it off. Organizing events help not only
-            the attendees but also all of us, both as coders and as people.
-          </div>
+          <h3>Have you been to any of our</h3>
+          <h1>
+            <super>EVENTS</super>
+          </h1>
+          <div>You should some time!</div>
           <button
             onClick={() => {
               props.setshowSlider(true)
