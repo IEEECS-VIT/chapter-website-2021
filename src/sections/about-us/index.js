@@ -1,23 +1,36 @@
 import React from "react"
-import styles from './aboutusstyle.module.css';
-import clubimg from '../../images/club.png'
-import dot from '../../images/Bg_Lisght.png'
+import styles from "./aboutusstyle.module.css"
+import clubimg from "../../images/club.png"
+import dot from "../../images/Bg_Lisght.png"
 import { useThemeValue } from "../../utils/context"
 const AboutUs = () => {
   const { isDark } = useThemeValue()
   return (
     <div className={`${styles.about} ${isDark && styles.dark}`}>
-                <div className={styles.hollowcircle}></div>
-                <img className={styles.dot} src={dot} alt="dotted"></img>
-                <div className={styles.aboutus}>About Us</div>
-                <img className={styles.clubimg} src={clubimg} alt="club"></img>
-                <div className={styles.text}>We, here at IEEECS, nurture the coders and leaders of tomorrow. We empower and support new ideas giving them a platform to shine. IEEECS has been a home to great ideas capable of bringing a better future for all.<br></br> Its been almost a decade since IEEECS VIT has been operating and it has sent out capable individuals out into the world. One of the best technical chapters in VIT, IEEECS has maintained a sense of curiosity and wonder among the students of this campus in the field of technology by hosting events pertaining to the trending technology.<br></br> But above all, IEEECS has been a home to all those who are technologically inclined and has been responsible for sparking curiosity in the minds of today's techies. </div>
-                <div className={styles.circle1}></div>
-                <div className={styles.circle2}></div>
-                <div className={styles.circle3}></div>
-                <div className={styles.circle4}></div>
-                <div className={styles.circle5}></div>
-                <div className={styles.circle6}></div>
+      <div className={styles.hollowcircle}></div>
+      <img className={styles.dot} src={dot} alt="dotted"></img>
+      <div className={styles.aboutus}>About Us</div>
+      <img className={styles.clubimg} src={clubimg} alt="club"></img>
+      <div className={styles.text}>
+        IEEE Computer Society, VIT, is an eminent Student Branch belonging to
+        the Madras Section of IEEE Region 10. Formed in the February of 2012, we
+        aim to solve the modern-day problems by understanding and harnessing
+        cutting-edge technologies. We empower and support new ideas and
+        innovations, as well as strive to provide them a platform to rise and
+        shine. We are at the forefront for conducting and participating in elite
+        technical events, workshops, sessions and delivering high quality
+        projects to our partners and collaborators.<br></br> Internationally
+        recognized as the symbol of technical expertise and professionalism,
+        IEEE Computer Society has been a home to all inquisitive minds out
+        there, encouraging, motivating, and shaping them to face present-day
+        challenges, and conquer the same.{" "}
+      </div>
+      <div className={styles.circle1}></div>
+      <div className={styles.circle2}></div>
+      <div className={styles.circle3}></div>
+      <div className={styles.circle4}></div>
+      <div className={styles.circle5}></div>
+      <div className={styles.circle6}></div>
     </div>
   )
 }

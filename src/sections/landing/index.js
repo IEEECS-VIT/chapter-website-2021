@@ -18,16 +18,16 @@ const Landing = () => {
       >
         <div className={styles.heading}>
           <p>&nbsp;</p>
-          <h1>If It's Digital, Then </h1>
-          <h1>We're The <span className={`${styles.caption}`}>Ones</span> You Need.</h1>
+          <h1>We Live in a</h1>
+          <h1><span className={`${styles.caption}`}>Computer</span> Society.</h1>
         </div>
         <div className={styles.announcementOuter}>
         {/* <Announcement /> */}
         </div>
         <p className={styles.text}>
-          We, at IEEE Computer Society, strive to be the leading provider of technical information,
+          We strive to be the leading provider of technical information,
           community services, and personalized support to the world’s computer
-          science and technology communities{" "}
+          science and technology communities. We are IEEE Computer Society.{" "}
         </p>
         
       

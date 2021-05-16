@@ -19,16 +19,16 @@ body {
   font-size: 45px;
   font-family: "Montserrat", sans-serif;
   margin-left: 15vw;
-  margin-top: 27vh;
+  margin-top: 25vh;
 }
 .text {
   max-width: 33vw;
   margin-left: 15vw;
-  margin-top: 7vh;
+  margin-top: 5vh;
   top: 10vh;
   grid-column: span 6;
   text-align: justify;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   z-index: 1;
 }
@@ -43,8 +43,8 @@ body {
   height: 300px;
   object-fit: cover;
   display: inline-flex;
-  margin-top: 30vh;
-  margin-left: 24%;
+  margin-top: 32vh;
+  margin-left: 26%;
   border-radius: 50%;
   z-index: 1;
 }
@@ -141,7 +141,15 @@ body {
   z-index: -1;
   bottom: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
+  .text{
+    font-size: 14px;
+  }
+  .clubimg {
+    margin-left: 22%;
+  }
+}
+@media screen and (max-width: 790px) {
   .about {
     grid-template-rows: min-content;
     text-align: center;
