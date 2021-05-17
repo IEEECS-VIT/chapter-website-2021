@@ -169,6 +169,7 @@ const Slider = props => {
           head="HackBattle"
           subHead="The Battle of Bright Minds"
           img={img4}
+          isLeft={true}
         >
           A 2-day race to innovation, of developers where the most staunch and
           inventive prevail. Where inspiration is served in heaps and bounds by
@@ -187,7 +188,6 @@ const Slider = props => {
           head="MozDev"
           subHead="The Legacy Event"
           img={img5}
-          isLeft={true}
         >
           A premium 6 hour hands-on session on Web Development for the
           developers of tomorrow. The workshop is delivered by an industry
@@ -206,6 +206,7 @@ const Slider = props => {
           head="Cicada 3302"
           subHead="The Colossal Conundrum"
           img={img1}
+          isLeft={true}
         >
           A virtual maze filled with a series of mind-boggling puzzles and
           hidden messages. The event enjoys extreme popularity amongst the
@@ -223,7 +224,6 @@ const Slider = props => {
           head="Think Before Code"
           subHead="The World is Competitive."
           img={img2}
-          isLeft={true}
         >
           An adventure ride for the competitive coders, TBC is your chance to
           unleash the problem solver within you. Get your head gears on, fasten
