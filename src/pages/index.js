@@ -1,9 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import AboutUs from "../sections/about-us"
-
 import Achievements from "../sections/achievement"
-
 import ContactUs from "../sections/contact-us"
 import Events from "../sections/events"
 import OurTeam from "../sections/our-team"
@@ -31,23 +29,23 @@ const Index = () => {
       </Helmet>
       <div>
         <Template>
-          <Circle />
-          <Landing />
-          <div id="About">
-            <AboutUs />
-          </div>
-          <div id="Events">
-            <Events />
-          </div>
-          <div id="Achievements">
-            <Achievements />
-          </div>
-          <div id="Team">
-            <OurTeam />
-          </div>
-          <div id="Contact">
-            <ContactUs />
-          </div>
+            <Circle />
+            <Landing />
+            <div id="About">
+              <AboutUs />
+            </div>
+            <div id="Events">
+              <Events />
+            </div>
+            <div id="Achievements">
+              <Achievements />
+            </div>
+            <div id="Team">
+              <OurTeam />
+            </div>
+            <div id="Contact">
+              <ContactUs />
+            </div>
         </Template>
       </div>
     </div>

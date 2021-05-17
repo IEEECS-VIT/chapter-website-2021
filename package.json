@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@rehooks/window-scroll-position": "^1.0.1",
+    "axios": "^0.21.1",
+    "dotenv": "^8.6.0",
     "gatsby": "^2.32.4",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-google-analytics": "^2.11.0",
@@ -25,6 +27,7 @@
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-transformer-sharp": "^2.12.0",
+    "nodemailer": "^6.6.0",
     "react": "^16.13.1",
     "react-backdrop-filter": "^2.1.0",
     "react-dom": "^16.13.1",
