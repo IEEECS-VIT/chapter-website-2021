@@ -9,6 +9,7 @@
 }
 
 .header {
+  padding-top: 3%;
   color: rgba(8, 8, 8, 0.8);
   font-size: 1.55rem;
   margin-top: 3px;
@@ -49,6 +50,15 @@
   background-color: #000000;
 }
 
+@media only screen and (max-width: 600px) {
+  .header{
+    padding-top: 10% !important;
+    font-size: 1.15rem;
+  }
+  .subTitle {
+    font-size: 0.9rem;
+  }
+}
 @media only screen and (max-width: 320px) {
   .container {
     margin: 0;

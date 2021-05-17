@@ -30,9 +30,9 @@ const EventsMain = props => {
       <img className={Style.Half2} src={ellipse} alt="half2" />
       <div className={Style.Middle}>
         <div className={Style.Text}>
-          <h3>Have you been to any of our</h3>
+          <h3>Have You Been to Any of Our</h3>
           <h1>
-            <super>EVENTS</super>
+            <super>EVENTS?</super>
           </h1>
           <div>You should some time!</div>
           <button
