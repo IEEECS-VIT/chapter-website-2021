@@ -3,6 +3,7 @@ import classes from "./styles.module.css"
 import axios from "axios"
 
 const ContactForm = () => {
+  const [isSubmitting, setSubmitting] = useState(false)
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
@@ -20,6 +21,7 @@ const ContactForm = () => {
   const handleSubmit = event => {
     event.preventDefault()
     validateContent()
+    setSubmitting(true)
     axios
       .post(
         "/.netlify/functions/send-mail",
@@ -45,9 +47,11 @@ const ContactForm = () => {
         } else {
           // some other error
         }
+        setSubmitting(false)
       })
       .catch(err => {
         // some error
+        setSubmitting(false)
       })
   }
   return (
@@ -92,7 +96,7 @@ const ContactForm = () => {
         />
       </div>
       <div className={classes.formgroup}>
-        <button className={classes.submitButton} type="submit">
+        <button className={classes.submitButton} type="submit" disabled={isSubmitting}>
           Submit
         </button>
       </div>
