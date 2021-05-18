@@ -1,9 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import AboutUs from "../sections/about-us"
-
 import Achievements from "../sections/achievement"
-
 import ContactUs from "../sections/contact-us"
 import Events from "../sections/events"
 import OurTeam from "../sections/our-team"
@@ -27,27 +25,33 @@ const Index = () => {
           rel="stylesheet"
         ></link>
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+        <meta charset="UTF-8" />
+        <meta property="og:title" content="IEEE Computer Society VIT" />
+        <meta property="og:image" content="src/images/logoicon.png" />
+        <meta property="og:url" content="http://www.ieeecsvit.com" />
+        <meta property="og:description" content="The Official Website of IEEE-CS VIT." />
+        <meta name="keywords" content="IEEECS, IEEE, IEEE Computer Society, IEEE Computer Society VIT, IEEE-CS VIT, VIT, vit, ARCS, HackBattle, HackBattle '20, ieeecsvit, ieeecs"/>
         {/* <link rel="stylesheet" href="./global.css" /> */}
       </Helmet>
       <div>
         <Template>
-          <Circle />
-          <Landing />
-          <div id="About">
-            <AboutUs />
-          </div>
-          <div id="Events">
-            <Events />
-          </div>
-          <div id="Achievements">
-            <Achievements />
-          </div>
-          <div id="Team">
-            <OurTeam />
-          </div>
-          <div id="Contact">
-            <ContactUs />
-          </div>
+            <Circle />
+            <Landing />
+            <div id="About">
+              <AboutUs />
+            </div>
+            <div id="Events">
+              <Events />
+            </div>
+            <div id="Achievements">
+              <Achievements />
+            </div>
+            <div id="Team">
+              <OurTeam />
+            </div>
+            <div id="Contact">
+              <ContactUs />
+            </div>
         </Template>
       </div>
     </div>

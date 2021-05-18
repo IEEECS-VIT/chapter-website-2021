@@ -32,7 +32,7 @@ const EventsMain = props => {
         <div className={Style.Text}>
           <h3>Have You Been to Any of Our</h3>
           <h1>
-            <super>EVENTS?</super>
+            <strong>EVENTS?</strong>
           </h1>
           <div>You should some time!</div>
           <button

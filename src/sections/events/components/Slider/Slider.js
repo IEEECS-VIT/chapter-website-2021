@@ -4,10 +4,7 @@ import Slide from "../Slide/Slide"
 import bg1 from "../../components/svg/bgSvg/bgSvg1.png"
 import bg2 from "../../components/svg/bgSvg/bgSvg2.png"
 import bg3 from "../../components/svg/bgSvg/bgSvg3.png"
-import img1 from "../../components/svg/sliderImg/img1.png"
-import img2 from "../../components/svg/sliderImg/img2.png"
-import img4 from "../../components/svg/sliderImg/img4.png"
-import img5 from "../../components/svg/sliderImg/img5.png"
+
 
 const Slider = props => {
   const prevBtnRef = useRef(null)
@@ -149,7 +146,7 @@ const Slider = props => {
           isDark={props.isDark}
           head="ARCS"
           subHead="The Flagship event"
-          img={img2}
+          img="https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_539/v1621358997/Chapter%20Website%202021%20assets/Events/a_hqm2rx.jpg"
         >
           A Technical colloquium where participants learn and get inspired from
           the best in the business through numerous workshops and a Convoke. It
@@ -168,8 +165,7 @@ const Slider = props => {
           isDark={props.isDark}
           head="HackBattle"
           subHead="The Battle of Bright Minds"
-          img={img4}
-          isLeft={true}
+          img="https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_550/v1621358997/Chapter%20Website%202021%20assets/Events/hb_xhcjdc.jpg"
         >
           A 2-day race to innovation, of developers where the most staunch and
           inventive prevail. Where inspiration is served in heaps and bounds by
@@ -187,7 +183,8 @@ const Slider = props => {
           isDark={props.isDark}
           head="MozDev"
           subHead="The Legacy Event"
-          img={img5}
+          img="https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_550/v1621358997/Chapter%20Website%202021%20assets/Events/moz_quvs0s.jpg"
+          isLeft={true}
         >
           A premium 6 hour hands-on session on Web Development for the
           developers of tomorrow. The workshop is delivered by an industry
@@ -205,8 +202,7 @@ const Slider = props => {
           isDark={props.isDark}
           head="Cicada 3302"
           subHead="The Colossal Conundrum"
-          img={img1}
-          isLeft={true}
+          img="https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_550/v1621359854/Chapter%20Website%202021%20assets/Events/icada_jmwukt.jpg"
         >
           A virtual maze filled with a series of mind-boggling puzzles and
           hidden messages. The event enjoys extreme popularity amongst the
@@ -223,7 +219,8 @@ const Slider = props => {
           isDark={props.isDark}
           head="Think Before Code"
           subHead="The World is Competitive."
-          img={img2}
+          img="https://res.cloudinary.com/ieeecs-vit/image/upload/q_100/v1621358997/Chapter%20Website%202021%20assets/Events/tbc_x8odjv.jpg"
+          isLeft={true}
         >
           An adventure ride for the competitive coders, TBC is your chance to
           unleash the problem solver within you. Get your head gears on, fasten
@@ -238,9 +235,9 @@ const Slider = props => {
           touchMove={touchMove}
           bgImg={bg1}
           isDark={props.isDark}
-          head="Cyber Hunt"
+          head="Tech Hunt"
           subHead="A hunt with Code-Snippets"
-          img={img1}
+          img="https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_550/v1621358997/Chapter%20Website%202021%20assets/Events/th_hxwscj.jpg"
           isLeft={true}
         >
           Nothing screams adventure more than a Treasure Hunt. IEEE-CS brings

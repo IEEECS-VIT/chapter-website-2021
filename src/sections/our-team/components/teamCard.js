@@ -27,7 +27,7 @@ const TeamCard = ({ cardInfo }) => {
   return (
     <div className={classes.card}>
       <div className={classes.imageWrapper}>
-        <img className={classes.image} alt={name} src={image} />
+        <img className={classes.image} alt={name} src={`${image}`} />
         <div className={classes.overlay}>
           <div className={classes.social}>
             {instagram && (
