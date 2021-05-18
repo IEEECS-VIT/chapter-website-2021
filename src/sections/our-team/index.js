@@ -17,7 +17,7 @@ const OurTeamSection = () => {
 
   const cardInfo2 = {
     name: "Aayushi Tated",
-    image: require("./images/aayushi.jpg"),
+    image: require("https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355981/Chapter%20Website%202021%20assets/Team/aayushi_hjk3vg.jpg"),
     position: "Vice Chairperson",
     linkedIn: "https://www.linkedin.com/in/aayushi-tated-898805193/",
     github: "https://github.com/aayushi2000",
@@ -34,7 +34,7 @@ const OurTeamSection = () => {
 
   const cardInfo4 = {
     name: "Lakhan Nad",
-    image: require("./images/lakhan.jpg"),
+    image: require("https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355981/Chapter%20Website%202021%20assets/Team/lakhan_yb2y9r.jpg"),
     position: "Technical Head",
     linkedIn: "https://www.linkedin.com/in/lakhan-nad",
     github:"https://github.com/Lakhan-Nad",
@@ -42,7 +42,7 @@ const OurTeamSection = () => {
 
   const cardInfo5 = {
     name: "Aditya Menon",
-    image: require("./images/aditya.jpg"),
+    image: require("https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355981/Chapter%20Website%202021%20assets/Team/aditya_qh65io.jpg"),
     position: "Projects Head",
     personal: "https://www.supraditya.com/",
     linkedIn: "https://www.linkedin.com/in/supraditya/",
@@ -51,7 +51,7 @@ const OurTeamSection = () => {
 
   const cardInfo6 = {
     name: "Nikita Anand",
-    image: require("./images/nikita.jpg"),
+    image: require("https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355982/Chapter%20Website%202021%20assets/Team/nikita_ek4pcq.jpg"),
     position: "Design Head",
     linkedIn: "https://www.linkedin.com/in/nikita-anand-381608195/",
     github:"https://github.com/nikitaanand16",
@@ -59,7 +59,7 @@ const OurTeamSection = () => {
 
   const cardInfo7 = {
     name: "Arpit Bhattar",
-    image: require("./images/arpit.png"),
+    image: require("https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355981/Chapter%20Website%202021%20assets/Team/arpit_yqdsl1.png"),
     position: "Finance Head",
     linkedIn: "https://www.linkedin.com/in/arpit-bhattar-6b5a04184",
     github: "https://github.com/apt-bhattar"
@@ -67,7 +67,7 @@ const OurTeamSection = () => {
 
   const cardInfo8 = {
     name: "Kaustubh Singh",
-    image: require("./images/kaustubh.jpg"),
+    image: require("https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355980/Chapter%20Website%202021%20assets/Team/kaustubh_czkrcs.jpg"),
     position: "Public Relations Head",
     personal: "http://www.kaustubh.live/",
     linkedIn: "https://www.linkedin.com/in/kaustubh72/",
@@ -76,7 +76,7 @@ const OurTeamSection = () => {
 
   const cardInfo9 = {
     name: "Ayush Roy",
-    image: require("./images/ayush.jpg"),
+    image: require("https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355980/Chapter%20Website%202021%20assets/Team/ayush_vhce35.jpg"),
     position: "Events Head",
     linkedIn: "https://www.linkedin.com/in/ayush-roy-40838b191/",
     github: "https://github.com/ayushroy64"
@@ -84,7 +84,7 @@ const OurTeamSection = () => {
 
   const cardInfo10 = {
     name: "Ipsita Goel",
-    image: require("./images/ipsita.jpg"),
+    image: require("https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355980/Chapter%20Website%202021%20assets/Team/ipsita_uepe45.jpg"),
     position: "Marketing & Outreach Head",
     linkedIn: "https://www.linkedin.com/in/ipsitagoel/",
     github:"https://github.com/ipsitagoel",
@@ -92,7 +92,7 @@ const OurTeamSection = () => {
 
   const cardInfo11 = {
     name: "Shaolin Kataria",
-    image: require("./images/shaolin.jpg"),
+    image: require("https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355982/Chapter%20Website%202021%20assets/Team/shaolin_m5zjbg.jpg"),
     position: "Research Head",
     linkedIn: "https://www.linkedin.com/in/shaolink/",
     github: "https://github.com/shaolink8",
@@ -101,7 +101,7 @@ const OurTeamSection = () => {
 
   const cardInfo12 = {
     name: "Kamlendra Pratap Singh",
-    image: require("./images/kamlendra.jpg"),
+    image: require("https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355980/Chapter%20Website%202021%20assets/Team/kamlendra_yc3flk.jpg"),
     position: "Strategic Head",
     linkedIn: "https://www.linkedin.com/in/kamlendra-pratap-singh-372427192/",
     github: "https://github.com/kps1310"
