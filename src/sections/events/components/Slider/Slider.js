@@ -4,10 +4,7 @@ import Slide from "../Slide/Slide"
 import bg1 from "../../components/svg/bgSvg/bgSvg1.png"
 import bg2 from "../../components/svg/bgSvg/bgSvg2.png"
 import bg3 from "../../components/svg/bgSvg/bgSvg3.png"
-import img1 from "../../components/svg/sliderImg/img1.png"
-import img2 from "../../components/svg/sliderImg/img2.png"
-import img4 from "../../components/svg/sliderImg/img4.png"
-import img5 from "../../components/svg/sliderImg/img5.png"
+
 
 const Slider = props => {
   const prevBtnRef = useRef(null)
