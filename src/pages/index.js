@@ -25,6 +25,12 @@ const Index = () => {
           rel="stylesheet"
         ></link>
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+        <meta charset="UTF-8" />
+        <meta property="og:title" content="IEEE Computer Society VIT" />
+        <meta property="og:image" content="src/images/logoicon.png" />
+        <meta property="og:url" content="http://www.ieeecsvit.com" />
+        <meta property="og:description" content="The Official Website of IEEE-CS VIT." />
+        <meta name="keywords" content="IEEECS, IEEE, IEEE Computer Society, IEEE Computer Society VIT, IEEE-CS VIT, VIT, vit, ARCS, HackBattle, HackBattle '20, ieeecsvit, ieeecs"/>
         {/* <link rel="stylesheet" href="./global.css" /> */}
       </Helmet>
       <div>
