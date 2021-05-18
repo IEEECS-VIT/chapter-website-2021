@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import classes from "./styles.module.css"
 import axios from "axios"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 const ContactForm = () => {
   const [isSubmitting, setSubmitting] = useState(false)
@@ -16,6 +18,45 @@ const ContactForm = () => {
     }
     if (message.length < 3) {
       // invalid message
+    }
+  }
+  const notify = status => {
+    if (status === "success") {
+      // Success toast
+      toast.success("Form Submitted!", {
+        position: "bottom-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+      })
+    } else if (status === "validation") {
+      // Validation error toast
+      toast.warn("Some Form Fields are Incorrectly Filled ", {
+        position: "bottom-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+      })
+    } else if (status === "error") {
+      // Other Error toast
+      toast.error(
+        "An Error Occurred During Submission. Please Try Again Later ",
+        {
+          position: "bottom-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+        }
+      )
     }
   }
   const handleSubmit = event => {
@@ -42,10 +83,13 @@ const ContactForm = () => {
           setEmail("")
           setName("")
           setMessage("")
+          notify("success")
         } else if (res.status === 403) {
           // validation error
+          notify("validation")
         } else {
           // some other error
+          notify("error")
         }
         setSubmitting(false)
       })
@@ -96,9 +140,15 @@ const ContactForm = () => {
         />
       </div>
       <div className={classes.formgroup}>
-        <button className={classes.submitButton} type="submit" disabled={isSubmitting}>
+        {/* Putting onclick={notify("success")} will display the toast as intended, but form submission configuration not working */}
+        <button
+          className={classes.submitButton}
+          type="submit"
+          disabled={isSubmitting}
+        >
           Submit
         </button>
+        <ToastContainer />
       </div>
     </form>
   )
