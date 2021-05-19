@@ -156,6 +156,31 @@
     animation-name: movebg;
   }
 }
+
+@media (max-width: 500px) and (min-height: 760px) {
+  .heading {
+    font-size: 75% !important;
+    margin-left: -70px !important;
+  }
+  .backg{
+    background-size: 90% auto !important;
+  }
+  .text {
+    font-size: 75% !important;
+    margin-left: 12% !important;
+  }
+}
+@media (max-width: 500px) and (min-height: 850px) {
+  .heading {
+    font-size: 80% !important;
+    margin-left: -80px !important;
+  }
+  .text {
+    font-size: 85% !important;
+    /* margin: 10% 0% 0 15% !important; */
+  }
+}
+
 @media (min-width: 330px) and (max-width: 600px) {
   .heading {
     font-size: 60%;
