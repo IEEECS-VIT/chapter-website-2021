@@ -16,6 +16,7 @@ const Social = () => {
         href="https://www.linkedin.com/company/ieee-computer-society-vit-vellore/"
         target="_blank"
         rel="noreferrer noopener"
+        aria-label={`ieecsvit-linkedin`}
       >
         <span className={classes.icon}>
           <FaLinkedinIn className={classes.iconstyle} />
@@ -26,6 +27,7 @@ const Social = () => {
         href="https://twitter.com/ieeecsvit?lang=en"
         target="_blank"
         rel="noreferrer noopener"
+        aria-label={`ieecsvit-twitter`}
       >
         <span className={classes.icon}>
           <FaTwitter className={classes.iconstyle} />
@@ -36,6 +38,7 @@ const Social = () => {
         href="https://m.facebook.com/ieeecsvit/"
         target="_blank"
         rel="noreferrer noopener"
+        aria-label={`ieecsvit-facebook`}
       >
         <span className={classes.icon}>
           <FaFacebookF className={classes.iconstyle} />
@@ -46,6 +49,7 @@ const Social = () => {
         href="https://www.instagram.com/ieeecs_vit/"
         target="_blank"
         rel="noreferrer noopener"
+        aria-label={`ieecsvit-instagram`}
       >
         <span className={classes.icon}>
           <FaInstagram className={classes.iconstyle} />

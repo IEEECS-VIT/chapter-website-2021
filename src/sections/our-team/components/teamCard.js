@@ -36,6 +36,7 @@ const TeamCard = ({ cardInfo }) => {
                 className={classes.iconButton}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${name}-instagram`}
               >
                 <FaInstagram />
               </a>
@@ -46,6 +47,7 @@ const TeamCard = ({ cardInfo }) => {
                 className={classes.iconButton}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${name}-facebook`}
               >
                 <FaFacebook />
               </a>
@@ -56,6 +58,7 @@ const TeamCard = ({ cardInfo }) => {
                 className={classes.iconButton}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${name}-linkedin`}
               >
                 <FaLinkedin />
               </a>
@@ -66,6 +69,7 @@ const TeamCard = ({ cardInfo }) => {
                 className={classes.iconButton}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${name}-twitter`}
               >
                 <FaTwitter />
               </a>
@@ -76,6 +80,7 @@ const TeamCard = ({ cardInfo }) => {
                 className={classes.iconButton}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${name}-website`}
               >
                 <FaGlobe />
               </a>
@@ -86,6 +91,7 @@ const TeamCard = ({ cardInfo }) => {
                 className={classes.iconButton}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${name}-github`}
               >
                 <FaGithub />
               </a>
@@ -96,6 +102,7 @@ const TeamCard = ({ cardInfo }) => {
                 className={classes.iconButton}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`${name}-youtube`}
               >
                 <FaYoutube />
               </a>

@@ -18,7 +18,11 @@ const Index = () => {
   }
   return (
     <div>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+      >
         <title>IEEE Computer Society</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
@@ -29,29 +33,35 @@ const Index = () => {
         <meta property="og:title" content="IEEE Computer Society VIT" />
         <meta property="og:image" content="src/images/logoicon.png" />
         <meta property="og:url" content="http://www.ieeecsvit.com" />
-        <meta property="og:description" content="The Official Website of IEEE-CS VIT." />
-        <meta name="keywords" content="IEEECS, IEEE, IEEE Computer Society, IEEE Computer Society VIT, IEEE-CS VIT, VIT, vit, ARCS, HackBattle, HackBattle '20, ieeecsvit, ieeecs"/>
+        <meta
+          property="og:description"
+          content="The Official Website of IEEE-CS VIT."
+        />
+        <meta
+          name="keywords"
+          content="IEEECS, IEEE, IEEE Computer Society, IEEE Computer Society VIT, IEEE-CS VIT, VIT, vit, ARCS, HackBattle, HackBattle '20, ieeecsvit, ieeecs"
+        />
         {/* <link rel="stylesheet" href="./global.css" /> */}
       </Helmet>
       <div>
         <Template>
-            <Circle />
-            <Landing />
-            <div id="About">
-              <AboutUs />
-            </div>
-            <div id="Events">
-              <Events />
-            </div>
-            <div id="Achievements">
-              <Achievements />
-            </div>
-            <div id="Team">
-              <OurTeam />
-            </div>
-            <div id="Contact">
-              <ContactUs />
-            </div>
+          <Circle />
+          <Landing />
+          <div id="About">
+            <AboutUs />
+          </div>
+          <div id="Events">
+            <Events />
+          </div>
+          <div id="Achievements">
+            <Achievements />
+          </div>
+          <div id="Team">
+            <OurTeam />
+          </div>
+          <div id="Contact">
+            <ContactUs />
+          </div>
         </Template>
       </div>
     </div>

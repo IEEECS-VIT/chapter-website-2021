@@ -100,7 +100,11 @@ const Burger = ({ open, setOpen, change }) => {
       : styles.lightmode
     : lightStyle
   return (
-    <button onClick={() => setOpen(!open)} className={styles.styledBurger}>
+    <button
+      onClick={() => setOpen(!open)}
+      className={styles.styledBurger}
+      aria-label="sidebar-toggle"
+    >
       <div className={`${openClose} ${mode}`} />
       <div className={`${openClose} ${mode}`} />
       <div className={`${openClose} ${mode}`} />

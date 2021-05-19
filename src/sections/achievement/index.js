@@ -65,14 +65,14 @@ const Achievements = () => {
 
           <div className={classes.circle}>
             <span className={`${classes.one} ${isDark && classes.darkOne}`}>
-              1
+              3
             </span>
           </div>
 
           <br></br>
           <br></br>
 
-          <div className={classes.caption}>Merwin Scholar</div>
+          <div className={classes.caption}>Merwin Scholars</div>
         </div>
         <div className={classes.box}>
           <div className={classes.bgimg}>
