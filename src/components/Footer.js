@@ -66,33 +66,15 @@ const Footer = () => {
               >
                 Contact
               </p>
-                {/* <p>About</p>
-                <p>Events</p>
-                <p>Gallery</p>
-                <p>Contact</p> */}
               </div>
             </div>
-            {/* <div className={classes.col1}>
-              <span className={classes.title}>Events</span>
-              <div className={classes.para}>
-                <p>Arcs</p>
-                <p>Hackbattle</p>
-                <p>Mozdev</p>
-              </div>
-            </div> */}
-            {/* <div className={classes.col1}>
-            <span className={classes.title}>Projects</span>
-            <div className={classes.para}>
-              <p>Project_1</p>
-              <p>Project_2</p>
-              <p>Project_3</p>
-            </div>
-          </div> */}
-
             <div className={classes.col1}>
               <span className={classes.title}>Contact&nbsp;us </span>
               <div className={classes.para}>
-                <p><a href="mailto:ieeecsvit@gmail.com">ieeecsvit@gmail.com</a></p>
+                <p><a href="mailto:ieeecs@vit.ac.in" targrt="_blank" rel="noopener noreferrer">ieeecs@vit.ac.in</a></p>
+              </div>
+              <div className={classes.para}>
+                <p><a href="tel:+919509995499" targrt="_blank" rel="noopener noreferrer">+91 9509995499</a></p>
               </div>
             </div>
             <div className={classes.footerAbout}>
