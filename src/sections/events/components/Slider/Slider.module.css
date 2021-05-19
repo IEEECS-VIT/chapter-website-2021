@@ -36,6 +36,7 @@
   padding: 0;
   text-indent: -9999px;
   background-color: transparent;
+  cursor: pointer;
 }
 .Buttons .ActiveButton{
   background-color: #EFCA53;
