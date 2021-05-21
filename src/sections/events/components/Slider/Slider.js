@@ -25,7 +25,10 @@ const Slider = props => {
     setisDragging(true)
     setanimationID(requestAnimationFrame(animation))
   }
-  const totalEvents = 6
+  const totalEvents = 5
+  // Set totalEvents back to 6 in order to include Tech Hunt slide
+
+
   function touchMove(event) {
     if (isDragging) {
       const currentPosition = getPositionX(event)
@@ -226,7 +229,7 @@ const Slider = props => {
           unleash the problem solver within you. Get your head gears on, fasten
           the seatbelts you dive into the ocean of critical thinking!
         </Slide>
-        <Slide
+        {/* <Slide
           isActive={currentIndex === 5}
           touchStart={event => {
             touchStart(event, 5)
@@ -243,7 +246,7 @@ const Slider = props => {
           Nothing screams adventure more than a Treasure Hunt. IEEE-CS brings
           forth the greatest cyber odyssey every Riviera! Read between the lines
           and rally your coding skills to the ultimate prize.
-        </Slide>
+        </Slide> */}
       </div>
       <div className={Style.Buttons}>{buttons}</div>
     </div>
