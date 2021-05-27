@@ -4,11 +4,15 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "G-TVJHV90JSZ",
-        head: true,
-        anonymize: true,
+        trackingIds: [
+          "G-TVJHV90JSZ", // Google Analytics / GA
+        ],
+
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     "gatsby-plugin-sharp",
