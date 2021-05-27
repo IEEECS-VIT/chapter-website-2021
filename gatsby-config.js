@@ -6,7 +6,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "enter_tracking_ID_here",
+        trackingId: "G-TVJHV90JSZ",
+        head: true,
+        anonymize: true,
       },
     },
     "gatsby-plugin-sharp",
@@ -31,7 +33,6 @@ module.exports = {
         theme_color: `#a2466c`,
         display: `standalone`,
         icon: `src/images/logoicon.png`,
-        
       },
     },
   ],
