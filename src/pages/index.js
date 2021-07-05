@@ -38,8 +38,12 @@ const Index = () => {
           content="The Official Website of IEEE-CS VIT."
         />
         <meta
+          property="description"
+          content="The Official Website of IEEE-CS VIT student Organisation."
+        />
+        <meta
           name="keywords"
-          content="IEEECS, IEEE, IEEE Computer Society, IEEE Computer Society VIT, IEEE-CS VIT, VIT, vit, ARCS, HackBattle, HackBattle '20, ieeecsvit, ieeecs"
+          content="IEEECS, IEEE CS, ieee cs, IEEE, IEEE Computer Society, IEEE Computer Society VIT, IEEE-CS VIT, VIT, vit, ARCS, HackBattle, HackBattle '20, ieeecsvit, ieeecs"
         />
         {/* <link rel="stylesheet" href="./global.css" /> */}
       </Helmet>
