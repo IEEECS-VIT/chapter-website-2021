@@ -7,115 +7,149 @@ import classes from "./styles.module.css"
 const OurTeamSection = () => {
   const { isDark } = useThemeValue()
 
-  const cardInfo1 = {
-    name: "Mohit Hotwani",
-    image: require("./images/mohit.png"),
-    position: "Chairperson",
-    linkedIn: "https://www.linkedin.com/in/mohit-hotwani-719492167/",
-	  github: "https://github.com/mohithotwani01",
-  }
+  const cardInfos = [
+    {
+      name: "Aashish Sharma",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641544319/Chapter%20Website%202022%20assets/Aashish_s6bbl2.jpg",
+      position: "Chairperson",
+      linkedIn: "https://www.linkedin.com/in/aashish-sharma-1621261a3",
+      github: "https://github.com/aashish1502",
+    },
 
-  const cardInfo2 = {
-    name: "Aayushi Tated",
-    image: "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355981/Chapter%20Website%202021%20assets/Team/aayushi_hjk3vg.jpg",
-    position: "Vice Chairperson",
-    linkedIn: "https://www.linkedin.com/in/aayushi-tated-898805193/",
-    github: "https://github.com/aayushi2000",
-    personal: "https://auth.geeksforgeeks.org/user/aayushitated2000/articles"
-  }
+    {
+      name: "Parag Bramh",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641544564/Chapter%20Website%202022%20assets/Parag_vkszw6.jpg",
+      position: "Vice Chairperson",
+      linkedIn: "https://www.linkedin.com/in/parag-bramh15/",
+      github: "https://github.com/paragbramh",
+      personal: "paragbramh.github.io/AboutParag/ParagBramh",
+    },
 
-  const cardInfo3 = {
-    name: "Prerna Sultania",
-    image: require("./images/prerna.png"),
-    position: "HR & Operations Head",
-    linkedIn: "https://www.linkedin.com/in/prerna-sultania-762b79177/",
-    github: "https://github.com/PrernaSultania"
-  }
+    {
+      name: "Samriddhi Agarwal",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641544745/Chapter%20Website%202022%20assets/Samriddhi_gd7rdm.jpg",
+      position: "Joint Secretary",
+      linkedIn: "https://www.linkedin.com/in/samriddhi-agarwal-3520851b8/",
+      github: "https://github.com/samriddhiag",
+    },
 
-  const cardInfo4 = {
-    name: "Lakhan Nad",
-    image: "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355981/Chapter%20Website%202021%20assets/Team/lakhan_yb2y9r.jpg",
-    position: "Technical Head",
-    linkedIn: "https://www.linkedin.com/in/lakhan-nad",
-    github:"https://github.com/Lakhan-Nad",
-  }
+    {
+      name: "Yash Ray",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641544967/Chapter%20Website%202022%20assets/Yash_tgmopg.jpg",
+      position: "Joint Secretary",
+      linkedIn: "https://www.linkedin.com/in/yash-ray-cri80vt/",
+      github: "https://github.com/Yash-Ray",
+      personal: "https://www.yashray.co/",
+    },
 
-  const cardInfo5 = {
-    name: "Aditya Menon",
-    image: "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355981/Chapter%20Website%202021%20assets/Team/aditya_qh65io.jpg",
-    position: "Projects Head",
-    personal: "https://www.supraditya.com/",
-    linkedIn: "https://www.linkedin.com/in/supraditya/",
-    github: "https://github.com/supraditya"
-  }
+    {
+      name: "Harsh Kanani",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641542396/Chapter%20Website%202022%20assets/Harsh_m6vyoy.jpg",
+      position: "Technical Head",
+      personal: "https://harshkanani014.github.io/",
+      linkedIn: "https://www.linkedin.com/in/harsh-kanani-69a45818b/",
+      github: "https://github.com/harshkanani014",
+    },
 
-  const cardInfo6 = {
-    name: "Nikita Anand",
-    image: "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355982/Chapter%20Website%202021%20assets/Team/nikita_ek4pcq.jpg",
-    position: "Design Head",
-    linkedIn: "https://www.linkedin.com/in/nikita-anand-381608195/",
-    github:"https://github.com/nikitaanand16",
-  }
+    {
+      name: "Dipti Lulla",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641546340/Chapter%20Website%202022%20assets/Dipti_2_wlweec.jpg",
+      position: "Projects Head",
+      linkedIn: "https://www.linkedin.com/in/dipti-lulla-499062164",
+      github: "https://github.com/diptilulla",
+    },
 
-  const cardInfo7 = {
-    name: "Arpit Bhattar",
-    image: "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355981/Chapter%20Website%202021%20assets/Team/arpit_yqdsl1.png",
-    position: "Finance Head",
-    linkedIn: "https://www.linkedin.com/in/arpit-bhattar-6b5a04184",
-    github: "https://github.com/apt-bhattar"
-  }
+    {
+      name: "Mohammad Ayaazuddina",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641542370/Chapter%20Website%202022%20assets/Ayaaz_jv4olw.jpg",
+      position: "Events Head",
+      personal:
+        "https://drive.google.com/file/d/15KiOALup02E8-F5cy8eNo_8W4JTw3eUi/view",
+      linkedIn: "https://in.linkedin.com/in/ayaazuddin-mohammad-2750311b3",
+      github: "https://github.com/ayaazuddin",
+    },
 
-  const cardInfo8 = {
-    name: "Kaustubh Singh",
-    image: "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355980/Chapter%20Website%202021%20assets/Team/kaustubh_czkrcs.jpg",
-    position: "Public Relations Head",
-    personal: "http://www.kaustubh.live/",
-    linkedIn: "https://www.linkedin.com/in/kaustubh72/",
-    github: "https://github.com/Kaustubh72"
-  }
+    {
+      name: "Akshita Verma",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641545605/Chapter%20Website%202022%20assets/Akshita_r0bu7c.jpg",
+      position: "Outreach Head",
+      linkedIn: "https://www.linkedin.com/in/akshita-verma-5a491818b",
+      github: "https://github.com/aku134",
+    },
 
-  const cardInfo9 = {
-    name: "Ayush Roy",
-    image: "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355980/Chapter%20Website%202021%20assets/Team/ayush_vhce35.jpg",
-    position: "Events Head",
-    linkedIn: "https://www.linkedin.com/in/ayush-roy-40838b191/",
-    github: "https://github.com/ayushroy64"
-  }
+    {
+      name: "Aditya Anavekar",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641545760/Chapter%20Website%202022%20assets/Aditya_l5l4bl.jpg",
+      position: "Design Head",
+      linkedIn: "https://www.linkedin.com/in/aditya-anavekar-7549831bb/",
+      github: "https://github.com/anavekaraditya",
+    },
 
-  const cardInfo10 = {
-    name: "Ipsita Goel",
-    image: "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355980/Chapter%20Website%202021%20assets/Team/ipsita_uepe45.jpg",
-    position: "Marketing & Outreach Head",
-    linkedIn: "https://www.linkedin.com/in/ipsitagoel/",
-    github:"https://github.com/ipsitagoel",
-  }
+    {
+      name: "Arkajit Datta",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641639245/Chapter%20Website%202022%20assets/Arkajit_yjygvx.jpg",
+      position: "Research and Development Head",
+      linkedIn: "www.linkedin.com/in/arkajitdatta/",
+      github: "https://github.com/Arkajit-techie",
+    },
 
-  const cardInfo11 = {
-    name: "Shaolin Kataria",
-    image: "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355982/Chapter%20Website%202021%20assets/Team/shaolin_m5zjbg.jpg",
-    position: "Research Head",
-    linkedIn: "https://www.linkedin.com/in/shaolink/",
-    github: "https://github.com/shaolink8",
-    youtube: "https://www.youtube.com/user/ShaolinKataria",
-  }
+    {
+      name: "Vijeta Priya",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641638091/Chapter%20Website%202022%20assets/Vijeta_h7ykxm.jpg",
+      position: "Strategic Head",
+      linkedIn: "https://www.linkedin.com/in/vijeta-priya-731ab01aa",
+      github: "https://github.com/vijeta04",
+    },
 
-  const cardInfo12 = {
-    name: "Kamlendra Pratap Singh",
-    image: "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1621355980/Chapter%20Website%202021%20assets/Team/kamlendra_yc3flk.jpg",
-    position: "Strategic Head",
-    linkedIn: "https://www.linkedin.com/in/kamlendra-pratap-singh-372427192/",
-    github: "https://github.com/kps1310"
-  }
+    {
+      name: "Shivang Kohli",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641638199/Chapter%20Website%202022%20assets/Shivang_hgvzj0.jpg",
+      position: "Web Lead",
+      linkedIn: "https://www.linkedin.com/in/shivang-kohli-6a4226192",
+      github: "https://github.com/Shivang244",
+    },
 
-  const cardInfo13 = {
-    name: "Sunjol Singh",
-    image: require("./images/sunjol.jpg"),
-    position: "Technical Lead",
-    linkedIn: "https://www.linkedin.com/in/sunjol-singh-paul",
-    github: "https://github.com/sunjol",
-  }
+    {
+      name: "Amit Agarwal",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641638510/Chapter%20Website%202022%20assets/Amit_o1vs9m.jpg",
+      position: "App Lead",
+      linkedIn: "https://www.linkedin.com/in/amitchas/",
+      github: "https://github.com/AmitAgarwalChas",
+    },
 
- 
+    {
+      name: "Shruti Shreya",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641638802/Chapter%20Website%202022%20assets/Shruti_jnse5a.jpg",
+      position: "UI/UX Lead",
+      linkedIn: "https://www.linkedin.com/in/shruti-shreya-9b898718b",
+      github: "https://github.com/sSh0111",
+      personal: "https://www.behance.net/shruti_shreya",
+    },
+
+    {
+      name: "Chirayu Rathi",
+      image:
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641542371/Chapter%20Website%202022%20assets/Chirayu_qosreo.jpg",
+      position: "Projects mentor",
+      linkedIn: "https://www.linkedin.com/in/chirayu-rathi-038461189",
+      github: "https://github.com/chirayurathi",
+    },
+  ]
+
   return (
     <div className={`${classes.container} ${isDark && classes.dark}`}>
       <div className={classes.headerWrapper}>
@@ -135,19 +169,9 @@ const OurTeamSection = () => {
 
       {/* Cards Body */}
       <div className={classes.cardsWrapper}>
-        <TeamCard cardInfo={cardInfo1} />
-        <TeamCard cardInfo={cardInfo2} />
-        <TeamCard cardInfo={cardInfo3} />
-        <TeamCard cardInfo={cardInfo4} />
-        <TeamCard cardInfo={cardInfo5} />
-        <TeamCard cardInfo={cardInfo6} />
-        <TeamCard cardInfo={cardInfo7} />
-        <TeamCard cardInfo={cardInfo8} />
-        <TeamCard cardInfo={cardInfo9} />
-        <TeamCard cardInfo={cardInfo10} />
-        <TeamCard cardInfo={cardInfo11} />
-        <TeamCard cardInfo={cardInfo12} />
-        <TeamCard cardInfo={cardInfo13} />
+        {cardInfos.map(cardInfo => (
+          <TeamCard cardInfo={cardInfo} />
+        ))}
       </div>
     </div>
   )
