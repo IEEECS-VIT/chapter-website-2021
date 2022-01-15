@@ -74,7 +74,7 @@ const Footer = () => {
                 <p><a href="mailto:ieeecs@vit.ac.in" targrt="_blank" rel="noopener noreferrer">ieeecs@vit.ac.in</a></p>
               </div>
               <div className={classes.para}>
-                <p><a href="tel:+919509995499" targrt="_blank" rel="noopener noreferrer">+91 9509995499</a></p>
+                <p><a href="tel:+918114468591" targrt="_blank" rel="noopener noreferrer">+91 8114468591</a></p>
               </div>
             </div>
             <div className={classes.footerAbout}>

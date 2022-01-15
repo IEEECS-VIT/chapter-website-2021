@@ -11,7 +11,7 @@ const OurTeamSection = () => {
     {
       name: "Aashish Sharma",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641544319/Chapter%20Website%202022%20assets/Aashish_s6bbl2.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642240709/Chapter%20Website%202022%20assets/Aashish_tl08s2.jpg",
       position: "Chairperson",
       linkedIn: "https://www.linkedin.com/in/aashish-sharma-1621261a3",
       github: "https://github.com/aashish1502",
@@ -20,7 +20,7 @@ const OurTeamSection = () => {
     {
       name: "Parag Bramh",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641544564/Chapter%20Website%202022%20assets/Parag_vkszw6.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242961/Chapter%20Website%202022%20assets/Parag_mhenmt.jpg",
       position: "Vice Chairperson",
       linkedIn: "https://www.linkedin.com/in/parag-bramh15/",
       github: "https://github.com/paragbramh",
@@ -30,7 +30,7 @@ const OurTeamSection = () => {
     {
       name: "Samriddhi Agarwal",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641544745/Chapter%20Website%202022%20assets/Samriddhi_gd7rdm.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243053/Chapter%20Website%202022%20assets/Samriddhi_uwlopu.jpg",
       position: "Joint Secretary",
       linkedIn: "https://www.linkedin.com/in/samriddhi-agarwal-3520851b8/",
       github: "https://github.com/samriddhiag",
@@ -39,7 +39,7 @@ const OurTeamSection = () => {
     {
       name: "Yash Ray",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641544967/Chapter%20Website%202022%20assets/Yash_tgmopg.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243332/Chapter%20Website%202022%20assets/Yash_e5tn7y.jpg",
       position: "Joint Secretary",
       linkedIn: "https://www.linkedin.com/in/yash-ray-cri80vt/",
       github: "https://github.com/Yash-Ray",
@@ -49,7 +49,7 @@ const OurTeamSection = () => {
     {
       name: "Harsh Kanani",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641542396/Chapter%20Website%202022%20assets/Harsh_m6vyoy.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242867/Chapter%20Website%202022%20assets/Harsh_hpx9dv.jpg",
       position: "Technical Head",
       personal: "https://harshkanani014.github.io/",
       linkedIn: "https://www.linkedin.com/in/harsh-kanani-69a45818b/",
@@ -59,7 +59,7 @@ const OurTeamSection = () => {
     {
       name: "Dipti Lulla",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641546340/Chapter%20Website%202022%20assets/Dipti_2_wlweec.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243571/Chapter%20Website%202022%20assets/Dipti_ob13wc.jpg",
       position: "Projects Head",
       linkedIn: "https://www.linkedin.com/in/dipti-lulla-499062164",
       github: "https://github.com/diptilulla",
@@ -68,7 +68,7 @@ const OurTeamSection = () => {
     {
       name: "Mohammad Ayaazuddina",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641542370/Chapter%20Website%202022%20assets/Ayaaz_jv4olw.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242440/Chapter%20Website%202022%20assets/Ayaaz_lnyskg.jpg",
       position: "Events Head",
       personal:
         "https://drive.google.com/file/d/15KiOALup02E8-F5cy8eNo_8W4JTw3eUi/view",
@@ -79,7 +79,7 @@ const OurTeamSection = () => {
     {
       name: "Akshita Verma",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641545605/Chapter%20Website%202022%20assets/Akshita_r0bu7c.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242112/Chapter%20Website%202022%20assets/Akshita_lxgahd.jpg",
       position: "Outreach Head",
       linkedIn: "https://www.linkedin.com/in/akshita-verma-5a491818b",
       github: "https://github.com/aku134",
@@ -88,7 +88,7 @@ const OurTeamSection = () => {
     {
       name: "Aditya Anavekar",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641545760/Chapter%20Website%202022%20assets/Aditya_l5l4bl.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242000/Chapter%20Website%202022%20assets/Aditya_kvwsor.jpg",
       position: "Design Head",
       linkedIn: "https://www.linkedin.com/in/aditya-anavekar-7549831bb/",
       github: "https://github.com/anavekaraditya",
@@ -97,7 +97,7 @@ const OurTeamSection = () => {
     {
       name: "Arkajit Datta",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641639245/Chapter%20Website%202022%20assets/Arkajit_yjygvx.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242315/Chapter%20Website%202022%20assets/Arkajit_whajpn.jpg",
       position: "Research and Development Head",
       linkedIn: "www.linkedin.com/in/arkajitdatta/",
       github: "https://github.com/Arkajit-techie",
@@ -106,7 +106,7 @@ const OurTeamSection = () => {
     {
       name: "Vijeta Priya",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641638091/Chapter%20Website%202022%20assets/Vijeta_h7ykxm.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243332/Chapter%20Website%202022%20assets/Vijeta_hszpfc.jpg",
       position: "Strategic Head",
       linkedIn: "https://www.linkedin.com/in/vijeta-priya-731ab01aa",
       github: "https://github.com/vijeta04",
@@ -115,7 +115,7 @@ const OurTeamSection = () => {
     {
       name: "Shivang Kohli",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641638199/Chapter%20Website%202022%20assets/Shivang_hgvzj0.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243084/Chapter%20Website%202022%20assets/Shivang_v2jdzg.jpg",
       position: "Web Lead",
       linkedIn: "https://www.linkedin.com/in/shivang-kohli-6a4226192",
       github: "https://github.com/Shivang244",
@@ -124,7 +124,7 @@ const OurTeamSection = () => {
     {
       name: "Amit Agarwal",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641638510/Chapter%20Website%202022%20assets/Amit_o1vs9m.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242180/Chapter%20Website%202022%20assets/Amit_jqwsmo.jpg",
       position: "App Lead",
       linkedIn: "https://www.linkedin.com/in/amitchas/",
       github: "https://github.com/AmitAgarwalChas",
@@ -133,7 +133,7 @@ const OurTeamSection = () => {
     {
       name: "Shruti Shreya",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641638802/Chapter%20Website%202022%20assets/Shruti_jnse5a.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243188/Chapter%20Website%202022%20assets/Shruti_bfxdmf.jpg",
       position: "UI/UX Lead",
       linkedIn: "https://www.linkedin.com/in/shruti-shreya-9b898718b",
       github: "https://github.com/sSh0111",
@@ -143,7 +143,7 @@ const OurTeamSection = () => {
     {
       name: "Chirayu Rathi",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1641542371/Chapter%20Website%202022%20assets/Chirayu_qosreo.jpg",
+        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242520/Chapter%20Website%202022%20assets/Chirayu_kl1ttv.jpg",
       position: "Projects mentor",
       linkedIn: "https://www.linkedin.com/in/chirayu-rathi-038461189",
       github: "https://github.com/chirayurathi",
