@@ -10,7 +10,11 @@ const AboutUs = () => {
       <div className={styles.hollowcircle}></div>
       <img className={styles.dot} src={dot} alt="dotted"></img>
       <div className={styles.aboutus}>About Us</div>
-      <img className={styles.clubimg} src="https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_1000/v1621355993/Chapter%20Website%202021%20assets/about_lmofm5.jpg" alt="club"></img>
+      <img
+        className={styles.clubimg}
+        src="https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1684223624/ieee-cs/IEEE-CS_vpg3yh.jpg"
+        alt="club"
+      ></img>
       <div className={styles.text}>
         IEEE Computer Society, VIT, is an eminent Student Branch belonging to
         the Madras Section of IEEE Region 10. Formed in the February of 2012, we

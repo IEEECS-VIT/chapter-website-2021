@@ -9,144 +9,138 @@ const OurTeamSection = () => {
 
   const cardInfos = [
     {
-      name: "Aashish Sharma",
+      name: "Vidipt Khetriwal",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642240709/Chapter%20Website%202022%20assets/Aashish_tl08s2.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681496693/ieee-cs/Vidipt_ollf5m.jpg",
       position: "Chairperson",
-      linkedIn: "https://www.linkedin.com/in/aashish-sharma-1621261a3",
-      github: "https://github.com/aashish1502",
+      linkedIn: "https://www.linkedin.com/in/vidiptkhetriwal/",
+      github: "https://github.com/vidipt-khetriwal",
     },
 
     {
-      name: "Parag Bramh",
+      name: "Shreyas Bhardwaj",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242961/Chapter%20Website%202022%20assets/Parag_mhenmt.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681484860/ieee-cs/Shreyas_kjhjja.jpg",
       position: "Vice Chairperson",
-      linkedIn: "https://www.linkedin.com/in/parag-bramh15/",
-      github: "https://github.com/paragbramh",
-      personal: "paragbramh.github.io/AboutParag/ParagBramh",
+      linkedIn: "https://www.linkedin.com/in/shreyas-bhardwaj01/",
+      github: "https://github.com/shreyas-bhardwaj",
     },
 
     {
-      name: "Samriddhi Agarwal",
+      name: "Swayam Mehta",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243053/Chapter%20Website%202022%20assets/Samriddhi_uwlopu.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681486752/ieee-cs/Swayam_nrhccu.jpg",
       position: "Joint Secretary",
-      linkedIn: "https://www.linkedin.com/in/samriddhi-agarwal-3520851b8/",
-      github: "https://github.com/samriddhiag",
+      linkedIn: "https://www.linkedin.com/in/swayam-mehta-80b287221",
+      github: "https://github.com/SwayamMehta10",
     },
 
     {
-      name: "Yash Ray",
+      name: "Rohan Gupta",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243332/Chapter%20Website%202022%20assets/Yash_e5tn7y.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681484867/ieee-cs/Rohan_nfcadn.jpg",
       position: "Joint Secretary",
-      linkedIn: "https://www.linkedin.com/in/yash-ray-cri80vt/",
-      github: "https://github.com/Yash-Ray",
-      personal: "https://www.yashray.co/",
+      linkedIn: "https://www.linkedin.com/in/rohan-gupta-51b16615a",
+      github: "https://github.com/Rohan1572",
     },
 
     {
-      name: "Harsh Kanani",
+      name: "Anusha Garg",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242867/Chapter%20Website%202022%20assets/Harsh_hpx9dv.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681487207/ieee-cs/Anusha_ugmbzt.png",
+      position: "Marketing and HR",
+      linkedIn: "https://www.linkedin.com/in/anusha-garg-67a214205",
+      github: "https://github.com/anushagarg-10",
+    },
+
+    {
+      name: "Krushn Pathak",
+      image:
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681485410/ieee-cs/Krushn_i2gyct.jpg",
       position: "Technical Head",
-      personal: "https://harshkanani014.github.io/",
-      linkedIn: "https://www.linkedin.com/in/harsh-kanani-69a45818b/",
-      github: "https://github.com/harshkanani014",
+      linkedIn: "https://www.linkedin.com/in/krushn-pathak-646974204/",
+      github: "https://github.com/Krushnpathak",
     },
 
     {
-      name: "Dipti Lulla",
+      name: "Amirth Raj Puramcheriyil",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243571/Chapter%20Website%202022%20assets/Dipti_ob13wc.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681484860/ieee-cs/Amirth_mlumi0.jpg",
       position: "Projects Head",
-      linkedIn: "https://www.linkedin.com/in/dipti-lulla-499062164",
-      github: "https://github.com/diptilulla",
+      linkedIn: "https://www.linkedin.com/in/amirth-raj-puramcheriyil/",
+      github: "https://github.com/AmirthRaj2002",
     },
 
     {
-      name: "Mohammad Ayaazuddina",
+      name: "Anubhav Agarwal",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242440/Chapter%20Website%202022%20assets/Ayaaz_lnyskg.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681484853/ieee-cs/Anubhav_kwlzty.jpg",
       position: "Events Head",
-      personal:
-        "https://drive.google.com/file/d/15KiOALup02E8-F5cy8eNo_8W4JTw3eUi/view",
-      linkedIn: "https://in.linkedin.com/in/ayaazuddin-mohammad-2750311b3",
-      github: "https://github.com/ayaazuddin",
+      linkedIn: "https://www.linkedin.com/in/anubhav-agarwal-6ab029252",
+      github: "https://github.com/Zeus0305",
     },
 
     {
-      name: "Akshita Verma",
+      name: "Akanksha Dhar",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242112/Chapter%20Website%202022%20assets/Akshita_lxgahd.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681484938/ieee-cs/Akanksha_j0f05v.png",
       position: "Outreach Head",
-      linkedIn: "https://www.linkedin.com/in/akshita-verma-5a491818b",
-      github: "https://github.com/aku134",
+      linkedIn: "https://www.linkedin.com/in/akanksha-dhar-1b8303205",
+      github: "https://github.com/akankshadhar2",
     },
 
     {
-      name: "Aditya Anavekar",
+      name: "Adith Narein T",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242000/Chapter%20Website%202022%20assets/Aditya_kvwsor.jpg",
-      position: "Design Head",
-      linkedIn: "https://www.linkedin.com/in/aditya-anavekar-7549831bb/",
-      github: "https://github.com/anavekaraditya",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681484941/ieee-cs/Adith_e7qev6.jpg",
+      position: "Deisgn Head",
+      linkedIn: "https://www.linkedin.com/in/adith-narein-t-005603207/",
+      github: "https://github.com/adith13",
     },
 
     {
-      name: "Arkajit Datta",
+      name: "Harsh Rajpal",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242315/Chapter%20Website%202022%20assets/Arkajit_whajpn.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681484871/ieee-cs/Harsh_nsn7ji.jpg",
       position: "Research and Development Head",
-      linkedIn: "www.linkedin.com/in/arkajitdatta/",
-      github: "https://github.com/Arkajit-techie",
+      linkedIn: "https://www.linkedin.com/in/harsh-rajpal/",
+      github: "https://github.com/harsh-rajpal",
     },
 
     {
-      name: "Vijeta Priya",
+      name: "Jahnavi Gundakaram",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243332/Chapter%20Website%202022%20assets/Vijeta_hszpfc.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681485859/ieee-cs/Jahnavi_xxasbh.jpg",
       position: "Strategic Head",
-      linkedIn: "https://www.linkedin.com/in/vijeta-priya-731ab01aa",
-      github: "https://github.com/vijeta04",
+      linkedIn: "https://www.linkedin.com/in/jahnavi-gundakaram-43074a1b5/",
+      github: "https://github.com/jahnavigundakaram",
     },
 
     {
-      name: "Shivang Kohli",
+      name: "Likhit Ajeesh",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243084/Chapter%20Website%202022%20assets/Shivang_v2jdzg.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681484853/ieee-cs/Likhit_po7xuf.jpg",
       position: "Web Lead",
-      linkedIn: "https://www.linkedin.com/in/shivang-kohli-6a4226192",
-      github: "https://github.com/Shivang244",
+      linkedIn: "https://www.linkedin.com/in/likhit-ajeesh",
+      github: "https://github.com/Likkiii",
     },
 
     {
-      name: "Amit Agarwal",
+      name: "Garv Tandon",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242180/Chapter%20Website%202022%20assets/Amit_jqwsmo.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681496472/ieee-cs/Garv_hgnrrf.jpg",
       position: "App Lead",
-      linkedIn: "https://www.linkedin.com/in/amitchas/",
-      github: "https://github.com/AmitAgarwalChas",
+      linkedIn: "linkedin.com/in/garv-tandon-5b79921a3",
+      github: "github.com/garvsgit",
     },
 
     {
-      name: "Shruti Shreya",
+      name: "Karthik Remesh",
       image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642243188/Chapter%20Website%202022%20assets/Shruti_bfxdmf.jpg",
+        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1681484858/ieee-cs/Karthik_scfiy5.jpg",
       position: "UI/UX Lead",
-      linkedIn: "https://www.linkedin.com/in/shruti-shreya-9b898718b",
-      github: "https://github.com/sSh0111",
-      personal: "https://www.behance.net/shruti_shreya",
-    },
-
-    {
-      name: "Chirayu Rathi",
-      image:
-        "https://res.cloudinary.com/ieeecs-vit/image/upload/c_scale,q_100,w_300/v1642242520/Chapter%20Website%202022%20assets/Chirayu_kl1ttv.jpg",
-      position: "Projects mentor",
-      linkedIn: "https://www.linkedin.com/in/chirayu-rathi-038461189",
-      github: "https://github.com/chirayurathi",
+      linkedIn: "https://www.linkedin.com/in/karthik-remesh-03066a24a",
+      github: "https://github.com/karthik-remesh",
     },
   ]
 
