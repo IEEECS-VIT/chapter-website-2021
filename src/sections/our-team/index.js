@@ -21,7 +21,7 @@ const OurTeamSection = () => {
     {
       name: "Dharrsan Amarnath",
       image:
-         "",
+         "https://i.postimg.cc/25nSP8pP/image.png",
       position: "Vice Chairperson",
       linkedIn: "https://www.linkedin.com/in/shreyas-bhardwaj01/",
       github: "https://github.com/shreyas-bhardwaj",
