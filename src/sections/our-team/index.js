@@ -9,11 +9,12 @@ const OurTeamSection = () => {
 
   const cardInfos = [
     {
-      name: "Vidipt Khetriwal",
+      name: "Siddhant Malpani",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681496693/ieee-cs/Vidipt_ollf5m.jpg",
+      "https://i.postimg.cc/XqTVkHQw/IMG-4548.jpg",
+        // "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681496693/ieee-cs/Vidipt_ollf5m.jpg",
       position: "Chairperson",
-      linkedIn: "https://www.linkedin.com/in/vidiptkhetriwal/",
+      linkedIn: "https://www.linkedin.com/in/siddhant-malpani-247199235?originalSubdomain=in",
       github: "https://github.com/vidipt-khetriwal",
     },
 
