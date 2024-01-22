@@ -12,7 +12,7 @@ const DETAILS_MAX_LENGTH = 1e3
 
 const handler = async event => {
   if (!process.env.CONTACT_EMAIL) {
-    process.env.CONTACT_EMAIL = "lakhannad1999@gmail.com"
+    process.env.CONTACT_EMAIL = "prathyush.kodhanpur2021@vitstudent.ac.in"
   }
 
   const body = JSON.parse(event.body)
