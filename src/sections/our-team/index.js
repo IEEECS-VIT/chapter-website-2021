@@ -11,7 +11,7 @@ const OurTeamSection = () => {
     {
       name: "Siddhant Malpani",
       image:
-      "https://i.postimg.cc/XqTVkHQw/IMG-4548.jpg",
+      "https://i.postimg.cc/VvSpbFtx/image.png",
         // "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681496693/ieee-cs/Vidipt_ollf5m.jpg",
       position: "Chairperson",
       linkedIn: "https://www.linkedin.com/in/siddhant-malpani-247199235?originalSubdomain=in",
@@ -19,127 +19,118 @@ const OurTeamSection = () => {
     },
 
     {
-      name: "Shreyas Bhardwaj",
+      name: "Dharrsan Amarnath",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681484860/ieee-cs/Shreyas_kjhjja.jpg",
+         "",
       position: "Vice Chairperson",
       linkedIn: "https://www.linkedin.com/in/shreyas-bhardwaj01/",
       github: "https://github.com/shreyas-bhardwaj",
     },
 
     {
-      name: "Swayam Mehta",
+      name: "Theresa Jacob",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681486752/ieee-cs/Swayam_nrhccu.jpg",
-      position: "Joint Secretary",
+      "https://i.postimg.cc/Kz5BDXPL/image.png",
+      position: "Secretary",
       linkedIn: "https://www.linkedin.com/in/swayam-mehta-80b287221",
       github: "https://github.com/SwayamMehta10",
     },
 
     {
-      name: "Rohan Gupta",
+      name: "Atharva Singh",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681484867/ieee-cs/Rohan_nfcadn.jpg",
-      position: "Joint Secretary",
+        "https://i.postimg.cc/1tjLvdcC/image.png",
+      position: "Co-Secretary",
       linkedIn: "https://www.linkedin.com/in/rohan-gupta-51b16615a",
       github: "https://github.com/Rohan1572",
     },
 
     {
-      name: "Anusha Garg",
+      name: "Aryan Jain",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681487207/ieee-cs/Anusha_ugmbzt.png",
-      position: "Marketing and HR",
-      linkedIn: "https://www.linkedin.com/in/anusha-garg-67a214205",
-      github: "https://github.com/anushagarg-10",
-    },
-
-    {
-      name: "Krushn Pathak",
-      image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681485410/ieee-cs/Krushn_i2gyct.jpg",
-      position: "Technical Head",
+        "https://i.postimg.cc/KcTc3757/image.png",
+        position: "Technical Head",
       linkedIn: "https://www.linkedin.com/in/krushn-pathak-646974204/",
       github: "https://github.com/Krushnpathak",
     },
 
     {
-      name: "Amirth Raj Puramcheriyil",
+      name: "Kartik Gupta",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681484860/ieee-cs/Amirth_mlumi0.jpg",
+        "https://i.postimg.cc/G3WqQDsx/image.png",
       position: "Projects Head",
       linkedIn: "https://www.linkedin.com/in/amirth-raj-puramcheriyil/",
       github: "https://github.com/AmirthRaj2002",
     },
 
     {
-      name: "Anubhav Agarwal",
+      name: "Akash Kumar",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681484853/ieee-cs/Anubhav_kwlzty.jpg",
+        "https://i.postimg.cc/rm6z0f74/image.png",
       position: "Events Head",
       linkedIn: "https://www.linkedin.com/in/anubhav-agarwal-6ab029252",
       github: "https://github.com/Zeus0305",
     },
 
     {
-      name: "Akanksha Dhar",
+      name: "Hasmita Patnana",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681484938/ieee-cs/Akanksha_j0f05v.png",
-      position: "Outreach Head",
+        "https://i.postimg.cc/jSYC8gMS/image.png",
+      position: "Publicity Head",
       linkedIn: "https://www.linkedin.com/in/akanksha-dhar-1b8303205",
       github: "https://github.com/akankshadhar2",
     },
 
     {
-      name: "Adith Narein T",
+      name: "Ishi Singh",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681484941/ieee-cs/Adith_e7qev6.jpg",
-      position: "Deisgn Head",
+        "https://i.postimg.cc/nh9MT845/image.png",
+      position: "Design Head",
       linkedIn: "https://www.linkedin.com/in/adith-narein-t-005603207/",
       github: "https://github.com/adith13",
     },
 
     {
-      name: "Harsh Rajpal",
+      name: "Prantik Chakraborty",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681484871/ieee-cs/Harsh_nsn7ji.jpg",
+      "https://i.postimg.cc/tCcP5Nxr/image.png",
       position: "Research and Development Head",
       linkedIn: "https://www.linkedin.com/in/harsh-rajpal/",
       github: "https://github.com/harsh-rajpal",
     },
 
     {
-      name: "Jahnavi Gundakaram",
+      name: "Aryan Saxena",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681485859/ieee-cs/Jahnavi_xxasbh.jpg",
-      position: "Strategic Head",
+        "https://i.postimg.cc/L43TM8Cz/image.png",
+      position: "Editorial Lead",
       linkedIn: "https://www.linkedin.com/in/jahnavi-gundakaram-43074a1b5/",
       github: "https://github.com/jahnavigundakaram",
     },
 
     {
-      name: "Likhit Ajeesh",
+      name: "Prathyush Kodhanpur",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681484853/ieee-cs/Likhit_po7xuf.jpg",
+        "https://i.postimg.cc/zvF9SfvN/image.png",
       position: "Web Lead",
-      linkedIn: "https://www.linkedin.com/in/likhit-ajeesh",
-      github: "https://github.com/Likkiii",
+      linkedIn: "https://in.linkedin.com/in/prathyush-k-350b8b175",
+      github: "https://github.com/Prathyush-KKK",
     },
 
     {
-      name: "Garv Tandon",
+      name: "Nitish Narayan",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681496472/ieee-cs/Garv_hgnrrf.jpg",
-      position: "App Lead",
+        "https://i.postimg.cc/GpXs4PdJ/image.png",
+      position: "DevOps Lead",
       linkedIn: "linkedin.com/in/garv-tandon-5b79921a3",
       github: "github.com/garvsgit",
     },
 
     {
-      name: "Karthik Remesh",
+      name: "Panchal Nayak",
       image:
-        "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681484858/ieee-cs/Karthik_scfiy5.jpg",
-      position: "UI/UX Lead",
+        "https://i.postimg.cc/FsZmXhv8/image.png",
+      position: "AI/ML Lead",
       linkedIn: "https://www.linkedin.com/in/karthik-remesh-03066a24a",
       github: "https://github.com/karthik-remesh",
     },

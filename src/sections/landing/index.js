@@ -24,7 +24,7 @@ const Landing = () => {
         <div className={styles.announcementOuter}>
         {/* <Announcement /> */}
         </div>
-        <p className={styles.text}>
+        <p className={styles.text} style={{backgroundColor: 'black', padding:"1rem" }}>
           We strive to be the leading provider of technical information,
           community services, and personalized support to the world’s computer
           science and technology communities. We are IEEE Computer Society.{" "}
