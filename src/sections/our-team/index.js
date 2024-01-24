@@ -11,11 +11,11 @@ const OurTeamSection = () => {
     {
       name: "Siddhant Malpani",
       image:
-      "https://i.postimg.cc/VvSpbFtx/image.png",
+      "https://i.postimg.cc/WzZvmc4J/image.png",
         // "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681496693/ieee-cs/Vidipt_ollf5m.jpg",
       position: "Chairperson",
-      linkedIn: "https://www.linkedin.com/in/siddhant-malpani-247199235?originalSubdomain=in",
-      github: "https://github.com/vidipt-khetriwal",
+      linkedIn: "https://www.linkedin.com/in/siddhant-malpani-247199235/",
+      github: "https://github.com/SiddhantMalpani",
     },
 
     {
@@ -23,8 +23,8 @@ const OurTeamSection = () => {
       image:
          "https://i.postimg.cc/25nSP8pP/image.png",
       position: "Vice Chairperson",
-      linkedIn: "https://www.linkedin.com/in/shreyas-bhardwaj01/",
-      github: "https://github.com/shreyas-bhardwaj",
+      linkedIn: "https://www.linkedin.com/in/dharrsan-amarnath-75017221a",
+      github: "https://github.com/viper-18",
     },
 
     {
@@ -32,8 +32,8 @@ const OurTeamSection = () => {
       image:
       "https://i.postimg.cc/Kz5BDXPL/image.png",
       position: "Secretary",
-      linkedIn: "https://www.linkedin.com/in/swayam-mehta-80b287221",
-      github: "https://github.com/SwayamMehta10",
+      linkedIn: "https://www.linkedin.com/in/theresa-jacob/",
+      github: "https://github.com/Theresa-dot",
     },
 
     {
@@ -50,8 +50,8 @@ const OurTeamSection = () => {
       image:
         "https://i.postimg.cc/KcTc3757/image.png",
         position: "Technical Head",
-      linkedIn: "https://www.linkedin.com/in/krushn-pathak-646974204/",
-      github: "https://github.com/Krushnpathak",
+      linkedIn: "https://www.linkedin.com/in/aryan-jain-254185220",
+      github: "https://github.com/JainnyAryan",
     },
 
     {
@@ -59,8 +59,8 @@ const OurTeamSection = () => {
       image:
         "https://i.postimg.cc/G3WqQDsx/image.png",
       position: "Projects Head",
-      linkedIn: "https://www.linkedin.com/in/amirth-raj-puramcheriyil/",
-      github: "https://github.com/AmirthRaj2002",
+      linkedIn: "https://www.linkedin.com/in/kartik-gupta-96394722b",
+      github: "https://github.com/KartikGupta3",
     },
 
     {
@@ -68,8 +68,8 @@ const OurTeamSection = () => {
       image:
         "https://i.postimg.cc/rm6z0f74/image.png",
       position: "Events Head",
-      linkedIn: "https://www.linkedin.com/in/anubhav-agarwal-6ab029252",
-      github: "https://github.com/Zeus0305",
+      linkedIn: "https://in.linkedin.com/in/akashkumarv",
+      github: "https://github.com/IEEECS-VIT",
     },
 
     {
@@ -77,8 +77,8 @@ const OurTeamSection = () => {
       image:
         "https://i.postimg.cc/jSYC8gMS/image.png",
       position: "Publicity Head",
-      linkedIn: "https://www.linkedin.com/in/akanksha-dhar-1b8303205",
-      github: "https://github.com/akankshadhar2",
+      linkedIn: "https://www.linkedin.com/in/hasmita-patnana-392980230",
+      github: "https://github.com/hasmita-patnana7",
     },
 
     {
@@ -86,8 +86,8 @@ const OurTeamSection = () => {
       image:
         "https://i.postimg.cc/nh9MT845/image.png",
       position: "Design Head",
-      linkedIn: "https://www.linkedin.com/in/adith-narein-t-005603207/",
-      github: "https://github.com/adith13",
+      linkedIn: "https://www.linkedin.com/in/ishi-singh-b9584a21b",
+      github: "https://github.com/IshiSingh210",
     },
 
     {
@@ -95,8 +95,8 @@ const OurTeamSection = () => {
       image:
       "https://i.postimg.cc/tCcP5Nxr/image.png",
       position: "Research and Development Head",
-      linkedIn: "https://www.linkedin.com/in/harsh-rajpal/",
-      github: "https://github.com/harsh-rajpal",
+      linkedIn: "https://www.linkedin.com/in/prantik-chakraborty-a22b8922a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      github: "https://github.com/IEEECS-VIT",
     },
 
     {
@@ -104,8 +104,8 @@ const OurTeamSection = () => {
       image:
         "https://i.postimg.cc/L43TM8Cz/image.png",
       position: "Editorial Lead",
-      linkedIn: "https://www.linkedin.com/in/jahnavi-gundakaram-43074a1b5/",
-      github: "https://github.com/jahnavigundakaram",
+      linkedIn: "https://www.linkedin.com/in/aryan-saxena-19544b243/",
+      github: "https://github.com/IEEECS-VIT",
     },
 
     {
@@ -122,8 +122,8 @@ const OurTeamSection = () => {
       image:
         "https://i.postimg.cc/GpXs4PdJ/image.png",
       position: "DevOps Lead",
-      linkedIn: "linkedin.com/in/garv-tandon-5b79921a3",
-      github: "github.com/garvsgit",
+      linkedIn: "https://www.linkedin.com/in/nitish-narayanan-5b8202224",
+      github: "https://github.com/Nitish2004/",
     },
 
     {
@@ -131,8 +131,8 @@ const OurTeamSection = () => {
       image:
         "https://i.postimg.cc/FsZmXhv8/image.png",
       position: "AI/ML Lead",
-      linkedIn: "https://www.linkedin.com/in/karthik-remesh-03066a24a",
-      github: "https://github.com/karthik-remesh",
+      linkedIn: "https://www.linkedin.com/in/nitish-narayanan-5b8202224",
+      github: "https://github.com/Nitish2004/",
     },
   ]
 
