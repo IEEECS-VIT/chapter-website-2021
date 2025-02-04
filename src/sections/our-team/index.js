@@ -9,133 +9,97 @@ const OurTeamSection = () => {
 
   const cardInfos = [
     {
-      name: "Siddhant Malpani",
-      image:
-      "https://i.postimg.cc/WzZvmc4J/image.png",
-        // "https://res.cloudinary.com/dk0rcup52/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1681496693/ieee-cs/Vidipt_ollf5m.jpg",
+      name: "Ram Krishna",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWQ0Q7rxmNc3x6oSgLftpe9Ydh45vRMTuCKj7B",
       position: "Chairperson",
-      linkedIn: "https://www.linkedin.com/in/siddhant-malpani-247199235/",
-      github: "https://github.com/SiddhantMalpani",
+      linkedIn: "https://www.linkedin.com/in/ramkrishna2967",
+      github: null,
     },
-
     {
-      name: "Dharrsan Amarnath",
-      image:
-         "https://i.postimg.cc/25nSP8pP/image.png",
+      name: "Anubhav Batra",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCW1C8vy9oSz25JvCDndZjKOg7PGAia4rIR6N0s",
       position: "Vice Chairperson",
-      linkedIn: "https://www.linkedin.com/in/dharrsan-amarnath-75017221a",
-      github: "https://github.com/viper-18",
+      linkedIn: "https://www.linkedin.com/in/anubhav-batra-9ba7271b1/",
+      github: null,
     },
-
     {
-      name: "Theresa Jacob",
-      image:
-      "https://i.postimg.cc/Kz5BDXPL/image.png",
+      name: "Aditya Verma",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWeGpdS8Q2yNDZhMKWBsJjrSHARu1FmoQ8avUP",
       position: "Secretary",
-      linkedIn: "https://www.linkedin.com/in/theresa-jacob/",
-      github: "https://github.com/Theresa-dot",
+      linkedIn: "https://www.linkedin.com/in/adityaverma121",
+      github: null,
     },
-
     {
-      name: "Atharva Singh",
-      image:
-        "https://i.postimg.cc/1tjLvdcC/image.png",
+      name: "Arjun Bector",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWyXgVI3qlYpqZKeWm64naogFMuEwcL9dQ21z5",
       position: "Co-Secretary",
-      linkedIn: "https://www.linkedin.com/in/rohan-gupta-51b16615a",
-      github: "https://github.com/Rohan1572",
+      linkedIn: "https://www.linkedin.com/in/arjun-bector-348118248/",
+      github: "https://github.com/arjunbector",
     },
-
     {
-      name: "Aryan Jain",
-      image:
-        "https://i.postimg.cc/KcTc3757/image.png",
-        position: "Technical Head",
-      linkedIn: "https://www.linkedin.com/in/aryan-jain-254185220",
-      github: "https://github.com/JainnyAryan",
+      name: "Ansh Mehta",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWyT2GOkqlYpqZKeWm64naogFMuEwcL9dQ21z5",
+      position: "Technical Head",
+      linkedIn: "https://www.linkedin.com/in/anshmehta/",
+      github: "https://github.com/anshmehta7x",
     },
-
     {
-      name: "Kartik Gupta",
-      image:
-        "https://i.postimg.cc/G3WqQDsx/image.png",
+      name: "Akshit Anand",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWZG7KqoL6H9zSAaVip8vXf1RMoumtxw7nOCdP",
       position: "Projects Head",
-      linkedIn: "https://www.linkedin.com/in/kartik-gupta-96394722b",
-      github: "https://github.com/KartikGupta3",
+      linkedIn: "https://www.linkedin.com/in/akshit-anand-10a90b219/",
+      github: "https://github.com/akshit1003",
     },
-
     {
-      name: "Akash Kumar",
-      image:
-        "https://i.postimg.cc/rm6z0f74/image.png",
+      name: "Dhriti Sharma",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCW2Zx6ztTnXLKmIdqBW8NfJsyDcv0h3QSR69Fr",
       position: "Events Head",
-      linkedIn: "https://in.linkedin.com/in/akashkumarv",
-      github: "https://github.com/IEEECS-VIT",
+      linkedIn: "https://www.linkedin.com/in/dhriti-sharma-b03014275/",
+      github: null,
     },
-
     {
-      name: "Hasmita Patnana",
-      image:
-        "https://i.postimg.cc/jSYC8gMS/image.png",
+      name: "Varun Shirsath",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWXtAPjjyN9UsL2gtiX4xvrhOVoQWYk7alnz3m",
       position: "Publicity Head",
-      linkedIn: "https://www.linkedin.com/in/hasmita-patnana-392980230",
-      github: "https://github.com/hasmita-patnana7",
+      linkedIn: "https://www.linkedin.com/in/varun-shirsath-50403534b",
+      github: null,
     },
-
     {
-      name: "Ishi Singh",
-      image:
-        "https://i.postimg.cc/nh9MT845/image.png",
+      name: "Parth Jadhav",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWXZcnP3PyN9UsL2gtiX4xvrhOVoQWYk7alnz3",
       position: "Design Head",
-      linkedIn: "https://www.linkedin.com/in/ishi-singh-b9584a21b",
-      github: "https://github.com/IshiSingh210",
+      linkedIn: "https://www.linkedin.com/in/parthjadhav2004",
+      github: null,
     },
-
     {
-      name: "Prantik Chakraborty",
-      image:
-      "https://i.postimg.cc/tCcP5Nxr/image.png",
+      name: "Gouri Kanade",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWtQgUQCH0GT15KReO3s0LUm8kcavwP4WyiSXf",
       position: "Research and Development Head",
-      linkedIn: "https://www.linkedin.com/in/prantik-chakraborty-a22b8922a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      github: "https://github.com/IEEECS-VIT",
+      linkedIn: "https://www.linkedin.com/in/gourikanade1012/",
+      github: null,
     },
-
     {
-      name: "Aryan Saxena",
-      image:
-        "https://i.postimg.cc/L43TM8Cz/image.png",
-      position: "Editorial Lead",
-      linkedIn: "https://www.linkedin.com/in/aryan-saxena-19544b243/",
-      github: "https://github.com/IEEECS-VIT",
-    },
-
-    {
-      name: "Prathyush Kodhanpur",
-      image:
-        "https://i.postimg.cc/zvF9SfvN/image.png",
+      name: "Medhansh Jain",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWw0aQ23brOtUyIMGHs98e1KmLY6kRjb2DP0lV",
       position: "Web Lead",
-      linkedIn: "https://in.linkedin.com/in/prathyush-k-350b8b175",
-      github: "https://github.com/Prathyush-KKK",
+      linkedIn: "https://www.linkedin.com/in/medhansh-jain",
+      github: "https://github.com/medhansh17",
     },
-
     {
-      name: "Nitish Narayan",
-      image:
-        "https://i.postimg.cc/GpXs4PdJ/image.png",
-      position: "DevOps Lead",
-      linkedIn: "https://www.linkedin.com/in/nitish-narayanan-5b8202224",
-      github: "https://github.com/Nitish2004/",
+      name: "Krish Mehta",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWUXWKtVrIdfVg0CpQBN4X2aUt7HhrRnbZA5x3",
+      position: "App Lead",
+      linkedIn: "https://www.linkedin.com/in/krish-mehta-7a4037252",
+      github: "https://github.com/krish-1604",
     },
-
     {
-      name: "Panchal Nayak",
-      image:
-        "https://i.postimg.cc/FsZmXhv8/image.png",
-      position: "AI/ML Lead",
-      linkedIn: "https://www.linkedin.com/in/nitish-narayanan-5b8202224",
-      github: "https://github.com/Nitish2004/",
+      name: "Arya Patil",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWnI7DeLJDB7lxSoRwye2TGi3WXK8CUpO6QE1V",
+      position: "IOT Lead",
+      linkedIn: "https://www.linkedin.com/in/arya-patil-2a8366330/",
+      github: "https://github.com/Arya-S-Patil",
     },
   ]
-
   return (
     <div className={`${classes.container} ${isDark && classes.dark}`}>
       <div className={classes.headerWrapper}>

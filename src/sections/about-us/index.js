@@ -12,7 +12,7 @@ const AboutUs = () => {
       <div className={styles.aboutus}>About Us</div>
       <img
         className={styles.clubimg}
-        src="https://res.cloudinary.com/dk0rcup52/image/upload/v1684225810/ieee-cs/IEEE-CS_pdoype.jpg"
+        src="https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWj9xgMH5SvHIuMUsTDjEGNYPRt6LXBZbgwQly"
         alt="club"
       ></img>
       <div className={styles.text}>

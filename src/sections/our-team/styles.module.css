@@ -40,7 +40,7 @@
 .cardsWrapper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   justify-content: center;
 }
