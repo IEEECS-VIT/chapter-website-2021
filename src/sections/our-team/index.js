@@ -10,7 +10,7 @@ const OurTeamSection = () => {
   const cardInfos = [
     {
       name: "Ram Krishna",
-      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWQ0Q7rxmNc3x6oSgLftpe9Ydh45vRMTuCKj7B",
+      image: "https://cidcuhpuhx.ufs.sh/f/YGMgB3VOGZCWZosa2W8L6H9zSAaVip8vXf1RMoumtxw7nOCd",
       position: "Chairperson",
       linkedIn: "https://www.linkedin.com/in/ramkrishna2967",
       github: null,
